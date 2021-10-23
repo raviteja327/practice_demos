@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color:#000000;
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .container {
+            text-align: center;
+        }
+        .current-color {
+            font-size:50px;
+            color:#fff;
+            text-shadow:0 0 3px #000;
+            font-family: impact;
+        }
+        .generate-btn{
+            padding:16px 32px;
+            background-color:transparent;
+            border:3px solid #fff;
+            color:#fff;
+            text-transform:capitalize;
+            font-size:30px;
+            cursor:pointer;
+            box-shadow:0 0 3px #000;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="current-color">#000000</h2>
+        <button class="generate-btn">
+            generate random color
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        let currentColor = document.querySelector(".current-color");
+        let bodyElem = document.querySelector("body");
+        let generateBtn = document.querySelector(".generate-btn");
+
+        bodyElem.style.backgroundColor = currentColor.innerText;
+
+        generateBtn.addEventListener('click', () => {
+            let randomColor = "";
+            let characters = "0123456789abcdef";
+
+            for (i = 0; i < 6; i++) {
+                randomColor = randomColor + characters[Math.floor(Math.random() * 16)];
+            }
+
+            currentColor.innerText = "#" + randomColor;
+            bodyElem.style.backgroundColor = currentColor.innerText;
+
+        });
+    </script>
+</body>
+</html>
