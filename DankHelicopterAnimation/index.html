@@ -87,9 +87,8 @@
                 background-color: #a299ab;
                 opacity: 0.12;
                 transform: scaleY(0.075);
-                /* animation: rotate 0.6s linear infinite; */
             }
-            .rotor {
+            .rotator {
                 position: absolute;
                 width: 700px;
                 height: 700px;
@@ -104,7 +103,7 @@
                     transform: rotate(360deg);
                 }
             }
-            .rotor div {
+            .rotator div {
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -129,8 +128,10 @@
             <div class="tail"></div>
             <div class="main"></div>
             <div class="rotor">
-                <div></div>
-                <div></div>
+                <div class="rotator">
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </div>
 
