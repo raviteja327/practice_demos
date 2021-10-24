@@ -15,31 +15,49 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-        <title></title>
+        <title>Check Internet Status Using JavaScript</title>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
             body{
-                background-color: #131313;
+                margin: 0;
                 height: 100vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-family: 'Poppins', sans-serif;
+            }
+            .status {
+                padding: 20px 40px;
+                font-family: helvetica;
+                color: #fff;
+                letter-spacing: 1px;
             }
         </style>
     </head>
     <body>
     
-        
+        <p class="status"></p>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script>
+            const status = document.querySelector('.status')
+
+            let online = () => {
+                status.innerHTML = "Connection Available"
+                status.style.backgroundColor = "#77D970"
+            }
+
+            let offline = () => {
+                status.innerHTML = "No Connection"
+                status.style.backgroundColor = "#E02401"
+            }
             
+            if (window.navigator.onLine) {
+                online()
+            } else {
+                offline()
+            }
+
+            window.addEventListener("online", online)
+            window.addEventListener("offline", offline)
         </script>
     </body>
 </html>

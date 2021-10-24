@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <title>Responsive Drop Down Navigation Bar</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                user-select: none;
+            }
+            body {
+                background: #f2f2f2;
+            }
+            nav {
+                background: #222;
+            }
+            nav::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            nav .logo {
+                float: left;
+                color: white;
+                text-transform: uppercase;
+                font-size: 25px;
+                font-weight: 600;
+                line-height: 70px;
+                padding-left: 60px;
+            }
+            nav ul {
+                float: right;
+                margin-right: 40px;
+                list-style: none;
+                position: relative;
+            }
+            nav ul li {
+                display: inline-block;
+                background: #222;
+                margin: 0 5px;
+            }
+            nav ul li a {
+                color: white;
+                line-height: 70px;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 8px 15px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            nav ul li a:hover {
+                color: crimson;
+            }
+            nav ul ul {
+                position: absolute;
+                top: 90px;
+                opacity: 0;
+                visibility: hidden;
+                transition: top 0.3s;
+            }
+            nav ul li:hover > ul {
+                top: 70px;
+                opacity: 1;
+                visibility: visible;
+            }
+            nav ul ul li {
+                position: relative;
+                margin: 0;
+                width: 150px;
+                float: none;
+                display: list-item;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            }
+            nav ul ul li a {
+                line-height: 50px;
+            }
+            nav ul ul ul li {
+                position: relative;
+                top: -60px;
+                left: 150px;
+            }
+            .show,
+            .icon,
+            input {
+                display: none;
+            }
+            .fa-plus {
+                font-size: 15px;
+                margin-left: 40px;
+            }
+            @media all and (max-width: 968px) {
+                nav ul {
+                    margin-right: 0;
+                    float: left;
+                }
+                nav .logo {
+                    padding-left: 30px;
+                    width: 100%;
+                }
+                .show + a, ul {
+                    display: none;
+                }
+                nav ul li,
+                nav ul ul li {
+                    display: block;
+                    width: 100%;
+                }
+                .show {
+                    display: block;
+                    color: white;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    padding: 0 20px;
+                    line-height: 70px;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+                .show:hover {
+                    color: crimson;
+                }
+                .icon {
+                    display: block;
+                    color: white;
+                    position: absolute;
+                    top: 0;
+                    right: 40px;
+                    line-height: 70px;
+                    cursor: pointer;
+                    font-size: 25px;
+                }
+                nav ul ul {
+                    top: 70px;
+                    border-top: 0;
+                    float: none;
+                    position: static;
+                    display: none;
+                    opacity: 1;
+                    visibility: visible;
+                }
+                nav ul ul a {
+                    padding-left: 40px;
+                }
+                nav ul ul ul a {
+                    padding-left: 80px;
+                }
+                nav ul ul ul li {
+                    position: static;
+                }
+                [id^=btn]:checked + ul {
+                    display: block;
+                }
+                nav ul ul li {
+                    border-bottom: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <nav>
+            <div class="logo">Coding Master</div>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" name="" id="btn">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <label for="btn-1" class="show">Features+</label>
+                    <a href="#">Features</a>
+                    <input type="checkbox" name="" id="btn-1">
+                    <ul>
+                        <li><a href="#">Feature 1</a></li>
+                        <li><a href="#">Feature 2</a></li>
+                        <li><a href="#">Feature 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn-2" class="show">Services+</label>
+                    <a href="#">Services</a>
+                    <input type="checkbox" name="" id="btn-2">
+                    <ul>
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li>
+                            <label for="btn-3" class="show">More+</label>
+                            <a href="#">More <span class="fa fa-plus"></span></a>
+                            <input type="checkbox" name="" id="btn-3">
+                            <ul>
+                                <li><a href="#">Submenu 1</a></li>
+                                <li><a href="#">Submenu 2</a></li>
+                                <li><a href="#">Submenu 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
