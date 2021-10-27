@@ -84,7 +84,7 @@
             color: #e5e5e5;
         }
         button {
-            margin-top: 50px;
+            margin-top: 30px;
             width: 100%;
             background-color: #fff;
             color: #080710;
@@ -101,19 +101,27 @@
         .social div {
             width: 150px;
             border-radius: 3px;
-            padding: 5px 10px 10px 5px;
+            padding: 10px;
             background-color: rgba(255, 255, 255, 0.27);
             color: #eaf0fb;
             text-align: center;
         }
         .social div:hover {
             background-color: rgba(255, 255, 255, 0.47);
+            color: #ffffff;
         }
         .social .fb {
             margin-left: 25px;
         }
         .social a {
             text-decoration: none;
+        }
+        .social a:hover {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .fa:before {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -124,9 +132,9 @@
         <div class="shape"></div>
     </div>
     <form action="">
-        <h3>Login Here</h3>
+        <h3 class="mb-5">Login Here</h3>
         <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
+        <input type="text" placeholder="Email or Phone" id="username" class="mb-3">
         <label for="password">Password</label>
         <input type="text" placeholder="password" id="password">
         <button>Login</button>

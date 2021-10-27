@@ -44,7 +44,7 @@
                 if (passwordInput.type === "password") {
                 // switch up the type of the input
                     passwordInput.type = "text";
-                } else {
+                } else if (passwordInput.type === "text") {
                     passwordInput.type = "password";
                 }
             })
