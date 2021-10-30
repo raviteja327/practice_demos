@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Congrats Card Hover Effect Using CSS</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                height: 100vh;
+                width: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #030710;
+            }
+
+            .container {
+                width: 340px;
+                height: 420px;
+                padding: 2rem;
+                border-radius: 20px;
+                position: relative;
+                overflow: hidden;
+                background-color: #F8F9FD;
+            }
+
+            .bg-circles div {
+                aspect-ratio: 1/1;
+                background-color: rgb(253, 19, 58);
+                border-radius: 50%;
+                position: absolute;
+            }
+            #circle-1 {
+                width: 70%;
+                left: -20%;
+                top: -35%;
+                opacity: 0.5;
+            }
+            #circle-2 {
+                width: 120%;
+                left: -20%;
+                top: -80%;
+                opacity: 0.4;
+            }
+            #circle-3 {
+                width: 120%;
+                left: 20%;
+                top: -80%;
+                opacity: 0.4;
+            }
+            #title {
+                margin-top: 35%;
+                text-align: center;
+                font-size: 1.6rem;
+                color: #1b1b1b;
+                animation: breathing 3s linear infinite;
+            }
+            @keyframes breathing {
+                0%,
+                100% {
+                    -webkit-transform: scale(0.9);
+                    -ms-transform: scale(0.9);
+                    transform: scale(0.9);
+                }
+                25% {
+                    -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                    transform: scale(1);
+                }
+                60% {
+                    -webkit-transform: scale(0.9);
+                    -ms-transform: scale(0.9);
+                    transform: scale(0.9);
+                }
+            }
+            .conf-text {
+                margin-top: 1.5rem;
+                line-height: 130%;
+                text-align: center;
+                color: #606060
+            }
+            #btn-continue {
+                width: 100%;
+                height: 2.5rem;
+                margin-top: 3rem;
+                font-size: 1.2rem;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                transition: 0.5s;
+                background-color: rgb(255, 36, 72);
+                box-shadow: 0 5px 20px rgba(253, 19, 58, 0.25);
+            }
+            #btn-continue:hover {
+                -webkit-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <div class="bg-circles">
+              <div id="circle-1"></div>
+              <div id="circle-2"></div>
+              <div id="circle-3"></div>
+            </div>
+            <h1 id="title">Congratulations 🎉</h1>
+            <p class="conf-text">
+              Thank you for your interest in the Developer's Program. Your form has
+              been received and is being processed. You should receive a confirmation
+              email shortly.
+            </p>
+            <button id="btn-continue">Continue</button>
+          </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
