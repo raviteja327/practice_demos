@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Music Player</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+            * {
+                outline: none;
+                box-sizing: border-box;
+            }
+            body {
+                background-image: linear-gradient(0deg, rgba(247, 247, 247, 1) 23.8%, rgba(252, 221, 221, 1) 92% );
+                font-family: "Open Sans", sans-serif;
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .music-container {  
+                background-color: #fff;  
+                border-radius: 15px;  
+                box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);  
+                display: flex;  
+                padding: 20px 30px;  
+                position: relative;  
+                margin: 100px 0;  
+                z-index: 10;  
+            }  
+            .img-container {  
+                position: relative;  
+                width: 130px;  
+            }
+            .img-container::after {  
+                content: "";  
+                background-color: #fff;  
+                border-radius: 50%;  
+                position: absolute;  
+                bottom: 100%;  
+                left: 50%;  
+                width: 20px;  
+                height: 20px;  
+                transform: translate(-50%, 50%);  
+                box-shadow: 0 0 0px 10px #000;  
+            }  
+            .img-container img {  
+                border-radius: 50%;  
+                object-fit: cover;  
+                height: 130px;  
+                width: inherit;  
+                position: absolute;  
+                bottom: 0;  
+                left: 0;  
+                animation: rotate 3s linear infinite;  
+                animation-play-state: paused;  
+            }
+            .music-container.play .img-container img {  
+                animation-play-state: running;  
+            }  
+            @keyframes rotate {  
+                from {  
+                    transform: rotate(0deg);  
+                }  
+                to {  
+                    transform: rotate(360deg);  
+                }  
+            }
+            .navigation {  
+                display: flex;  
+                align-items: center;  
+                justify-content: center;  
+                z-index: 1;  
+            }  
+            .action-btn {  
+                background-color: #fff;  
+                border: 0;  
+                color: #dfdbdf;  
+                font-size: 20px;  
+                cursor: pointer;  
+                padding: 10px;  
+                margin: 0 20px;  
+            }  
+            .action-btn.action-btn-big {  
+                color: #cdc2d0;  
+                font-size: 30px;  
+            }
+            .music-info {  
+                background-color: rgba(255, 255, 255, 0.5);  
+                width: calc(100% - 40px);  
+                padding: 10px 10px 10px 150px;  
+                border-radius: 15px 15px 0px 0px;  
+                position: absolute;  
+                top: 0;  
+                left: 20px;  
+                opacity: 0;  
+                transform: translateY(0%);  
+                transition: transform 0.3s ease-in, opacity 0.3s ease-in;  
+                z-index: 0;  
+            }  
+            .music-container.play .music-info {  
+                opacity: 1;  
+                transform: translateY(-100%);  
+            }  
+            .music-info h4 {  
+                margin: 0;  
+            }
+            .progress-container {  
+                background-color: #fff;  
+                border: 5px;  
+                cursor: pointer;  
+                margin: 10px 0;  
+                height: 4px;  
+                width: 100%;  
+            }  
+            .progress {  
+                background-color: #fe8daa;  
+                border-radius: 5px;  
+                height: 100%;  
+                width: 0%;  
+                transform: width 0.1s linear;  
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>Music Player</h1>  
+        <div class="music-container" id="music-container">  
+            <div class="music-info">  
+                <h4 class="title" id="title"></h4>  
+                <div class="progress-container" id="progress-container">  
+                    <div class="progress" id="progress"></div>  
+                </div>  
+            </div>  
+            <audio src="./music/happyrock.mp3" id="audio"></audio>  
+            <div class="img-container">  
+                <img src="data:image/png;base64,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" alt="music-cover" id="cover" />  
+            </div>  
+            <div class="navigation">  
+                <button id="prev" class="action-btn">  
+                    <i class="fa fa-backward" aria-hidden="true"></i>  
+                </button>  
+                <button id="play" class="action-btn action-btn-big">  
+                    <i class="fa fa-play" aria-hidden="true"></i>  
+                </button>  
+                <button id="next" class="action-btn">  
+                    <i class="fa fa-forward" aria-hidden="true"></i>  
+                </button>  
+            </div>  
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            const musicContainer = document.getElementById("music-container");  
+            const playBtn = document.getElementById("play");  
+            const prevBtn = document.getElementById("prev");  
+            const nextBtn = document.getElementById("next");  
+            const audio = document.getElementById("audio");  
+            const progress = document.getElementById("progress");  
+            const progressContainer = document.getElementById("progress-container");  
+            const title = document.getElementById("title");  
+            const cover = document.getElementById("cover");
+
+            // Songs Titles  
+            const songs = ["happyrock", "jazzyfrenchy", "ukulele"];  
+
+            // KeepTrack of song  
+            let songIndex = 0;  
+
+            // Initially load song details into DOM  
+            loadSong(songs[songIndex]);  
+
+            // Update song details  
+            function loadSong(song) {  
+                title.innerText = song;  
+                audio.src = `./music/${song}.mp3`;  
+                cover.src = `./images/${song}.jpg`;  
+            }
+
+            // Play Song  
+            function playSong() {  
+                musicContainer.classList.add("play");  
+                playBtn.querySelector("i.fa").classList.remove("fa-play");  
+                playBtn.querySelector("i.fa").classList.add("fa-pause");  
+                audio.play();  
+            }
+
+            // Pause Song  
+            function pauseSong() {  
+                musicContainer.classList.remove("play");  
+                playBtn.querySelector("i.fa").classList.add("fa-play");  
+                playBtn.querySelector("i.fa").classList.remove("fa-pause");  
+                audio.pause();  
+            }  
+
+            // Previous Song  
+            function prevSong() {  
+                songIndex--;  
+                if (songIndex < 0) {  
+                    songIndex = songs.length - 1;  
+                }     
+                loadSong(songs[songIndex]);  
+                playSong();  
+            }
+
+            // Next Song  
+            function nextSong() {  
+                songIndex++;  
+                if (songIndex > songs.length - 1) {  
+                    songIndex = 0;  
+                }  
+                loadSong(songs[songIndex]);  
+                playSong();  
+            }  
+
+            // Update Progress bar  
+            function updateProgress(e) {  
+                const { duration, currentTime } = e.srcElement;  
+                const progressPerCent = (currentTime / duration) * 100;  
+                progress.style.width = `${progressPerCent}%`;  
+            }  
+
+            // Set Progress  
+            function setProgress(e) {  
+                const width = this.clientWidth;  
+                const clickX = e.offsetX;  
+                const duration = audio.duration;  
+                audio.currentTime = (clickX / width) * duration;  
+            }
+
+            // Event Listeners  
+            playBtn.addEventListener("click", () => {  
+                const isPlaying = musicContainer.classList.contains("play");  
+                if (isPlaying) {  
+                    pauseSong();  
+                } else {  
+                    playSong();  
+                }  
+            });  
+
+            // Change Song  
+            prevBtn.addEventListener("click", prevSong);  
+            nextBtn.addEventListener("click", nextSong);  
+
+            // Time/Song Update  
+            audio.addEventListener("timeupdate", updateProgress);  
+
+            // Click On progress Bar  
+            progressContainer.addEventListener("click", setProgress);  
+            
+            // Song End  
+            audio.addEventListener("ended", nextSong);
+
+        </script>
+    </body>
+</html>

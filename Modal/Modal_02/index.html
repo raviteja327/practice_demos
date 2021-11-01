@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Popup Modal</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            button {
+                font-family: inherit;
+            }
+            .modal-btn {
+                padding: 20px 60px;
+                background-color: #ff7a00;
+                border: none;
+                text-transform: capitalize;
+                font-size: 24px;
+                color: #fff;
+                cursor: pointer;
+            }
+            .modal-container {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.3s;
+            }
+            .modal {
+                background-color: #fff;
+                width: 95%;
+                max-width: 700px;
+                text-align: center;
+                transform: scale(0.6);
+                transition: transform 0.3s;
+            }
+            .modal-header {
+                background-color: #ff7a00;
+                padding: 20px;
+            }
+            .modal-header h2 {
+                color: #fff;
+                text-transform: uppercase;
+            }
+            .modal-body {
+                padding: 20px;
+            }
+            .modal-body p {
+                line-height: 1.8;
+                margin: 20px 0;
+            }
+            .modal .close-btn {
+                padding: 15px 30px;
+                border: none;
+                background-color: #ff7a00;
+                color: #fff;
+                text-transform: capitalize;
+                font-size: 20px;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+            .modal-container.show {
+                opacity: 1;
+                pointer-events: all;
+            }
+            .modal-container.show .modal {
+               transform: scale(1);
+            }
+        </style>
+    </head>
+    <body>
+    
+        <button class="modal-btn">open modal</button>
+
+        <div class="modal-container">
+            <div class="modal">
+                <div class="modal-header">
+                    <h2>I AM A MODAL 😎</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi impedit sit optio quos sapiente at! Rerum, laborum illo in quis earum eos doloribus veritatis</p>
+                </div>
+                <button class="close-btn">close modal</button>
+            </div>
+          </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            const modalBtn = document.querySelector(".modal-btn");
+            const closeBtn = document.querySelector(".close-btn");
+            const modalContainer = document.querySelector(".modal-container");
+
+            
+            modalBtn.addEventListener("click", () => {
+                modalContainer.classList.add("show");
+            });
+            
+            closeBtn.addEventListener("click", () => {
+                console.log("modalContainer")
+                modalContainer.classList.remove("show");
+            });
+        </script>
+    </body>
+</html>

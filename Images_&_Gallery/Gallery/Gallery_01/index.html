@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MASONRY LAYOUT</title>
+
+    <style>
+        main {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .masonry-layout {
+            column-count: 3;
+            column-gap: 20px;
+        }
+        .item {
+            margin-bottom: 20px;
+            -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+            page-break-inside: avoid; /* Firefox */
+            break-inside: avoid; /* IE 10+ */
+        }
+        @media (max-width: 768px) {
+            .masonry-layout {
+                column-count: 2;
+                column-gap: 10px;
+            }
+            .item {
+                margin-bottom: 10px;
+            }
+        }
+        /* You can do this if you want only 1 column in smaller devices 👇👇 */
+        /* @media (max-width: 768px) {
+            .masonry-layout {
+                column-count: 1;
+            }
+        } */
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="masonry-layout">
+        <div class="item"><img src="./images/1823704.jpg" alt="" /></div>
+        <div class="item"><img src="./images/3826410.jpg" alt="" /></div>
+        <div class="item"><img src="./images/3491940.jpg" alt="" /></div>
+        <div class="item"><img src="./images/54283.jpg" alt="" /></div>
+        <div class="item"><img src="./images/9321606.jpg" alt="" /></div>
+        <div class="item"><img src="./images/5852971.jpg" alt="" /></div>
+        <div class="item"><img src="./images/3727256.jpg" alt="" /></div>
+        <div class="item"><img src="./images/848573.jpg" alt="" /></div>
+        <div class="item"><img src="./images/9226519.jpg" alt="" /></div>
+        <div class="item"><img src="./images/4974914.jpg" alt="" /></div>
+        <div class="item"><img src="./images/4064696.jpg" alt="" /></div>
+        <div class="item"><img src="./images/9250013.jpg" alt="" /></div>
+      </div>
+    </main>
+  </body>
+</html>
