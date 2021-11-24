@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Gallery With Blur Hover Effect</title>
+
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+
+        h1 {
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-size: 55px;
+            text-align: center;
+            margin: 30px 0 40px;
+            color: #454545;
+        }
+        .container {
+            max-width: 1440px; width: 95%;
+            margin: 0 auto;
+        }
+        .img-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+        .gallery-img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 5px;
+        }
+        .img-container:hover .gallery-img {
+            filter: blur(3px);
+            transform: scale(0.95);
+        }
+        .img-container .gallery-img:hover {
+            filter: blur(0);
+            transform: scale(1);
+        }
+    </style>
+  </head>
+  <body>
+    <section class="gallery">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <div class="img-container">
+                <img src="./images/gallery1.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery2.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery3.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery4.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery5.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery6.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery7.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery8.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery9.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery10.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery11.jpg" alt="" class="gallery-img" />
+                <img src="./images/gallery12.jpg" alt="" class="gallery-img" />
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
