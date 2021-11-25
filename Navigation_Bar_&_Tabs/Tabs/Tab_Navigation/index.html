@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Navigation using html Css and JS</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        body {
+            background: linear-gradient(to right, #4a00e0, #8e2de2);
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main {
+            height: 100vh;
+        }
+        .nav {
+            width: 300px;
+            height: 80px;
+            background: #fff;
+            border-radius: 25px;
+            justify-content: space-evenly;
+        }
+        .box {
+            flex-direction: column;
+            width: 50px;
+            height: 50px;
+            /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.21); */
+            border-radius: 10px;
+            font-size: 0.8rem;
+            position: relative;
+        }
+        .active {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.21), 0 -0.1px 10px rgba(0, 0, 0, 0.55);
+        }
+        .box input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            -webkit-appearance: none;
+            transition: all 0.4s;
+        }
+        .box i,
+        .box p {
+            color: #333333;
+            transition: all 0.4s;
+        }
+        .box p {
+            margin-top: 3px;
+            font-size: 0.7rem;
+        }
+        .box input:checked ~ i,
+        .box input:checked ~ p {
+            color: #4a00e0de;
+            text-shadow: 0 0 30px #4a00e0de;
+        }
+    </style>        
+</head>
+<body>
+    
+    <div class="main center">
+        <div class="nav center">
+            <div class="box center active">
+                <input type="checkbox" class="tab">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </div>
+            <div class="box center">
+                <input type="checkbox" class="tab">
+                <i class="fas fa-globe-europe"></i>
+                <p>Browse</p>
+            </div>
+            <div class="box center">
+                <input type="checkbox" class="tab">
+                <i class="fas fa-heart"></i>
+                <p>Likes</p>
+            </div>
+            <div class="box center">
+                <input type="checkbox" class="tab">
+                <i class="fas fa-user-circle"></i>
+                <p>Profile</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f6816dd194.js"></script>
+
+    <script>
+        const tab = document.querySelectorAll(".tab")
+
+        tab[0].checked = true
+
+        tab.forEach((e) => {
+            e.addEventListener("click", (event) => {
+                tab.forEach((e) => {
+                    e.checked = false
+                    e.parentElement.classList.remove("active")
+                })
+                event.target.checked = true
+                e.parentElement.classList.add("active")
+            })
+        })
+    </script>
+</body>
+</html>

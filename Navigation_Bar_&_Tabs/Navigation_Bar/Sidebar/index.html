@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            background: #F4F8F9;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        input#menu {
+            display: none;
+        }
+        .icon {
+            background: #FFF;
+            cursor: pointer;
+            display: block;
+            height: 24px;
+            padding: 16px;
+            width: 24px;
+        }
+        label.icon {
+            position: fixed;
+            z-index: 200;
+        }
+        .icon .menu,
+        .icon .menu::before,
+        .icon .menu::after {
+            background: #9FB1BD;
+            content: '';
+            display: block;
+            height: 2px;
+            position: absolute;
+            transition: background ease .3s, top ease .3s .3s, transform ease .3s;
+            width: 20px;
+        }
+        .icon:hover .menu,
+        .icon:hover .menu::before,
+        .icon:hover .menu::after {
+            background: #FC5185;
+        }
+        .icon .menu {
+            left: 18px;
+            top: 27px;
+        }
+        .icon .menu::before {
+            top: -6px;
+        }
+        .icon .menu::after {
+            top: 6px;
+        }
+        #menu:checked + .icon .menu {
+            background: transparent;
+        }
+        #menu:checked + .icon .menu::before {
+            transform: rotate(45deg);
+        }
+        #menu:checked + .icon .menu::after {
+            transform: rotate(-45deg);
+        }
+        #menu:checked + .icon .menu::before,
+        #menu:checked + .icon .menu::after {
+            top: 0;
+            transition: top ease .3s, transform ease .3s .3s;
+        }
+        nav {
+            background: #FFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+            height: 100vh;
+            padding-top: 60px;
+            position: fixed;
+            transition: width ease .6s;
+            width: 60px;
+            z-index: 100;
+            overflow: hidden;
+        }
+        #menu:checked ~ nav {
+            width: 200px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            cursor: pointer;
+            display: block;
+            line-height: 60px;
+            padding-left: 16px;
+            white-space: nowrap;
+        }
+        nav li:hover{
+            background: #FC5185;
+            color: #fff;
+        }
+        nav li:hover i{
+            color: #fff;
+        }
+        nav i {
+            color: #9FB1BD;
+            margin-right: 24px;
+            vertical-align: text-bottom;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="checkbox" id="menu">
+    <label for="menu" class="icon">
+        <div class="menu"></div>
+    </label>
+    <nav>
+        <ul>
+            <li>
+                <i class="material-icons">article</i>Article
+            </li>
+            <li>
+                <i class="material-icons">backup</i>Backup
+            </li>
+            <li>
+                <i class="material-icons">bookmark_border</i>Bookmark
+            </li>
+            <li>
+                <i class="material-icons">perm_media</i>Gallery
+            </li>
+            <li>
+                <i class="material-icons">chat_bubble_outline</i>Messages
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>
