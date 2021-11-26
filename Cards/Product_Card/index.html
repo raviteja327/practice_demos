@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        /* Embedding Google Fonts */
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #b34bf8;
+            font-family: "Poppins", sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+        }
+        .card-tag {
+            background-color: rgba(179, 75, 248, 0.3);
+            padding: 5px 10px;
+            color: #b34bf8;
+            border-radius: 2px;
+        }
+        .card-header {
+            padding: 30px 50px;
+            text-align: center;
+        }
+        .card-header img {
+            max-height: 200px;
+        }
+        .product-title {
+            font-size: 24px;
+            line-height: 1;
+            color: #353535;
+        }
+        .product-status {
+            color: #808080;
+        }
+        .product-price {
+            font-size: 30px;
+            color: #353535;
+            margin: 20px 0;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn {
+            padding: 10px 40px;
+            border: none;
+            font-family: inherit;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background-color: #b34bf8;
+            color: #fff;
+        }
+        .btn-secondary {
+            color: #808080;
+        }
+        .card-footer .btn:first-child {
+            margin-right: 15px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="product-card">
+        <span class="card-tag">#1 Best Seller</span>
+        <div class="card-header">
+            <img src="product.png" alt="">
+        </div>
+        <div class="card-body">
+            <h4 class="product-title">Easy Laptop Chair</h4>
+            <p class="product-status">Ships in 3-4 days</p>
+            <h3 class="product-price">$80.00</h3>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-secondary">Save</button>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+    </div>
+
+</body>
+</html>
