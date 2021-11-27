@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover Effect</title>
+
+    <style>
+        *{  
+            box-sizing: border-box;  
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+        }  
+        body{  
+            display: flex;  
+            flex-direction: column;
+            min-height: 100vh;  
+            justify-content: center;  
+            align-items: center;  
+            background-color: #fafafa;
+            overflow: hidden;
+        }
+
+        .card-container {  
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: stretch;
+            min-height: 70vh;
+            width: 300px;
+            background-image: linear-gradient(-45deg, #4595fc, #c434e3);
+            padding: 30px 30px 10px 30px;
+            border-radius: 20px;
+        }  
+        .card-header {
+            display: flex;
+            height: auto;
+            width: auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 500px 0;
+        }
+        .user-profile-image {
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <header class="card-header">
+            <div class="user-profile-image"></div>
+            <span class="username">Ana Zona</span>
+            <span class="user-bio">Backend Developer</span>
+        </header>
+        <section class="about-section">
+            <div class="about-item">
+                <div class="item-value">400</div>
+                <div class="item-label">Posts</div>
+            </div>
+            <div class="about-item">
+                <div class="item-value">8K</div>
+                <div class="item-label">Followers</div>
+            </div>
+            <div class="about-item">
+                <div class="item-value">33</div>
+                <div class="item-label">Followers</div>
+            </div>
+        </section>
+        <footer class="card-footer">
+            <button class="follow-btn">Follow</button>
+        </footer>
+    </div>    
+    <footer>A work by <a href="https://www.instagram.com/karancodes/" target="_blank">Karan Kumar</a></footer>
+    
+</body>
+</html>
