@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>How To Make Website With Dark Theme</title>
+
+    <style>
+        :root {
+            --primary-color: #fff;
+            --secondry-color: #1b1b1b;  
+        }
+        .dark-theme {
+            --primary-color: #1b1b1b;
+            --secondry-color: #fff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: var(--primary-color);
+            padding-right: 7%;
+            padding-left: 3%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .navbar {
+            width: 100%;
+            height: 15vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 160px;
+            margin-top: 17px;
+            cursor: pointer;
+        }
+        nav {
+            flex: 1;
+            padding-left: 480px;
+        }
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: var(--secondry-color);
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        nav ul li a:hover {
+            color: #ff6401;
+        }
+        #icon {
+            width: 30px;
+            cursor: pointer;
+        }
+        .content {
+            position: relative;
+        }
+        h1 {
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-top: 100px;
+            letter-spacing: .1em;
+            font-size: 50px;
+            color: var(--secondry-color);
+        }
+        h1 .style {
+            color: #ff6401;
+            font-size: 60px;
+            font-weight: 800;
+        }
+        p {
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: .1em;
+            margin-top: 35px;
+            color: var(--secondry-color);
+        }
+        .text {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .btn {
+            background-color: var(--secondry-color);
+            color: var(--primary-color);
+            margin-top: 80px;
+            padding: 15px 45px;
+            border: none;
+            outline: none;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 30px;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            transition: all .5s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            transition: all .5s;
+        }
+        .social-media {
+            margin-top: 80px;
+            margin-left: 50px;
+            text-decoration: none;
+            font-size: 33px;
+        }
+        .fa {
+            color: var(--secondry-color);
+            margin-left: 10px;
+        }
+        .fa:hover {
+            color: #ff6401;
+        }
+        .image {
+            position: absolute;
+            width: 45%;
+            height: 570px;
+            bottom: 0;
+            margin-bottom: -154px;
+            margin-left: 710px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+           <img src="images/logo.png" class="logo">
+            <nav>
+               <ul>
+                   <li><a href="">Home</a></li>
+                   <li><a href="">About</a></li>
+                   <li><a href="">Portfolio</a></li>
+                   <li><a href="">Services</a></li>
+                   <li><a href="">Hire Me</a></li>
+               </ul>
+            </nav>
+            <img src="images/moon.png" id="icon">
+        </div>
+        <div class="content">
+            <h1>I'm a <span class="style">Programmer</span></h1>
+            <p>I'm a Self Taught Developer, Frontend Web Developer, Web Designer, <br>Freelancer, Content Creator, YouTuber, Influencer. Providing <br> quality content on Web Development for Free.
+           </p> 
+           <div class="text">
+               <button class="btn">Download Resume</button>
+               <div class="social-media">
+                   <a href=""><i class="fa fa-github"></i></a>
+                   <a href=""><i class="fa fa-instagram"></i></a>
+                   <a href=""><i class="fa fa-linkedin"></i></a>
+               </div>
+           </div>  
+           <img src="images/bg.png" class="image">
+       </div>
+
+       <script>
+
+           var icon = document.getElementById("icon");
+
+           icon.onclick = function() {
+                document.body.classList.toggle("dark-theme");
+
+                if(document.body.classList.contains("dark-theme")) {
+                    icon.src = "images/sun.png";
+                } else {
+                    icon.src = "images/moon.png";
+                }
+           }
+
+       </script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Card Using HTML & CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background:  #182b3c;
+        }
+
+        .card{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 300px;
+            height: 450px;
+            background: #000;
+            overflow: hidden;
+            box-shadow: 0 0 10px #00f7ff,
+                        0 0 10px #00f7ff,
+                        0 0 10px #00f7ff,
+                        0 0 10px #00f7ff;
+        }
+        .card .poster{
+            position: relative;
+            overflow: hidden;
+        }
+        .card .poster::before{
+            content: '';
+            position: absolute;
+            bottom: -180px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, #000 60%, transparent);
+            transition: 0.5s;
+        }
+        .card:hover .poster::before{
+            bottom: 0;
+        }
+        .card .poster img{
+            width: 100%;
+            transition: 0.5s;
+        }
+        .card:hover .poster img{
+            filter: blur(5px);
+            transform: translateY(-50px);
+        }
+        .details{
+            position: absolute;
+            padding: 20px;
+            width: 100%;
+            height: 75%;
+            bottom: -180px;
+            left: 0;
+            box-sizing: border-box;
+            transition: 0.5s;
+            z-index: 2;
+        }
+        .card:hover .details{
+            bottom: 0;
+        } 
+        .details h2{
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+        .details h2 span{
+            font-size: 14px;
+            color: #00f7ff;
+        }
+        .rating{
+            position: relative;
+            padding: 5px 0;
+        }
+        .rating .fa{
+            color: #f7f406;
+            margin-right: 2px;
+            font-size: 16px;
+        }
+        .rating span{
+            color: #fff;
+            padding: 0 5px;
+        }
+        .tags{
+            position: relative;
+            margin-top: 5px;
+            color: #fff;
+            display: inline-block;
+            border-radius: 4px;
+        }
+        .tags span{
+            padding: 2px 5px;
+            margin-right: 2px;
+        }
+        .tags span.fantasy{
+            background: #7206f7;
+        }
+        .info{
+            color: #fff;
+        }
+        .info p{
+            margin: 15px 0 10px;
+        }
+        .star{
+            position: relative;   
+        }
+        .star h4{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            color: #f7f406;
+        }
+        .star ul{
+            margin: 10px 0 0;
+            padding: 0;
+            display: flex;
+        }
+        .star ul li{
+            list-style: none;
+            height: 35px;
+            width: 35px;
+            background: #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 6px;
+            border: 6px solid #fff;
+        }
+        .star ul li img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="poster">
+            <img src="harry-potter.jpg" alt="">
+        </div>
+        <div class="details">
+            <h2>Harry Potter and Deadly Hallows - Part 1 ( 2010 ) <br> <span> Directed by David Yates</span></h2>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <span>4/5</span>
+            </div>
+            <div class="tags">
+                <span class="fantasy">Fantasy</span>
+            </div>
+            <div class="info">
+                <p>It is the first of two cinematic parts based on J. K. Rowling's 2007 novel of the same name and the seventh installment.</p>
+            </div>
+            <div class="star">
+                <h4>Cast</h4>
+                <ul>
+                    <li><img src="daniel.jpg" alt=""></li>
+                    <li><img src="emma.jpg" alt=""></li>
+                    <li><img src="rupert.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
