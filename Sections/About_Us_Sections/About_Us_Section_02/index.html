@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us Section</title>
+
+    <!-- Embedding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"/>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .about {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        .section-heading {
+            text-align: center;
+            color: #ff6969;
+            font-family: "Kaushan Script", cursive;
+            font-size: 70px;
+            margin-top: 100px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+        }
+        .about__details {
+            flex-basis: 50%;
+            margin-right: 20px;
+        }
+        .about__details h3 {
+            font-size: 40px;
+            color: #6b645d;
+        }
+        .about__details p {
+            color: #6b645d;
+            line-height: 1.8;
+            margin-top: 10px;
+        }
+        .about__image {
+            max-width: 640px;
+            flex-basis: 50%;
+            position: relative;
+        }
+        .about__image img {
+            max-width: 100%;
+        }
+        .about__image::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("splash.jpg");
+            background-size: 100%;
+            background-position: center;
+            mix-blend-mode: screen;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about">
+        <div class="container">
+            <h1 class="section-heading">About Me</h1>
+            <div class="row">
+                <div class="about__details">
+                    <h3>I Am Samuel</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                        illo impedit iusto necessitatibus, accusantium quia asperiores
+                        laborum culpa velit animi eius? Vitae, blanditiis enim! Aliquid
+                        illum inventore nisi corporis harum cumque maxime quibusdam ex
+                        voluptatum! 
+                        <br><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea atque
+                        officia aut similique optio. Assumenda, explicabo quas. Illum, sit
+                        repellat delectus aperiam ratione ipsam, non laudantium quos
+                        obcaecati iure eum debitis amet dolores magnam reprehenderit.
+                    </p>
+                </div>
+                <div class="about__image">
+                    <img src="portrait.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Frontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Switch SignUp Login Form</title>
+    
+    <style>
+        html {
+            margin: 0;
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background: #d1d8ec;
+        }
+
+        .form-collection {
+            width: 400px;
+            height: 400px;
+        }
+        .limit-width {
+            width: 300px;
+        }
+        .box-title{
+            padding: 0 15px;
+            color: #f53b57;
+            text-decoration: underline;
+        }
+        .absolute-footer {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 1.7rem;
+            font-weight: 300;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.4);
+            color: #fff;
+        }
+        .form-collection {
+            z-index: 2;
+        }
+        .card {
+            font-family: "Open Sans", sans-serif;
+            background: #fff;
+            position: absolute;
+            transition: 0.3s ease all;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .box-btn {
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            display: block;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #444;
+            background: transparent;
+            transition: 0.2s ease all;
+            border-radius: 3px;
+        }
+        .box-btn:hover {
+            background: rgba(0, 0, 0, 0.06);
+        }
+        .box-btn:active {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .input-group {
+            border: 2px solid #eee;
+            position: relative;
+            background: #eee;
+            margin: 15px 0;
+            border-radius: 2px;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .input-group i{
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .input-group input {
+            border: none;
+            padding-left: 20px;
+            background: transparent;
+            width: 100%;
+            outline: none;
+            font-weight: 500;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+        }
+        .input-group label {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            padding-left: 10px;
+            font-weight: 500;
+            color: #aaa;
+        }
+        .card-footer button {
+            width: 100%;
+            padding: 25px;
+            font-size: 24px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            background: #f53b57;
+            border: none;
+            color: #fff;
+            box-shadow: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .above {
+            z-index: 1;
+        }
+        .below {
+            z-index: 0;
+        }
+        .turned {
+            opacity: 0.8;
+        }
+        .sign-up-card,
+        .log-in-card {
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+        }
+        .sign-up-card.turned {
+            filter: blur(0.8px);
+            transform: rotateZ(-90deg) translate3d(0, 100px, 0) scale(0.7);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        .log-in-card.turned {
+            filter: blur(1px);
+            transform: rotateZ(-90deg) translateX(0px) translateY(100px) scale(0.7);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+        .animation-state-1 .sign-up-card.below {
+            transform: rotateZ(-7deg) translateY(150px) scale(0.78);
+            opacity: 1;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            filter: blur(0.4px);
+        }
+        .animation-state-1 .log-in-card.above {
+            transform: rotateZ(-83deg) translateY(-180px) translateX(100px) scale(0.78);
+            opacity: 1;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            filter: blur(0.5px);
+        }
+        .animation-state-finish .sign-up-card.above {
+            transform-origin: left top;
+            transform: rotateZ(5deg) translateY(0px) scale(1);
+            opacity: 1;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            filter: blur(0);
+        }
+        .animation-state-finish .log-in-card.below {
+            transform: rotateZ(-90deg) translateX(0px) translateY(100px) scale(0.7);
+            opacity: 0.8;
+            filter: blur(1px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+        .animation-state-1 .log-in-card.below {
+            transform: rotateZ(-10deg) translateY(180px) scale(0.78);
+            opacity: 1;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            filter: blur(0.5px);
+        }
+        .animation-state-1 .sign-up-card.above {
+            transform: rotateZ(-80deg) translateY(-170px) translateX(100px) scale(0.78);
+            opacity: 1;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            filter: blur(0.4px);
+        }
+        .animation-state-finish .log-in-card.above {
+            transform-origin: left top;
+            transform: rotateZ(5deg) translateY(0px) scale(1);
+            opacity: 1;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            filter: blur(0);
+        }
+        .animation-state-finish .sign-up-card.below {
+            filter: blur(0.4px);
+            transform: rotateZ(-90deg) translate3d(0, 100px, 0) scale(0.7);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-collection">
+        <div class="card elevation-3 limit-width log-in-card below turned">
+            <h1 class="box-title">Login</h1>
+            <div class="card-body">
+                <div class="input-group email">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Email"/>
+                </div>
+                <div class="input-group password">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Password"/>
+                </div>
+                <a href="#" class="box-btn">Forgot Password?</a>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="login-btn">Log in</button>
+            </div>
+        </div>
+        <div class="card elevation-2 limit-width sign-up-card above">
+            <h1 class="box-title">Sign up</h1>
+            <div class="card-body">
+                <div class="input-group fullname">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Full Name"/>
+                </div>
+                <div class="input-group email">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Email"/>
+                </div>
+                <div class="input-group password">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Password"/>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+      <!-- Jquery CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+      
+      <script>
+          $(document).on('click', '.below button', function(){
+              let belowCard = $('.below'),
+              aboveCard = $('.above'),
+              parent = $('.form-collection');
+              parent.addClass('animation-state-1');
+              setTimeout(function(){
+                  belowCard.removeClass('below');
+                  aboveCard.removeClass('above');
+                  belowCard.addClass('above');
+                  aboveCard.addClass('below');
+                  setTimeout(function(){
+                      parent.addClass('animation-state-finish');
+                      parent.removeClass('animation-state-1');
+                      setTimeout(function(){
+                          aboveCard.addClass('turned');
+                          belowCard.removeClass('turned');
+                          parent.removeClass('animation-state-finish');
+                      }, 300)
+                  }, 10)
+              }, 300);
+          });
+      </script>
+</body>
+</html>
