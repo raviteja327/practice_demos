@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animated Glowing Progress Bar Using HTML & CSS</title>
+    
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #010101;
+        }
+
+        .progress-bar-container:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        .progress-bar-container h2 {
+            font-family: "Poppins", sans-serif;
+            color: #eee;
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+        .progress-bar {
+            width: 800px;
+            height: 5px;
+            margin-top: 10px;
+            border: 1px solid #565656;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(245, 159, 0);
+        }
+        .percentage {
+            display: block;
+            height: 100%;
+            background-color: orange;
+            border-radius: 5px;
+            animation: progress 1500ms ease-in 1;
+        }
+        .html {
+            width: 75%;
+        }
+        .css {
+            width: 90%;
+        }
+        .javascript {
+            width: 65%;
+        }
+        .reactJs {
+            width: 55%;
+        }
+        .bootstrap {
+            width: 80%;
+        }
+        .copyPaste {
+            width: 95%;
+        }
+
+        @keyframes progress {
+            from {
+                width: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="skills">
+        <div class="progress-bar-container">
+            <h2>HTML</h2>
+            <div class="progress-bar">
+                <span class="percentage html"></span>
+            </div>
+        </div>
+        <div class="progress-bar-container">
+            <h2>CSS</h2>
+            <div class="progress-bar">
+                <span class="percentage css"></span>
+            </div>
+        </div>
+        <div class="progress-bar-container">
+            <h2>JavaScript</h2>
+            <div class="progress-bar">
+                <span class="percentage javascript"></span>
+            </div>
+        </div>
+        <div class="progress-bar-container">
+            <h2>ReactJS</h2>
+            <div class="progress-bar">
+                <span class="percentage reactJs"></span>
+            </div>
+        </div>
+        <div class="progress-bar-container">
+            <h2>Bootstrap</h2>
+            <div class="progress-bar">
+                <span class="percentage bootstrap"></span>
+            </div>
+        </div>
+        <div class="progress-bar-container">
+            <h2>Copy Paste</h2>
+            <div class="progress-bar">
+                <span class="percentage copyPaste"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+  

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            background-color: #1b1b1b;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .cart{
+            position: relative;
+            width: 300px;
+            height: auto;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .cart-number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            padding: 50px 30px 10px;
+        }
+        .cart img{
+            width: 100px;
+            height: 100px;
+        }
+        .cart-button{
+            margin-top: 20px;
+            padding: 15px 30px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            font-size: 20px;
+            color: #fff;
+            transition: all 0.3s;
+            width: 180px;
+            z-index: 100;
+        }
+        button{
+            border: none;
+            background-color: #f27b1d;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons{
+            transition: all 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .minus,
+        .add{
+            font-size: 20px;
+            color: #fff;
+            padding: 15px 20px;
+            background-color: #fff;
+            transition: all 0.3s ease-out;
+            background-color: #f27b1d;
+        }
+        .minus{
+            transform: translateX(60px);
+        }
+        .add{
+            transform: translateX(-64px);
+        }
+        .minus-slide{
+            transform: translateX(0px);
+        }
+        .add-slide{
+            transform: translateX(0px);
+        }
+        button:hover{
+            background-color: #ff6f00;
+        }
+        .number{
+            position: absolute;
+            top: 8%;
+            right: 17%;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 600;
+            color: #fff;
+            transition: all 0.3s ease-out;
+        }
+        .popup{
+            position: absolute;
+            top: 8%;
+            right: 17%;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 600;
+            background-color: #fc565a !important;
+            color: #fff;
+            transform: scale(0);
+            transition: all 0.3s ease-out;
+        }
+        .background-color{
+            position: absolute;
+            top: 8%;
+            right: 17%;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 600;
+            background-color: #fc565a !important;
+            color: #fff;
+            transform: scale(1);
+        }
+        .popup-open{
+            animation: pop-up 0.3s ease-out 0.2s;
+            transition-delay: 0.3s;
+            transform: scale(1);   
+        }
+        .popup-two{
+            animation: pop-up-2 0.3s ease-out !important;
+            transition-delay: 0.3s; 
+            transform: scale(1);
+        }
+
+        @keyframes pop-up{
+            0%{
+                transform: scale(0);
+            }
+            20%{
+                transform: scale(0.8);
+            }
+
+            100%{
+                transform: scale(1);
+            }
+        }
+        @keyframes pop-up-2{
+            0%{
+                transform: scale(1);
+            }
+            20%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cart">
+        <div class="cart-number">
+            <img src="supermarket.png" alt="">
+            <span class="background"></span>
+            <span class="popup"></span>
+            <span class="number"></span>
+        </div>
+        <div class="buttons">
+            <button class="minus">-</button>
+            <button class="cart-button" id="cart-button">Add to cart</button>
+            <button class="add">+</button>
+        </div> 
+    </div>
+    
+    <script>
+        var button = document.getElementById("cart-button");
+        var number = document.querySelector('.number');
+        var popup = document.querySelector(".popup");
+        var plus = document.querySelector(".add");
+        var minus = document.querySelector(".minus");
+        var background = document.querySelector(".background");
+        var counter = 0;
+
+        button.addEventListener("click", function(event){
+            if(counter == 0){
+                number.classList.add("popup-open");
+                popup.classList.add("popup-open");
+                setTimeout(increment,640);
+                console.log("COUNTER 0");
+                minus.classList.add("minus-slide");
+                plus.classList.add("add-slide");
+            }
+            if(counter > 0){
+                setTimeout(increment,650);
+                popup.classList.add("popup-open");
+                popup.classList.add("popup-two");
+                setTimeout(function(){
+                    background.classList.add("background-color");
+                    setTimeout(function(){
+                        background.classList.remove("background-color");
+                    },740); 
+                },739); 
+                setTimeout(function(){
+                    popup.classList.remove("popup-two");  
+                },740); 
+            }
+        })
+        
+        minus.addEventListener("click",function(){
+            counter--;
+            if(counter == 0 ){
+                number.innerHTML = null;
+                number.classList.remove("popup-open");
+                popup.classList.remove("popup-open");
+                popup.classList.remove("popup-two");
+                background.classList.remove("background-color");
+                minus.classList.remove("minus-slide");
+                plus.classList.remove("add-slide");
+            }
+            else{
+                popup.classList.add("popup-open");
+                popup.classList.add("popup-two");
+                setTimeout(function(){
+                    background.classList.add("background-color");
+                    setTimeout(function(){
+                        background.classList.remove("background-color");
+                    },740); 
+                },739); 
+                setTimeout(function(){
+                    popup.classList.remove("popup-two");  
+                },740); 
+                setTimeout(function(){
+                    number.innerHTML = counter;
+                },650);
+                
+            }
+            
+        })
+        plus.addEventListener("click",function(){
+            
+            if(counter == 0){
+                number.classList.add("popup-open");
+                popup.classList.add("popup-open");
+                setTimeout(increment,640);
+                console.log("COUNTER 0");
+                minus.classList.add("minus-slide");
+                plus.classList.add("add-slide");
+            }
+            if(counter > 0){
+                setTimeout(increment,650);
+                
+                popup.classList.add("popup-open");
+                popup.classList.add("popup-two");
+                setTimeout(function(){
+                    background.classList.add("background-color");
+                    setTimeout(function(){
+                        background.classList.remove("background-color");
+                    },740); 
+                },739); 
+                setTimeout(function(){
+                    popup.classList.remove("popup-two");  
+                },740); 
+            }
+            
+        })
+
+        function increment(){
+            counter = isNaN(counter) ? 0 : counter;
+            counter++;
+            number.innerHTML = counter;
+        }
+    </script>
+</body>
+</html>

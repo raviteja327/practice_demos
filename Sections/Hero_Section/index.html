@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section with Full Page Slider</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .slider-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            overflow-x: hidden;
+        }
+        .slider {
+            height: 100%;
+            display: flex;
+            transition: transform 1500ms;
+        }
+        .slide {
+            width: 100%;
+            height: 100%;
+        }
+        .intro {
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.95));
+        }
+        .intro h1 {
+            color: #fff;
+            font-family: "Poppins", sans-serif;
+            font-size: 80px;
+            text-align: center;
+            line-height: 1.1;
+        }
+        .intro h1 span {
+            color: #e8983f;
+        }
+
+        @media (max-width: 768px) {
+            .intro h1 {
+                font-size: 50px;
+            }
+        }
+        @media (max-width: 480px) {
+            .intro h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="slide1.jpg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="slide2.jpg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="slide3.jpg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="slide4.jpg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="slide5.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="intro">
+            <h1>WELCOME TO THE <br>
+                <span>JOURNEY.</span>
+            </h1>
+        </div>
+    </header>
+
+    <script>
+        const slider = document.querySelector(".slider");
+        const slides = document.querySelectorAll(".slide");
+        let currentIndex = 1;
+
+        slider.style.width = `${slides.length * 100}%`;
+
+        function moveSlider() {
+            if (currentIndex < slides.length) {
+                slider.style.transform = `translateX(-${
+                  currentIndex * (100 / slides.length)
+                }%)`;
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+        }
+
+        setInterval(() => {
+            moveSlider();
+        }, 3000);
+    </script>
+
+  </body>
+</html> 
