@@ -1,0 +1,194 @@
+Time Savings Tools For Developer
+
+1. VS Code Online
+    https://vscode.dev/
+
+
+
+CSS CDN Links
+
+1. CSS GG => Open-source CSS, SVG and Figma UI Icons available in SVG Sprite, styled-components, NPM & API.
+    https://github.com/astrit/css.gg#get-started
+
+    <!-- css.gg -->
+    <link href='https://css.gg/css' rel='stylesheet'>
+    <!-- UNPKG -->
+    <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
+    <!-- JSDelivr -->
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+
+    <!-- css.gg -->
+    <link href='https://css.gg/ {ICONNAME} .css' rel='stylesheet'>
+    <!-- UNPKG -->
+    <link href='https://unpkg.com/css.gg/icons/css/ {ICONNAME} .css' rel='stylesheet'>
+    <!-- JSDelivr -->
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/css/ {ICONNAME} .css' rel='stylesheet'>
+
+    <!-- CSS Format -->
+    <link href='https://css.gg/css?= {ICONNAME} | {ICONNAME}' rel='stylesheet'>
+
+    <i class=" {ICONNAME} "></i>
+
+    <!-- reference icon using span -->
+    <span class=" {ICONNAME} "></span>
+
+    <!-- reference icon using div -->
+    <div class=" {ICONNAME} "></div>
+
+    <!-- reference icon using custom tag -->
+    <gg-icon class=" {ICONNAME} "></gg-icon>
+
+
+CSS Tools & Libraries
+
+1. CSS3 Generator
+    http://css3generator.com/
+
+2. CSS Type Set
+    http://csstypeset.com/
+
+3. Blobmaker
+    https://www.blobmaker.app/
+
+4. Fancy Border Radius Generator
+    https://9elements.github.io/fancy-border-radius/
+
+5. CSS Glassmorphism Generator
+    https://hype4.academy/tools/glassmorphism-generator
+
+6. CSS Bootstrap Framework
+    https://getbootstrap.com/
+
+7. Keyframes => Keyframes gives you a visual timeline to help you create, view and run animmations.
+    https://keyframes.app/
+
+8. Griddy => Easily learn CSS Grid with amazing examples and create CSS Grid.
+    https://griddy.io/
+
+9. Autoprefixer CSS online => Autoprefixer is an CSS post processor. It combs through compiled CSS files to add or remove vendor prefixes like -webkit and -moz after checking the code against caniuse.com. This tool adds, arranges and deletes prefixes for you.
+    https://autoprefixer.github.io/
+
+10. CSS Buttons
+    https://cssbuttons.io/
+
+11. Neumorphism => Generate Soft-UI CSS code
+    https://neumorphism.io/#e0e0e0
+
+12. 
+
+
+
+
+
+
+
+Icons & images
+
+1. CSS GG => Open-source CSS, SVG and Figma UI Icons available in SVG Sprite, styled-components, NPM & API.
+    https://css.gg/
+
+2. Fontspring Matcherator => The most robust font detection tool available. This tool is one more example of Fontspring leading the industry in font curation and discovery. Upload an image with type and we will identify the fonts that match.
+    https://www.fontspring.com/matcherator
+
+3. SVGOMG => SVGOMG is an almost perfect example of a fully responsive and capable tool written with web technologies. It features a beautiful Material Design look, ServiceWorker ensures that the app loads quickly and is available offline.
+    https://jakearchibald.github.io/svgomg/
+
+4. Remove BG (Background)
+    https://www.remove.bg/
+
+5. BG Jar => Free svg background generator for your websites, blogs and app.
+    https://bgjar.com/
+
+
+
+
+
+
+colors
+
+1. Coolors => Coolors is a super fast color scheme generator, of use to anyone involved in user-facing design. Coolors is one of the smartest color scheme generator, for those looking for the perfect scheme.
+    https://coolors.co/
+
+2. Hex Invaders => Hex invaders is a fun way to learn and understand what hex codes are and how they work.
+    http://www.hexinvaders.com/
+
+3. Paletton => Beautiful CSS color palette generator.
+    https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
+
+4. CSS Gradient => As a free CSS Gradient generator tool, this website lets you create a colorful gradient background for your website, blog, or social media profile.
+    https://cssgradient.io/
+
+5. My color Space
+    https://mycolor.space/
+
+
+
+
+
+
+API's
+
+1. Unsplash API => The Unsplash API is a modern JSON API that surfaces all of the info you will need to build any experiences for your users.
+    https://unsplash.com/developers
+
+2. NASA API => NASA APIs gives you access to different type of data about astronomy, Space weather, Moon, Mars and much more.
+    https://api.nasa.gov/
+
+3. MovieDB API => It's very useful API that allow you to fetch data about movie actors, TV shows and much more.
+    https://www.themoviedb.org/
+    https://developers.themoviedb.org/3/getting-started/introduction
+
+4. Count API => The Count API gives you the ability to create numeric counters and track the number of times a page was visited.
+    https://countapi.xyz/
+
+5. Yahoo Finance API => This API helps to query financial summary, stocks, quotes, movers, etc to create a financial site / app such as Yahoo Finance.
+    https://www.yahoofinanceapi.com/
+
+6. TempMail API => A disposable temporary E-mail services which self-destructs after a certain time elapses.
+    https://temp-mail.us/en/api/
+    https://temp-mail.org/en/api/
+
+7. Drag & Drop API => HTML Drag and Drop interfaces enable applications to use drag-and-drop features in browsers.
+
+8. Full Screen API => This API adds methods to present a specific Element in full-screen mode, and to exit full-screen mode once it is no longer needed.
+
+9. Web Speech API => This API enables you to incorporate voice data into web apps. The API has two parts - SpeechSynthesis (Text-to-Speech), and SpeechRecognition (Asynchronous Speech Recognition).
+
+10. Vibration API => Most modern mobile devices include vibration hardware and the Vibration API offers Web apps the ability to access this hardware, if it exists, and does nothing if the device doesn't support it.
+
+11. Geo Location API => The Geolocation API allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information.
+
+
+
+
+
+
+
+SEO Tools
+
+1. Peppertype => Generate better content copies in seconds with the power of Artificial Intelligence.
+    https://www.peppertype.ai/
+
+2. Poet => Capture and share Twitter posts as beautiful images.
+    https://poet.so/
+
+3. Meta Tags Generators => Meta tags are important for SEO, This Website will help you to generate general meta tags based on your inputs.
+    https://webcode.tools/generators/meta-tags
+
+4. Site Checker Pro => Get free on page SEO audit report. Find the mistakes in technical SEO for specific URL.
+    https://sitechecker.pro/
+
+
+
+Others
+
+1. Carbon => Create and share beautiful images of your source code. Start typing or drop a file into the text area to get started.
+    https://carbon.now.sh/
+
+2. Apption => Add 3rd party apps embed or create a custom embed for your Notion Document.
+    https://apption.co/
+
+3. Can I Use => A website that provides up to date browser support tables of front end web technologies on desktop and mobile web browsers.
+    https://caniuse.com/
+
+4. 
