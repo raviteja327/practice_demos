@@ -74,7 +74,27 @@ CSS Tools & Libraries
 11. Neumorphism => Generate Soft-UI CSS code
     https://neumorphism.io/#e0e0e0
 
-12. 
+12. Haikei => Nice backgrounds 
+    https://app.haikei.app/
+
+13. CSS Scan => Goodbye to "inspect element" - check the CSS of any element you hover over, instantly, and copy its entire rules with a single click.
+    https://getcssscan.com/
+    https://chrome.google.com/webstore/detail/css-scan/gieabiemggnpnminflinemaickipbebg
+
+14. Cubic Bezier
+    https://cubic-bezier.com/#.17,.67,.83,.67
+
+15. Smooth shadow
+    https://shadows.brumm.af/
+
+16. CSS Clip - Path Maker
+    https://bennettfeely.com/clippy/
+
+17. Get Waves
+    https://getwaves.io/
+
+18. Wait! Animate
+    https://waitanimate.wstone.io/
 
 
 
@@ -158,6 +178,25 @@ API's
 
 11. Geo Location API => The Geolocation API allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information.
 
+12. Removal AI API => Removal.AI API makes it easy for you, it uses AI to remove background from your images, the final image which you get is more clean and good. Simple to use you just have to drag and drop your image into the website and see the awesome result.
+    https://removal.ai/api-documentation/
+    https://removal.ai/services/marketing/
+
+13. Random Jokes API => The random jokes API allows you to fetch random jokes data in an easy way using Fetch, Aax XHR and etc.
+    https://icanhazdadjoke.com/api
+
+14. Marvel API => The Marvel Comics API allows developers everywhere to access information about Marvel's vast library of comics - from what's coming up, to 70 years ago.
+    https://developer.marvel.com/
+
+15. Breaking bad quotes API => A free API to retrieve some quotes of Breaking Bad, bitch!
+    https://breakingbadquotes.xyz/
+
+16. The Meal API => The meal API gives you access to random meal data to use it in your application. This API contains all the meal categories with images, ingredients, videos, the country of each meal and many more features.
+    https://www.themealdb.com/
+
+17. Hue API => The official app can become a bit busy when you have multiple devices, so you could build an app that can control Hue bulbs around the house, changing their color and brightness. You could also go back to basic and build a command-line app to control your lights.
+    https://developers.meethue.com/
+
 
 
 
@@ -191,4 +230,186 @@ Others
 3. Can I Use => A website that provides up to date browser support tables of front end web technologies on desktop and mobile web browsers.
     https://caniuse.com/
 
-4. 
+4. Learn-anything.xyz => Search interactive mind maps to learn anything.
+    https://learn-anything.xyz/
+
+5. Frontend Mentor => Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs.
+    https://www.frontendmentor.io/
+
+6. Screen Castify => Want to record your web app for a demo.
+    https://www.screencastify.com/
+
+7. Avataaars Generator => A free online generator for anyone to make their beautiful personal avatar easily.
+    https://getavataaars.com/
+
+
+
+30 ways to improve Your Design
+
+1. Add more white space, let things breathe
+2. Contrast is better for recognition
+3. Add color to make things stand out
+4. Use texture to add more of a realistic feel
+5. Don't make the logo bigger
+6. Use a versatile font with large families
+7. Adjust kerning if letters feel weirdly spaced
+8. Learn your shortcuts for faster design speed
+9. Redesign famous logos and backwards engineer them
+10. Break the grid using typography or shapes
+11. Add drama by wrapping text or using playful fonts
+12. Don't use lorem ipsum, write real words
+13. Trust your gut, if it doesn't look right scrap it
+14. Do more sketches, the more the better
+15. Try a blending mode when mixing graphic elements
+16. Pair 2 fonts that go well together, like a script and sans
+17. Design for the customer not the client
+18. Design a logo in black and white first
+19. Photoshop is your best friend
+20. Ctrl + z is your second best friend
+21. Add a soft shadow to add 3D depth
+22. Always customise your logo type logos
+23. Get feedback from a professional designer
+24. Flip it, see it in black and white, try it on a mock up
+25. Use scale for emphasis or fun layouts
+26. Put it next to competitors on a page or shelf to see difference
+27. Less is more, unless you are going for chaotic abstract
+28. Test your designs on real customers
+29. Do the unexpected, people like suprises or little details
+30. Play around and have fun don't copy just copy others 
+
+
+websites
+
+1. w3schools
+    https://www.w3schools.com/
+
+2. Programiz
+    https://www.programiz.com/
+
+3. Geeks for Geeks 
+    https://www.geeksforgeeks.org/
+
+4. Study tonight
+    https://www.studytonight.com/
+
+5. Guru99
+    https://www.guru99.com/
+
+6. Tutorials point
+    https://www.tutorialspoint.com/index.htm
+
+7. Sololearn
+    https://www.sololearn.com/home
+
+8. Free Code Camp
+    https://www.freecodecamp.org/
+
+
+
+
+Code Snippets
+
+1. Codepen
+    https://codepen.io/
+
+2. Code My UI
+    https://codemyui.com/
+
+3. CSS Desk
+    http://www.cssdesk.com/
+
+4. Free Frontend
+    https://freefrontend.com/
+
+5. Web Tools
+6. Codepad
+    http://codepad.org/
+
+7. Snipplr
+    https://snipplr.com/
+
+8. Little Snippets
+    https://www.littlesnippets.net/
+
+
+Coding Practice
+
+1. Hacker Rank
+    https://www.hackerrank.com/
+
+2. Top Coder
+    https://www.topcoder.com/
+
+3. Code Chef
+    https://www.codechef.com/
+
+4. Hacker Earth
+    https://www.hackerearth.com/
+
+5. Coderbyte
+    https://coderbyte.com/
+
+
+Apps
+
+1. Mimo
+    https://getmimo.com/
+
+2. Grass Hopper
+    https://grasshopper.app/
+
+3. Programming Hub
+    https://programminghub.io/
+
+
+
+YouTube Channels
+
+1. Traversy Media
+    https://www.youtube.com/c/TraversyMedia
+
+2. Code With Harry
+    https://www.youtube.com/c/CodeWithHarry
+
+3. Free Code Camp
+    https://www.youtube.com/c/Freecodecamp
+
+4. Yahoo Baba
+    https://www.youtube.com/c/YahooBaba
+
+5. Clever Programmer
+    https://www.youtube.com/c/CleverProgrammer
+
+6. The New Boston
+    https://www.youtube.com/user/thenewboston
+
+7. Dev Ed
+    https://www.youtube.com/c/DevEd
+
+8. Telusko 
+    https://www.youtube.com/c/Telusko
+
+9. Wes Bos
+    https://www.youtube.com/c/WesBos
+
+
+
+Responsive Screen Breakpoints CSS
+
+1. Phones
+    min-device-width => 320px and max-device-width => 480px
+
+2. Tablets
+    min-device-width => 481px and max-device-width => 768px
+
+3. iPads
+    min-device-width => 769px and max-device-width => 1024px
+
+4. iPad Pro, Tablets Pro (Big Screens)
+    min-device-width => 1025px and max-device-width => 1366px
+
+5. Laptops, Mini Monitors
+    min-device-width => 1367px and max-device-width => 1760px
+
+6. Large Screens
+    min-device-width => 1761px and max-device-width => 1920px
