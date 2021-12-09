@@ -5,6 +5,29 @@ Time Savings Tools For Developer
 
 
 
+
+Frameworks
+
+1. CSS Bootstrap Framework
+    https://getbootstrap.com/
+
+2. Milligram => A minimalist CSS framework
+    https://milligram.io/
+
+
+
+
+Bootstrap
+
+2. Responsive Bootstrap Website
+    https://www.youtube.com/watch?v=9cKsq14Kfsw&ab_channel=DrewRyan
+    https://www.youtube.com/watch?v=k8ioDxSEjZU&ab_channel=DailyTuition
+
+3. Portfolio Website
+    https://www.youtube.com/watch?v=dgKSqz3it50&ab_channel=DailyTuition
+
+
+
 CSS CDN Links
 
 1. CSS GG => Open-source CSS, SVG and Figma UI Icons available in SVG Sprite, styled-components, NPM & API.
@@ -50,14 +73,14 @@ CSS Tools & Libraries
 3. Blobmaker
     https://www.blobmaker.app/
 
-4. Fancy Border Radius Generator
+4. CSS / Fancy Border Radius Generator
     https://9elements.github.io/fancy-border-radius/
 
 5. CSS Glassmorphism Generator
     https://hype4.academy/tools/glassmorphism-generator
 
-6. CSS Bootstrap Framework
-    https://getbootstrap.com/
+6. Ken Burns Effect
+    https://codepen.io/coding_beast/pen/VweyYZm
 
 7. Keyframes => Keyframes gives you a visual timeline to help you create, view and run animmations.
     https://keyframes.app/
@@ -81,10 +104,10 @@ CSS Tools & Libraries
     https://getcssscan.com/
     https://chrome.google.com/webstore/detail/css-scan/gieabiemggnpnminflinemaickipbebg
 
-14. Cubic Bezier
+14. Cubic Bezier Curves Generator
     https://cubic-bezier.com/#.17,.67,.83,.67
 
-15. Smooth shadow
+15. Smooth shadow (CSS shadows Generator)
     https://shadows.brumm.af/
 
 16. CSS Clip - Path Maker
@@ -96,6 +119,220 @@ CSS Tools & Libraries
 18. Wait! Animate
     https://waitanimate.wstone.io/
 
+19. CSS Battle => CSS Battle is gamification system which is a great way to track your progress and continue learning, they even give away some merchandise at the end of some battles.
+    https://cssbattle.dev/
+
+20. CSS Parallax Icon Animation
+    https://codepen.io/coding_beast/pen/MWKrYYR
+
+21. Cirrus CSS
+    https://cirrus-ui.netlify.app/
+
+22. Halfmoon CSS
+    https://www.gethalfmoon.com/docs/introduction/
+
+23. Primer CSS
+    https://primer.style/css/
+
+24. Animista 
+    https://animista.net/
+
+25. Animate.css
+    https://animate.style/
+
+26. All Animation CSS3
+    https://all-animation.github.io/
+
+27. CSS Shake
+    https://elrumordelaluz.github.io/csshake/
+
+28. Vivify
+    http://vivify.mkcreative.cz/
+
+29. Hover.css
+    https://ianlunn.github.io/Hover/
+
+30. Infinite
+    https://tilomitra.github.io/infinite/
+
+31. vhs
+    https://jxnblk.com/vhs
+
+32. Magic Animations
+    https://www.minimamente.com/project/magic/
+
+33. Woah.css
+    https://www.joerezendes.com/projects/Woah.css/
+
+34. Box shadow
+    https://getcssscan.com/css-box-shadow-examples
+
+35. CSS Button Hover Styles
+    https://tympanus.net/Development/ButtonHoverStyles/
+
+36. CSS Line Hover Styles for Links
+    https://tympanus.net/Development/LineHoverStyles/
+
+
+
+
+JavaScript & Libraries
+
+1. To Do List
+    https://codepen.io/coding_beast/pen/wvMpvVy
+
+2. Background / Full Screen Image Slider
+    https://www.youtube.com/watch?v=7ZO2RTMNSAY&ab_channel=TraversyMedia
+
+3. Neumorphism Calculator
+    https://codepen.io/coding_beast/pen/GRoWWGj
+
+4. Quiz Game
+    https://codepen.io/coding_beast/pen/jOWYEbQ
+
+5. Client-Side Form Validation
+    https://codepen.io/coding_beast/pen/qBbpEZN
+
+6. Budgeting App
+    https://github.com/romeojeremiah/javascript-oop-budget-project
+
+7. 2D Brick Breaker Game
+    https://github.com/romeojeremiah/2D-break-breaker
+
+8. Grocery Shopping Cart
+    https://www.youtube.com/watch?v=q_TZhCWbS3I&ab_channel=freeCodeCamp.org
+
+9. Book List App
+    https://www.youtube.com/watch?v=JaMCxVWtW58&ab_channel=TraversyMedia
+
+10. Custom PDF Viewer
+    https://www.youtube.com/watch?v=ydCSSgwZjzs&ab_channel=TraversyMedia
+
+11. Star Ratings With JavaScript
+    https://www.youtube.com/watch?v=u3rylF3y3og&ab_channel=TraversyMedia
+
+12. YouTube API Project
+    https://www.youtube.com/watch?v=r-yxNNO1EI8&ab_channel=TraversyMedia
+
+13. Plyr => Plyr is a simple, accessible and customizable HTML5, YouTube and Vimeo media player. It is light weight, accessible and customizable media player that supports modern browsers. Plyr makes the things really simple.
+    https://plyr.io/
+
+14. Video JS => Video JS is a web video player built from the ground up for an HTML5 world. It supports HTML5, Flash video, YouTube and Vimeo (through plugins). It supports videos on desktops, mobile devices. This player is now used on 2,00,000 websites.
+    https://videojs.com/
+
+15. Popcorn JS => Popcorn JS is a JavaScript library that allows video, audio and other media to control and be controlled by arbitrary elements of a webpage. Combining open source technologies author can let their media be the "conductor" of interactive and immersive experiences.
+    https://mozilla.github.io/popcorn-docs/getting-started/
+
+16. Afterglow => Afterglow is a tool to create fully responsive and totally awesome video players from HTML5 video elements with as little effort as possible.
+    https://docs.afterglowplayer.com/
+
+17. Projekktor => Projekktor is a self-hosted, open source video (and audio) player for the web. It simplifies the way you implement and work with web video by solving tons of cross browser - and compatibility - issues, adding eye candy extremely powerful non standard features.
+
+18.
+
+
+
+JavaScript Carousel Libraries
+
+1. 
+
+
+
+
+React JS
+
+1. To Do List
+    https://www.youtube.com/watch?v=N8kYlimhuLw&ab_channel=CodeSpot
+
+2. E-Commerce Project
+    https://www.youtube.com/watch?v=-edmQKcOW8s&ab_channel=CodingAddict
+
+3. Build a Recipe App
+    https://www.youtube.com/watch?v=U9T6YkEDkMo&ab_channel=DevEd
+
+4. Beach Resort Website
+    https://www.youtube.com/watch?v=ScDWrogElmo&ab_channel=CodingAddict
+
+5. Build a Chat App
+    https://www.youtube.com/watch?v=jFNHerJqvFw&ab_channel=freeCodeCamp.org
+
+6. COVID-19 Tracker Application
+    https://www.youtube.com/watch?v=khJlrj3Y6Ls&ab_channel=JavaScriptMastery
+
+7. React Website => Channel Name - MacLinz Universal Channel
+    https://www.youtube.com/watch?v=YyGgqmIjR-M&ab_channel=MacLinzUniversalChannel
+
+8. Expense Tracker => Channel Name - Traversy Media
+    https://www.youtube.com/watch?v=XuFDcZABiDQ&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb&ab_channel=TraversyMedia
+
+9. Recipe App => Channel Name - Dev Ed
+    https://www.youtube.com/watch?v=U9T6YkEDkMo&t=2s&ab_channel=DevEd
+
+10. Contact Manager => Channel Name - Dipesh Malvia
+    https://www.youtube.com/watch?v=0riHps91AzE&ab_channel=DipeshMalvia
+
+11. Instagram Clone => Channel Name - freeCodeCamp.org
+    https://www.youtube.com/watch?v=mDgEqoQUBgk&ab_channel=freeCodeCamp.org
+
+12. YouTube Clone => Channel Name - Backbench Coder
+    https://www.youtube.com/watch?v=Mos5QJAje28&ab_channel=BackbenchCoder
+
+
+
+
+
+
+
+
+
+Angular JS
+
+1. To Do List
+    https://www.youtube.com/watch?v=jNCzuSryJHE&ab_channel=CodAffection
+
+2. Tic-Tac-Toe
+    https://www.youtube.com/watch?v=G0bBLvWXBvc&ab_channel=Fireship
+
+3. Budget Calculator Application
+    https://www.youtube.com/watch?v=sU4z4Ti-8OQ&ab_channel=Devstackr
+
+4. E-Commerce App
+    https://www.youtube.com/watch?v=X-vjBas_pTU&list=PLsjmv9aDmNDAN5adZxbGTlQHlgU2je7KE&ab_channel=Programming%27sFun
+
+5. Hotel App & Booking Engine
+    https://www.youtube.com/watch?v=8DEOkXFpLVk&ab_channel=TheaWorld
+
+6. Weather App
+    https://www.youtube.com/watch?v=r7EhBTPlQkk&ab_channel=Academind
+
+
+
+Node JS
+
+1. Amazon E-Commerce Website
+    https://www.youtube.com/watch?v=Fy9SdZLBTOo&ab_channel=CodingwithBasir
+
+2. Basic Weather App
+    https://www.youtube.com/watch?v=PFJHQ2g6s0k&ab_channel=ItsTechMode
+
+3. Realtime Chat With Users
+    https://www.youtube.com/watch?v=jD7FnbI76Hg&ab_channel=TraversyMedia
+    https://www.youtube.com/watch?v=ZwFA3YMfkoc&ab_channel=JavaScriptMastery
+
+
+
+
+
+PHP
+
+1. Registration & Login System
+    https://www.youtube.com/watch?v=XBTA-ofG8gc&ab_channel=DailyTuition
+
+2. E-Commerce Website
+    https://www.youtube.com/watch?v=KLWA2vCERSQ&ab_channel=DailyTuition
+
+3. Chat Application
+    https://www.youtube.com/watch?v=Xq8LIOj6AWI&ab_channel=CodingCafe
 
 
 
@@ -113,11 +350,17 @@ Icons & images
 3. SVGOMG => SVGOMG is an almost perfect example of a fully responsive and capable tool written with web technologies. It features a beautiful Material Design look, ServiceWorker ensures that the app loads quickly and is available offline.
     https://jakearchibald.github.io/svgomg/
 
-4. Remove BG (Background)
+4. Remove BG (Background) => Remove image background 100% automatically - in 5 seconds - without a single click - for free. 
     https://www.remove.bg/
 
 5. BG Jar => Free svg background generator for your websites, blogs and app.
     https://bgjar.com/
+
+6. Avataaars Generator => A free online generator for anyone to make their beautiful personal avatar easily.
+    https://getavataaars.com/
+
+7. Tabler Icons => Free and Open-source icons designed with attention to detail to make your design stand out.
+    https://tablericons.com/
 
 
 
@@ -140,6 +383,12 @@ colors
 
 5. My color Space
     https://mycolor.space/
+
+6. Easing Gradients
+    https://larsenwork.com/easing-gradients/
+
+7. Data Viz color palette Generator
+    https://learnui.design/tools/data-color-picker.html
 
 
 
@@ -217,6 +466,9 @@ SEO Tools
 4. Site Checker Pro => Get free on page SEO audit report. Find the mistakes in technical SEO for specific URL.
     https://sitechecker.pro/
 
+5. Free Code Tools => Collection of free SEO and code tools.
+    https://freecodetools.org/
+
 
 
 Others
@@ -233,14 +485,20 @@ Others
 4. Learn-anything.xyz => Search interactive mind maps to learn anything.
     https://learn-anything.xyz/
 
-5. Frontend Mentor => Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs.
-    https://www.frontendmentor.io/
-
-6. Screen Castify => Want to record your web app for a demo.
+5. Screen Castify => Want to record your web app for a demo.
     https://www.screencastify.com/
 
-7. Avataaars Generator => A free online generator for anyone to make their beautiful personal avatar easily.
-    https://getavataaars.com/
+6. Dev Resources => A collaborative list of resources for developers, presented in curated categories.
+    https://devresourc.es/
+
+7. Coffee App
+    https://codepen.io/coding_beast/pen/bGEaNGM
+
+8. Smoothie Maker App in Pure CSS
+    https://codepen.io/coding_beast/pen/KKVZwpb
+
+9. CSS-only Calendar App
+    https://codepen.io/coding_beast/pen/wvMpBqE
 
 
 
@@ -303,6 +561,22 @@ websites
 
 8. Free Code Camp
     https://www.freecodecamp.org/
+
+9. Code Well => If you want to level up your HTML, CSS and JavaScript skills, Codewell offers real world Figma templates that you can use to improve.
+    https://www.codewell.cc/
+
+10. Tree House => Treehouse is a great platform to help you learn certain languages like JavaScript, or even backend languages like PHP. You can use their course and a wide variety of quiz.
+    https://teamtreehouse.com/
+
+11. Codepen Challenges => Codepen challenges provide prompts for variety of languages and technologies. HTML, CSS, JavaScript, Flutter you name it, which is best for the developer to challenge it and share the solution who participated.
+    https://codepen.io/challenges
+
+12. Frontend Mentor => Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges while working to professional designs.
+    https://www.frontendmentor.io/
+
+13. JavaScript 30 => A 30 day vanilla JS coding challenge by Wes Bos. You get to build clocks, drum kits, and so much more using just JavaScript. It's also free.
+    https://javascript30.com/
+
 
 
 
