@@ -137,7 +137,7 @@ CSS Tools & Libraries
 24. Animista 
     https://animista.net/
 
-25. Animate.css
+25. Animate.css => CSS animations is a proposed modeule for cascading style sheets that allows the animation of HTML document elements using CSS.
     https://animate.style/
 
 26. All Animation CSS3
@@ -146,7 +146,7 @@ CSS Tools & Libraries
 27. CSS Shake
     https://elrumordelaluz.github.io/csshake/
 
-28. Vivify
+28. Vivify CSS => Vivify CSS is a powerful animate CSS library, CSS3 animation library which comes with 68+ animations with support for delay and duration.
     http://vivify.mkcreative.cz/
 
 29. Hover.css
@@ -158,7 +158,7 @@ CSS Tools & Libraries
 31. vhs
     https://jxnblk.com/vhs
 
-32. Magic Animations
+32. Magic Animations / Effects CSS => Magic CSS are a set of simple animation to include in your web or app project's.
     https://www.minimamente.com/project/magic/
 
 33. Woah.css
@@ -172,6 +172,24 @@ CSS Tools & Libraries
 
 36. CSS Line Hover Styles for Links
     https://tympanus.net/Development/LineHoverStyles/
+
+37. More Toggles => A pure CSS library that provides you with stylish toggles.
+    https://jnkkkk.github.io/MoreToggles.css/
+
+38. Animator By Haiku => Create engaging animations for any app or website.
+    https://www.haikuanimator.com/
+
+39. Animated CSS Burgers => A small library of animated mobile hamburger menus that should satisfy your needs.
+    https://march08.github.io/animated-burgers/
+
+40. Motion UI => Motion UI is a Sass library for quickly creating CSS transitions and animations. We originally bundled this code with Foundation for Apps, but we've souped it up, made it its own library, and open sourced it ahead of the launch of Foundation for Sites 6.
+    https://zurb.com/playground/motion-ui
+
+41. Hint CSS => CSS is written as a pure CSS resource using which you can create cool accessible tooltips for your web app. It does not rely on JavaScript but rather uses aria-label / data-attribute pseudo elements, content property and CSS3 transitions to create the tooltips.
+    https://kushagra.dev/lab/hint/
+
+
+
 
 
 
@@ -228,18 +246,41 @@ JavaScript & Libraries
 
 17. Projekktor => Projekktor is a self-hosted, open source video (and audio) player for the web. It simplifies the way you implement and work with web video by solving tons of cross browser - and compatibility - issues, adding eye candy extremely powerful non standard features.
 
-18.
+18. Simple Keyboard => An elegant, responsive virtual keyboard component that offers ready-to-use demos of every device.
+    https://virtual-keyboard.js.org/
+
+19. Dark MOde Js => This project lets you add a dark mode toggle to pages and many more. 
+    https://darkmodejs.learn.uno/
+
+
+
+
 
 
 
 JavaScript Carousel Libraries
 
-1. 
+1. Glide js => A dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more.
+    https://glidejs.com/
+
+2. Splide => Splide is a lightweight, powerful and flexible slider and carousel, written in pure JavaScript without any dependencies. It is small in size, less than 29KB.
+    https://splidejs.com/
+
+3. Swiper => Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior.
+    https://swiperjs.com/
+
+4. Glider js => A blazingly fast, crazy small, fully responsive, mobile-friendly, dependency free, native scrolling list with paging controls.
+    https://nickpiscitelli.github.io/Glider.js/
+
+5. Embla Carousel => A lightweight carousel library with fluid motion and great swipe precision. Build awesome carousels by extending Embla Carousel with your own CSS and JavaScript.
+    https://www.embla-carousel.com/
 
 
 
 
-React JS
+
+
+React JS & Libraries
 
 1. To Do List
     https://www.youtube.com/watch?v=N8kYlimhuLw&ab_channel=CodeSpot
@@ -277,6 +318,23 @@ React JS
 12. YouTube Clone => Channel Name - Backbench Coder
     https://www.youtube.com/watch?v=Mos5QJAje28&ab_channel=BackbenchCoder
 
+13. MUI 
+    https://mui.com/
+
+14. Shards React
+    https://designrevision.com/downloads/shards-react/
+
+15. Chakra
+    https://chakra-ui.com/
+
+16. React Bootstrap
+    https://react-bootstrap.github.io/
+
+17. Semantic UI React
+    https://react.semantic-ui.com/
+
+18. React Animation => Add unique pre-built animated effects to page elements based on content changes.
+    https://nearform.github.io/react-animation/
 
 
 
@@ -446,6 +504,34 @@ API's
 17. Hue API => The official app can become a bit busy when you have multiple devices, so you could build an app that can control Hue bulbs around the house, changing their color and brightness. You could also go back to basic and build a command-line app to control your lights.
     https://developers.meethue.com/
 
+18. Public APIs => Public API is an extremely useful repository that has over 116 Github stars. It curates a list of different types of APIs that you can use as a web developer. Almost every API you will need is available in this repository.
+    https://github.com/public-apis/public-apis
+
+19. 
+
+20. 
+
+21. 
+
+
+
+
+Github Repositories
+
+1. Clean JavaScript Code => Clean-code-javascript is an awesome repository that helps you to write clean JavaScript code. It takes the concepts of Robert C.Martin's book and adopts them for JavaScript.
+    https://github.com/ryanmcdermott/clean-code-javascript
+
+2. Free Programming Books => This repository has a massive collection of free programming books useful for learning all sorts of technology.
+    https://github.com/EbookFoundation/free-programming-books
+
+3. Awesome Courses => This repository contains CS courses offered by universities. The unique aspect of the material compiled in this repository. (Such as lecture notes, lecture videos and assignments).
+    https://github.com/prakhar1989/awesome-courses
+
+4. Developer Roadmap => The developer roadmap is one of the popular useful repositories contains lot of roadmaps on what type of developer you want to become (backend, frontend etc). So it,s a web developers roadmap that helps you choose your path.
+    https://github.com/kamranahmedse/developer-roadmap
+
+5. Chart.xkcd => Chart.xkcd is a chart library plots "sketchy", "cartoony" or "hand-drawn" styled charts.
+    https://github.com/timqian/chart.xkcd
 
 
 
@@ -687,3 +773,11 @@ Responsive Screen Breakpoints CSS
 
 6. Large Screens
     min-device-width => 1761px and max-device-width => 1920px
+
+
+
+
+VS Code Extensions
+
+1. Debug Visualizer => It is a VS Code extension and allows you to Visualize data structures while debugging.
+
