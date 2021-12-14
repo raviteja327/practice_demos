@@ -6,6 +6,33 @@ Time Savings Tools For Developer
 
 
 
+Useful Tools
+
+1. TinyPNG => TinyPNG uses smart lossy compression techniques to reduce the file size of your WEBP, JPEG and PNG files.
+    https://tinypng.com/
+
+
+
+Cheat Sheets
+
+1. HTML
+    https://makeawebsitehub.com/the-html-5-mega-cheat-sheet/
+
+2. CSS
+    https://makeawebsitehub.com/css3-mega-cheat-sheet/
+
+3. Bootstrap
+    https://hackerthemes.com/bootstrap-cheatsheet/
+
+4. JavaScript
+    https://websitesetup.org/javascript-cheat-sheet/
+
+5. jQuery
+    https://makeawebsitehub.com/jquery-mega-cheat-sheet/
+
+
+
+
 Frameworks
 
 1. CSS Bootstrap Framework
@@ -188,6 +215,12 @@ CSS Tools & Libraries
 41. Hint CSS => CSS is written as a pure CSS resource using which you can create cool accessible tooltips for your web app. It does not rely on JavaScript but rather uses aria-label / data-attribute pseudo elements, content property and CSS3 transitions to create the tooltips.
     https://kushagra.dev/lab/hint/
 
+42. CSS3 Button Generator
+    https://css3buttongenerator.com/
+
+43. CSS Reference => cssreference.io is a free visual guide to CSS. It features the most popular properties, and explains them with illustrated and animated examples.
+    https://cssreference.io/
+
 
 
 
@@ -252,6 +285,54 @@ JavaScript & Libraries
 19. Dark MOde Js => This project lets you add a dark mode toggle to pages and many more. 
     https://darkmodejs.learn.uno/
 
+11. Lodash => One of the most popular utility libraries is Lodash. Lodash has a huge feature set of functions that can help complete certain tasks when you're working with arrays or objects. The syntax is intuitive and the documentation provides good examples.
+    https://lodash.com/
+
+12. Nodemon => When you're developing a web application, Nodemon can't miss. Nodemon makes developing web applications easier by restarting the server automatically when it senses a change in the files. This saves having to restart the server yourself for every change you mske.
+    https://nodemon.io/
+    https://www.npmjs.com/package/nodemon
+    https://github.com/remy/nodemon
+
+13. NanoID => Creating IDs that aren't just auto-incremented can be a hassle. NanoID creates an alphanumeric ID that is smaller than usual UUIDs and still very safe. The library itself can be minified and zipped to only 180 bytes.
+    https://www.npmjs.com/package/nanoid
+    https://github.com/ai/nanoid
+    https://zelark.github.io/nano-id-cc/
+
+14. Passport => Authentication used to be difficult to implement, or just outright annoying if you need to do it. Passport helps with that. Passport is authentication middleware for Node server. It can be used with all major types of authentication such as Facebook login and Google Auth.
+    http://www.passportjs.org/
+
+15. Faker JS => Faker is a great way of quickly adding fake data into your application for testing purposes. Don't waste any more time on filling your database with real-looking names, pictures or bank info.
+    https://fakerjsdocs.netlify.app/
+
+16. UUID => UUID or Universally Unique Identifiers are a way of sorting unique values. It is compliant with the rules of typical UUIDs and can be used in a database as the UUID type in most cases. It is more secure than auto-increment IDs or NanoIDs because of the size and its inability to guess one correct.
+    https://www.npmjs.com/package/uuid
+    https://github.com/uuidjs/uuid
+
+17. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or set every time.
+    https://axios-http.com/docs/intro
+
+18. Lax JS => Simple & lightweight vanilla JavaScript plugin to create smooth & beautiful animations when you scroll.
+    https://github.com/alexfoxy/lax.js
+
+19. Textblock => A javascript tool for adjusting size, leading, and grades to cast continuously responsive typography. It works over your current CSS as a progressive enhancement.
+    https://textblock.io/
+
+20. Tone JS => Tone.js is a Web Audio framework for creating interactive music in the browser.
+    https://tonejs.github.io/
+
+21. Freezeframe JS => Freezeframe.js is a library that pauses animated .gifs and enables them to animate on mouse hover / mouse click / touch event, or triggered manually.
+    https://github.com/ctrl-freaks/freezeframe.js/
+    http://ctrl-freaks.github.io/freezeframe.js/
+
+22. Scene JS => Scene Js is a JavaScript & CSS timeline-based animation library.
+    https://daybrush.com/scenejs/
+
+23. Microlight JS => Microlight JS is a lightweight code highlighting library, for any programming language, that greatly improves readability.
+    https://asvd.github.io/microlight/
+
+24. Flatpickr => Written in vanilla JavaScript, flatpickr is a lightweight datetimepicker and calendar solution.
+    https://flatpickr.js.org/
+
 
 
 
@@ -274,6 +355,9 @@ JavaScript Carousel Libraries
 
 5. Embla Carousel => A lightweight carousel library with fluid motion and great swipe precision. Build awesome carousels by extending Embla Carousel with your own CSS and JavaScript.
     https://www.embla-carousel.com/
+
+6. BaguetteBox JS => BaguetteBox JS is a simple and easy-to-use responsive image lightbox script with swipe gesture support on mobile devices. It has been written in pure JavaScript.
+    https://feimosi.github.io/baguetteBox.js/
 
 
 
@@ -318,7 +402,7 @@ React JS & Libraries
 12. YouTube Clone => Channel Name - Backbench Coder
     https://www.youtube.com/watch?v=Mos5QJAje28&ab_channel=BackbenchCoder
 
-13. MUI 
+13. MUI / Material UI => Material UI is a set of components created by Google, that implements their famous Material Design. With over 36K stars on Github. It's the most popular UI package of all React libraries. It's simple, eye-catching, light and user-friendly.    
     https://mui.com/
 
 14. Shards React
@@ -327,14 +411,32 @@ React JS & Libraries
 15. Chakra
     https://chakra-ui.com/
 
-16. React Bootstrap
+16. React Bootstrap => React Bootstrap, a UI kit that retains it's Bootstrap core. In order to give you more control over the form and function of each component, it replaces Bootstrap's JavaScript with React.
     https://react-bootstrap.github.io/
 
-17. Semantic UI React
+17. Semantic UI React => Semantic UI uses human-friendly HTML for it's development framework, and has integrations with React, Angular, Meteor, Ember and many other frameworks. All jQuery functionality has been re-implemented in React.
     https://react.semantic-ui.com/
 
 18. React Animation => Add unique pre-built animated effects to page elements based on content changes.
     https://nearform.github.io/react-animation/
+
+19. Blogging / Portfolio
+20. Messaging App
+21. Social Media App
+22. Calculator
+23. React Dashboard
+
+24. Redux => Redux is a state management solution for JavaScript applications. It's mostly used in combination with React. Redux makes it possible to connect every component directly to the entire state and thus eliminates the need to use props or callbacks.
+    https://redux.js.org/
+
+25. Storybook => Storybook has been popular for some time now. It isn't exactly a component library itself but is an open source tool for developing UI components in isolation for React and many other technologies and platforms.
+    https://storybook.js.org/
+
+26. React Toolbox => React UI components library that you can use to implement Google's material design principles in your proect is React Toolbox. It relies on CSS modules for this purpose. Though you can use any module bundler, it integrates neatly with webpack workflow.
+    http://react-toolbox.io/#/
+
+27. Evergreen => Evergreen contains a set of React components that's suitable for enterprise grade web applications. Since it uses React Primitive. It's highly flexible. At the same time, it works just as easily right out of the box.
+    https://evergreen.segment.com/
 
 
 
@@ -448,6 +550,8 @@ colors
 7. Data Viz color palette Generator
     https://learnui.design/tools/data-color-picker.html
 
+8. Color Zilla
+    https://www.colorzilla.com/gradient-editor/
 
 
 
@@ -464,6 +568,7 @@ API's
 3. MovieDB API => It's very useful API that allow you to fetch data about movie actors, TV shows and much more.
     https://www.themoviedb.org/
     https://developers.themoviedb.org/3/getting-started/introduction
+    https://www.themoviedb.org/documentation/api
 
 4. Count API => The Count API gives you the ability to create numeric counters and track the number of times a page was visited.
     https://countapi.xyz/
@@ -500,6 +605,7 @@ API's
 
 16. The Meal API => The meal API gives you access to random meal data to use it in your application. This API contains all the meal categories with images, ingredients, videos, the country of each meal and many more features.
     https://www.themealdb.com/
+    https://www.themealdb.com/api.php
 
 17. Hue API => The official app can become a bit busy when you have multiple devices, so you could build an app that can control Hue bulbs around the house, changing their color and brightness. You could also go back to basic and build a command-line app to control your lights.
     https://developers.meethue.com/
@@ -507,11 +613,51 @@ API's
 18. Public APIs => Public API is an extremely useful repository that has over 116 Github stars. It curates a list of different types of APIs that you can use as a web developer. Almost every API you will need is available in this repository.
     https://github.com/public-apis/public-apis
 
-19. 
+19. Free to Game
+    https://www.freetogame.com/api-doc
 
-20. 
+20. Open Library
+    https://openlibrary.org/
 
-21. 
+21. Open Weather 
+    https://openweathermap.org/api
+
+22. Agify
+    https://agify.io/
+
+23. Coinbase
+    https://developers.coinbase.com/api/v2
+
+24. Cocktail DB
+    https://www.thecocktaildb.com/api.php
+
+25. Coin Paprika
+    https://api.coinpaprika.com/
+
+26. Jikan
+    https://jikan.moe/
+
+27. Makeup
+    https://makeup-api.herokuapp.com/
+
+28. Music Brainz
+    https://musicbrainz.org/
+
+29. Tvmaze
+    https://www.tvmaze.com/api
+
+30. Recipe Puppy
+    http://www.recipepuppy.com/
+
+31. Meme API => This API is used to generate Memes from the internet.
+
+32. News API => News API is a simple, easy-to-use Rest API that returns JSON search results for current and historic news articles published by over 80,000 worldwide sources.
+    https://newsapi.org/
+
+33. Covid-19 API => Every 15 minutes updated statistic about Corona virus. Latest stats by country are collected from several reliable sources. You can also see total stats and daily reports.
+
+34. Blockchain API => Blockchain API is used to track global rates of crypto currencies like Bitcoin, Ethereum etc.
+    https://www.blockchain.com/api
 
 
 
@@ -555,6 +701,12 @@ SEO Tools
 5. Free Code Tools => Collection of free SEO and code tools.
     https://freecodetools.org/
 
+6. Nibbler => Nibbler is a free tool for testing websites. Enter the address of any website and Nibbler will give you a report scoring the website out of 10 for key areas, including accessibility, SEO, social media and technology.
+    https://nibbler.silktide.com/
+
+7. Pentest Tools => Pentest Tools allows you to quickly discover and report vulnerabilities in websites and network infrastructures.
+    https://pentest-tools.com/website-vulnerability-scanning/website-scanner
+
 
 
 Others
@@ -585,6 +737,33 @@ Others
 
 9. CSS-only Calendar App
     https://codepen.io/coding_beast/pen/wvMpBqE
+
+10. Designian => A collection of top free illustration and design libraries to use for your personal and content marketing activities.
+    https://designian.co/
+
+11. My heritage => Create your family tree and make your animated portrait live with access to various records for genealogy research.
+    https://www.myheritage.com/
+
+12. Alternativeto => You can get alternative to any tool.
+    https://alternativeto.net/
+
+13. Online Convert => Convert media files online from one format to another which include audio, video, image etc.
+    https://www.online-convert.com/
+
+14. Libgen => A huge search engine for books and articles around topics you can read it for free.
+    https://libgen.is/
+
+15. Synthesia => You can create a video just from the text in 40+ languages for free but note it has some paid features as well.
+    https://www.synthesia.io/
+
+16. Gumroad => It's an online platform that facilitates the sale of product by creators directly to customers.
+    https://gumroad.com/
+
+17. Ngrok => Ngrok is a cross-platform application that enables developers to expose a local development server to the Internet with minimal effort.
+    https://ngrok.com/
+
+18. What web can do => This tool allows you to check what APIs are available in the browser you are currently using. After selecting an API you will receive a set of instructions on how to use theme.
+    https://whatwebcando.today/
 
 
 
@@ -751,6 +930,9 @@ YouTube Channels
 
 9. Wes Bos
     https://www.youtube.com/c/WesBos
+
+10. Online Tutorials
+    https://www.youtube.com/c/OnlineTutorials4Designers
 
 
 
