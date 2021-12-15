@@ -11,6 +11,12 @@ Useful Tools
 1. TinyPNG => TinyPNG uses smart lossy compression techniques to reduce the file size of your WEBP, JPEG and PNG files.
     https://tinypng.com/
 
+2. SCSS to CSS Convertor => Convert any SCSS code into CSS code easily.
+    https://jsonformatter.org/scss-to-css
+
+
+
+
 
 
 Cheat Sheets
@@ -40,6 +46,9 @@ Frameworks
 
 2. Milligram => A minimalist CSS framework
     https://milligram.io/
+
+3. Myresponsee
+    https://www.myresponsee.com/
 
 
 
@@ -221,6 +230,9 @@ CSS Tools & Libraries
 43. CSS Reference => cssreference.io is a free visual guide to CSS. It features the most popular properties, and explains them with illustrated and animated examples.
     https://cssreference.io/
 
+44. Blobs
+    https://blobs.app/?e=6&gw=6&se=797317&c=d1d8e0&o=0
+
 
 
 
@@ -333,6 +345,23 @@ JavaScript & Libraries
 24. Flatpickr => Written in vanilla JavaScript, flatpickr is a lightweight datetimepicker and calendar solution.
     https://flatpickr.js.org/
 
+25. React JS => React is another extremely popular name and can never be missed out in a roundup of free JavaScript libraries. React has earned a reputation for being the ultimate JavaScript library for designing user interfaces.
+    https://reactjs.org/
+
+26. Clipboard JS => As the name suggests, Clipboard JS lets you copy the content to the clipboard without any dependencies. This means your app can copy data to the clipboard without relying on Flash or anything else.
+    https://clipboardjs.com/
+
+27. Textillate JS 
+    https://textillate.js.org/
+
+28. Chartist JS => Chartist lets you create simple responsive charts for your web projects. You can customize every single aspect of the charts and since Chartist uses SVG to render them, your charts can also obey CSS rules and custom code.
+    https://gionkunz.github.io/chartist-js/
+
+29. Three JS => Three JS is a 3D library for JavaScript. It lets you create 3D visualizations as well as render 3D to HTML5, SVG and WebGL.
+    https://threejs.org/
+
+30. Simple Parallax => A tiny JavaScript library that adds parallax animation to any image.
+    https://simpleparallax.com/
 
 
 
@@ -438,6 +467,33 @@ React JS & Libraries
 27. Evergreen => Evergreen contains a set of React components that's suitable for enterprise grade web applications. Since it uses React Primitive. It's highly flexible. At the same time, it works just as easily right out of the box.
     https://evergreen.segment.com/
 
+28. Formik => Forms & Validation -> Build forms in React, without the tears.
+    https://formik.org/
+
+29. React Router => Router
+    https://reactrouter.com/
+
+30. Styled Components => Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress.
+    https://styled-components.com/
+
+31. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or set every time.
+    https://axios-http.com/docs/intro
+
+32. Full React JS Course - 10 Hours - English from Free Code Camp
+    https://www.youtube.com/watch?v=4UZrsTqkcW4&ab_channel=freeCodeCamp.org
+
+33. Full React JS Course - 11+ Hours - English from Clever Programmer
+    https://www.youtube.com/watch?v=-cMqr9HpZ-Y&ab_channel=CleverProgrammer
+
+34. Full React JS Course - 2+ Hours - Hindi from Code with Harry
+    https://www.youtube.com/watch?v=RGKi6LSPDLU&ab_channel=CodeWithHarry
+
+35. Full React JS Course Playlist - 85 Videos - Hindi from Code Technical Thapa
+    https://www.youtube.com/watch?v=tiLWCNFzThE&list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ&ab_channel=ThapaTechnical
+
+36. Full React JS Course Playlist - 32 Videos - English from The Net Ninja
+    https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&ab_channel=TheNetNinja
+
 
 
 
@@ -499,13 +555,13 @@ PHP
 
 
 
-Icons & images
+Icons & images & Illustrations
 
 1. CSS GG => Open-source CSS, SVG and Figma UI Icons available in SVG Sprite, styled-components, NPM & API.
     https://css.gg/
 
-2. Fontspring Matcherator => The most robust font detection tool available. This tool is one more example of Fontspring leading the industry in font curation and discovery. Upload an image with type and we will identify the fonts that match.
-    https://www.fontspring.com/matcherator
+2. World Vector Logo
+    https://worldvectorlogo.com/
 
 3. SVGOMG => SVGOMG is an almost perfect example of a fully responsive and capable tool written with web technologies. It features a beautiful Material Design look, ServiceWorker ensures that the app loads quickly and is available offline.
     https://jakearchibald.github.io/svgomg/
@@ -522,6 +578,58 @@ Icons & images
 7. Tabler Icons => Free and Open-source icons designed with attention to detail to make your design stand out.
     https://tablericons.com/
 
+8. Stream Line HQ
+    https://streamlinehq.com/
+    https://app.streamlinehq.com/icons
+
+9. Logo Ipsum
+    https://logoipsum.com/
+
+10. Story set 
+    https://storyset.com/
+
+11. unDraw 
+    https://undraw.co/
+
+12. IRA Design
+    https://iradesign.io/
+
+13. DrawKit
+    https://drawkit.com/
+
+14. Open Doodles
+    https://www.opendoodles.com/
+
+15. Manypixels
+    https://www.manypixels.co/
+
+16. Illustrations
+    https://illlustrations.co/
+
+17. Pixel True
+    https://www.pixeltrue.com/
+
+18. Isometric
+    https://isometric.online/
+
+19. Ouch
+    https://icons8.com/illustrations
+
+20. Iconscout
+    https://iconscout.com/
+
+21. Open Peeps
+    https://www.openpeeps.com/
+
+22. humaaans
+    https://www.humaaans.com/
+
+23. Blush
+    https://blush.design/
+
+24. Flaticon => Add isometric PNG images in your website which will make it look real.
+    https://www.flaticon.com/
+
 
 
 
@@ -531,6 +639,7 @@ colors
 
 1. Coolors => Coolors is a super fast color scheme generator, of use to anyone involved in user-facing design. Coolors is one of the smartest color scheme generator, for those looking for the perfect scheme.
     https://coolors.co/
+    https://coolors.co/palettes/popular
 
 2. Hex Invaders => Hex invaders is a fun way to learn and understand what hex codes are and how they work.
     http://www.hexinvaders.com/
@@ -659,6 +768,9 @@ API's
 34. Blockchain API => Blockchain API is used to track global rates of crypto currencies like Bitcoin, Ethereum etc.
     https://www.blockchain.com/api
 
+35. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or set every time.
+    https://axios-http.com/docs/intro
+
 
 
 
@@ -765,6 +877,12 @@ Others
 18. What web can do => This tool allows you to check what APIs are available in the browser you are currently using. After selecting an API you will receive a set of instructions on how to use theme.
     https://whatwebcando.today/
 
+19. UI Design Daily
+    https://www.uidesigndaily.com/
+
+20. Smart Mockups => Add interactive mockups in your website so that you website look amazing.
+    https://smartmockups.com/
+
 
 
 30 ways to improve Your Design
@@ -857,7 +975,7 @@ Code Snippets
 3. CSS Desk
     http://www.cssdesk.com/
 
-4. Free Frontend
+4. Free Frontend => Get all type of user interface design for free.
     https://freefrontend.com/
 
 5. Web Tools
@@ -963,3 +1081,91 @@ VS Code Extensions
 
 1. Debug Visualizer => It is a VS Code extension and allows you to Visualize data structures while debugging.
 
+
+
+
+
+Fonts
+
+1. Fontspring Matcherator => The most robust font detection tool available. This tool is one more example of Fontspring leading the industry in font curation and discovery. Upload an image with type and we will identify the fonts that match.
+    https://www.fontspring.com/matcherator
+
+2. Befonts
+    https://befonts.com/
+
+
+
+
+Templates
+
+1. Theme Fisher
+    https://themefisher.com/
+
+2. Webflow
+    https://webflow.com/
+
+3. Nicepage
+    https://nicepage.com/
+
+4. Bootstrap Made
+    https://bootstrapmade.com/
+
+5. Colorlib
+    https://colorlib.com/
+
+6. Templatemo
+    https://templatemo.com/
+
+7. Mockplus
+    https://www.mockplus.com/
+
+8. Monsterpost
+    https://monsterspost.com/
+
+9. Myresponsee
+    https://www.myresponsee.com/
+
+10. FWT
+    https://freewebsitetemplates.com/
+
+11. Formoid
+    https://formoid.com/
+
+12. UI Cookies
+    https://uicookies.com/
+
+13. Webthemez
+    https://webthemez.com/
+
+14. Hongkiat
+    https://www.hongkiat.com/blog/
+
+15. Cruip
+    https://cruip.com/
+    https://cruip.com/free-templates/
+
+16. UI Deck
+    https://uideck.com/
+
+17. Tooplate
+    https://www.tooplate.com/
+
+
+
+
+Navigation Menu Projects
+
+1. Flat Vertical Navigation => An easy flat vertical navigation with multi animated drop-down menu. Additionally together with Font tremendous and Animate CSS.
+    https://codepen.io/andytran/pen/eIgoJ/
+
+2. Rings Navigation Concept => Links are obviously placed on prime of every other making a number of rings.
+    https://codepen.io/bennettfeely/pen/qRJOZJ
+
+3. Circular Navigation Concept => A new navigation thought with HTML, CSS and JavaScript.
+    https://codepen.io/Chrisstar/pen/eBRzzv/
+
+4. Simple Pure CSS Dropdown Menu => Menu with dropdown made simplest in CSS, with a line that compiles with the hover on the road.
+    https://codepen.io/dghez/pen/Kwoper
+
+5. Full-screen Menu Overlay => A full-reveal menu, showcasing your manufacturer and website navigation.
+    https://codepen.io/ettrics/pen/JoaaxW
