@@ -71,15 +71,19 @@ CSS CDN Links
 
     <!-- css.gg -->
     <link href='https://css.gg/css' rel='stylesheet'>
+
     <!-- UNPKG -->
     <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
+
     <!-- JSDelivr -->
     <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
 
     <!-- css.gg -->
     <link href='https://css.gg/ {ICONNAME} .css' rel='stylesheet'>
+
     <!-- UNPKG -->
     <link href='https://unpkg.com/css.gg/icons/css/ {ICONNAME} .css' rel='stylesheet'>
+
     <!-- JSDelivr -->
     <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/css/ {ICONNAME} .css' rel='stylesheet'>
 
@@ -124,26 +128,28 @@ CSS Tools & Libraries
 8. Griddy => Easily learn CSS Grid with amazing examples and create CSS Grid.
     https://griddy.io/
 
-9. Autoprefixer CSS online => Autoprefixer is an CSS post processor. It combs through compiled CSS files to add or remove vendor prefixes like -webkit and -moz after checking the code against caniuse.com. This tool adds, arranges and deletes prefixes for you.
+9. Autoprefixer CSS online => Autoprefixer is an CSS post processor. It combs through compiled CSS files to add or remove vendor prefixes 
+    like -webkit and -moz after checking the code against caniuse.com. This tool adds, arranges and deletes prefixes for you.
     https://autoprefixer.github.io/
 
 10. CSS Buttons
     https://cssbuttons.io/
 
-11. Neumorphism => Generate Soft-UI CSS code
+11. Neumorphism / Soft UI Generator => Generate Soft-UI CSS code
     https://neumorphism.io/#e0e0e0
 
 12. Haikei => Nice backgrounds 
     https://app.haikei.app/
 
-13. CSS Scan => Goodbye to "inspect element" - check the CSS of any element you hover over, instantly, and copy its entire rules with a single click.
+13. CSS Scan => Goodbye to "inspect element" - check the CSS of any element you hover over, instantly, and copy its entire rules with a 
+    single click.
     https://getcssscan.com/
     https://chrome.google.com/webstore/detail/css-scan/gieabiemggnpnminflinemaickipbebg
 
 14. Cubic Bezier Curves Generator
     https://cubic-bezier.com/#.17,.67,.83,.67
 
-15. Smooth shadow (CSS shadows Generator)
+15. Smooth shadow Generator (CSS shadows Generator) => Make a smooth CSS shadow.
     https://shadows.brumm.af/
 
 16. CSS Clip - Path Maker
@@ -155,7 +161,8 @@ CSS Tools & Libraries
 18. Wait! Animate
     https://waitanimate.wstone.io/
 
-19. CSS Battle => CSS Battle is gamification system which is a great way to track your progress and continue learning, they even give away some merchandise at the end of some battles.
+19. CSS Battle => CSS Battle is gamification system which is a great way to track your progress and continue learning, 
+    they even give away some merchandise at the end of some battles.
     https://cssbattle.dev/
 
 20. CSS Parallax Icon Animation
@@ -170,10 +177,12 @@ CSS Tools & Libraries
 23. Primer CSS
     https://primer.style/css/
 
-24. Animista 
+24. Animista => Animista is a CSS animation library and a place where you can play with a collection of ready-made CSS animations and 
+    download only those you will use.
     https://animista.net/
 
-25. Animate.css => CSS animations is a proposed modeule for cascading style sheets that allows the animation of HTML document elements using CSS.
+25. Animate.css => CSS animations is a proposed modeule for cascading style sheets that allows the animation of HTML document elements 
+    using CSS.
     https://animate.style/
 
 26. All Animation CSS3
@@ -182,7 +191,8 @@ CSS Tools & Libraries
 27. CSS Shake
     https://elrumordelaluz.github.io/csshake/
 
-28. Vivify CSS => Vivify CSS is a powerful animate CSS library, CSS3 animation library which comes with 68+ animations with support for delay and duration.
+28. Vivify CSS => Vivify CSS is a powerful animate CSS library, CSS3 animation library which comes with 68+ animations with support for 
+    delay and duration.
     http://vivify.mkcreative.cz/
 
 29. Hover.css
@@ -218,20 +228,40 @@ CSS Tools & Libraries
 39. Animated CSS Burgers => A small library of animated mobile hamburger menus that should satisfy your needs.
     https://march08.github.io/animated-burgers/
 
-40. Motion UI => Motion UI is a Sass library for quickly creating CSS transitions and animations. We originally bundled this code with Foundation for Apps, but we've souped it up, made it its own library, and open sourced it ahead of the launch of Foundation for Sites 6.
+40. Motion UI => Motion UI is a Sass library for quickly creating CSS transitions and animations. We originally bundled this code with 
+    Foundation for Apps, but we've souped it up, made it its own library, and open sourced it ahead of the launch of Foundation for Sites 6.
     https://zurb.com/playground/motion-ui
 
-41. Hint CSS => CSS is written as a pure CSS resource using which you can create cool accessible tooltips for your web app. It does not rely on JavaScript but rather uses aria-label / data-attribute pseudo elements, content property and CSS3 transitions to create the tooltips.
+41. Hint CSS => CSS is written as a pure CSS resource using which you can create cool accessible tooltips for your web app. 
+    It does not rely on JavaScript but rather uses aria-label / data-attribute pseudo elements, content property and CSS3 transitions to 
+    create the tooltips.
     https://kushagra.dev/lab/hint/
 
 42. CSS3 Button Generator
     https://css3buttongenerator.com/
 
-43. CSS Reference => cssreference.io is a free visual guide to CSS. It features the most popular properties, and explains them with illustrated and animated examples.
+43. CSS Reference => cssreference.io is a free visual guide to CSS. It features the most popular properties, and explains them with 
+    illustrated and animated examples.
     https://cssreference.io/
 
 44. Blobs
     https://blobs.app/?e=6&gw=6&se=797317&c=d1d8e0&o=0
+
+45. CSS Snippets => The CSS Snippet collection contains utilities and interactive examples for CSS3. It includes modern techniques for creating
+    commonly-used layouts, styling and Animating elements, as well as snippets for handling user interactions.
+    https://www.30secondsofcode.org/css/p/1
+
+46. Section Separator => A collection of customizable CSS section separators, with the possibility to easily copy the code.
+    https://wweb.dev/resources/css-separator-generator/
+
+47. Block Reveal Effect => Ideas for revealing content in a schematic box look.
+    https://tympanus.net/Development/BlockRevealers/
+
+48. Bubbler
+    https://www.ilikepixels.co.uk/bubbler/
+
+49. CSS Accordion Slider Generator
+    https://accordionslider.com/
 
 
 
@@ -277,19 +307,26 @@ JavaScript & Libraries
 12. YouTube API Project
     https://www.youtube.com/watch?v=r-yxNNO1EI8&ab_channel=TraversyMedia
 
-13. Plyr => Plyr is a simple, accessible and customizable HTML5, YouTube and Vimeo media player. It is light weight, accessible and customizable media player that supports modern browsers. Plyr makes the things really simple.
+13. Plyr => Plyr is a simple, accessible and customizable HTML5, YouTube and Vimeo media player. It is light weight, accessible and 
+    customizable media player that supports modern browsers. Plyr makes the things really simple.
     https://plyr.io/
 
-14. Video JS => Video JS is a web video player built from the ground up for an HTML5 world. It supports HTML5, Flash video, YouTube and Vimeo (through plugins). It supports videos on desktops, mobile devices. This player is now used on 2,00,000 websites.
+14. Video JS => Video JS is a web video player built from the ground up for an HTML5 world. It supports HTML5, Flash video, 
+    YouTube and Vimeo (through plugins). It supports videos on desktops, mobile devices. This player is now used on 2,00,000 websites.
     https://videojs.com/
 
-15. Popcorn JS => Popcorn JS is a JavaScript library that allows video, audio and other media to control and be controlled by arbitrary elements of a webpage. Combining open source technologies author can let their media be the "conductor" of interactive and immersive experiences.
+15. Popcorn JS => Popcorn JS is a JavaScript library that allows video, audio and other media to control and be controlled by arbitrary 
+    elements of a webpage. Combining open source technologies author can let their media be the "conductor" of interactive and immersive 
+    experiences.
     https://mozilla.github.io/popcorn-docs/getting-started/
 
-16. Afterglow => Afterglow is a tool to create fully responsive and totally awesome video players from HTML5 video elements with as little effort as possible.
+16. Afterglow => Afterglow is a tool to create fully responsive and totally awesome video players from HTML5 video elements with as little 
+    effort as possible.
     https://docs.afterglowplayer.com/
 
-17. Projekktor => Projekktor is a self-hosted, open source video (and audio) player for the web. It simplifies the way you implement and work with web video by solving tons of cross browser - and compatibility - issues, adding eye candy extremely powerful non standard features.
+17. Projekktor => Projekktor is a self-hosted, open source video (and audio) player for the web. It simplifies the way you implement and 
+    work with web video by solving tons of cross browser - and compatibility - issues, adding eye candy extremely powerful non standard 
+    features.
 
 18. Simple Keyboard => An elegant, responsive virtual keyboard component that offers ready-to-use demos of every device.
     https://virtual-keyboard.js.org/
@@ -297,42 +334,53 @@ JavaScript & Libraries
 19. Dark MOde Js => This project lets you add a dark mode toggle to pages and many more. 
     https://darkmodejs.learn.uno/
 
-11. Lodash => One of the most popular utility libraries is Lodash. Lodash has a huge feature set of functions that can help complete certain tasks when you're working with arrays or objects. The syntax is intuitive and the documentation provides good examples.
+11. Lodash => One of the most popular utility libraries is Lodash. Lodash has a huge feature set of functions that can help complete 
+    certain tasks when you're working with arrays or objects. The syntax is intuitive and the documentation provides good examples.
     https://lodash.com/
 
-12. Nodemon => When you're developing a web application, Nodemon can't miss. Nodemon makes developing web applications easier by restarting the server automatically when it senses a change in the files. This saves having to restart the server yourself for every change you mske.
+12. Nodemon => When you're developing a web application, Nodemon can't miss. Nodemon makes developing web applications easier by restarting 
+    the server automatically when it senses a change in the files. This saves having to restart the server yourself for every change you mske.
     https://nodemon.io/
     https://www.npmjs.com/package/nodemon
     https://github.com/remy/nodemon
 
-13. NanoID => Creating IDs that aren't just auto-incremented can be a hassle. NanoID creates an alphanumeric ID that is smaller than usual UUIDs and still very safe. The library itself can be minified and zipped to only 180 bytes.
+13. NanoID => Creating IDs that aren't just auto-incremented can be a hassle. NanoID creates an alphanumeric ID that is smaller than usual 
+    UUIDs and still very safe. The library itself can be minified and zipped to only 180 bytes.
     https://www.npmjs.com/package/nanoid
     https://github.com/ai/nanoid
     https://zelark.github.io/nano-id-cc/
 
-14. Passport => Authentication used to be difficult to implement, or just outright annoying if you need to do it. Passport helps with that. Passport is authentication middleware for Node server. It can be used with all major types of authentication such as Facebook login and Google Auth.
+14. Passport => Authentication used to be difficult to implement, or just outright annoying if you need to do it. Passport helps with that. 
+    Passport is authentication middleware for Node server. It can be used with all major types of authentication such as Facebook login 
+    and Google Auth.
     http://www.passportjs.org/
 
-15. Faker JS => Faker is a great way of quickly adding fake data into your application for testing purposes. Don't waste any more time on filling your database with real-looking names, pictures or bank info.
+15. Faker JS => Faker is a great way of quickly adding fake data into your application for testing purposes. Don't waste any more time on 
+    filling your database with real-looking names, pictures or bank info.
     https://fakerjsdocs.netlify.app/
 
-16. UUID => UUID or Universally Unique Identifiers are a way of sorting unique values. It is compliant with the rules of typical UUIDs and can be used in a database as the UUID type in most cases. It is more secure than auto-increment IDs or NanoIDs because of the size and its inability to guess one correct.
+16. UUID => UUID or Universally Unique Identifiers are a way of sorting unique values. It is compliant with the rules of typical UUIDs 
+    and can be used in a database as the UUID type in most cases. It is more secure than auto-increment IDs or NanoIDs because of the 
+    size and its inability to guess one correct.
     https://www.npmjs.com/package/uuid
     https://github.com/uuidjs/uuid
 
-17. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or set every time.
+17. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or 
+    set every time.
     https://axios-http.com/docs/intro
 
 18. Lax JS => Simple & lightweight vanilla JavaScript plugin to create smooth & beautiful animations when you scroll.
     https://github.com/alexfoxy/lax.js
 
-19. Textblock => A javascript tool for adjusting size, leading, and grades to cast continuously responsive typography. It works over your current CSS as a progressive enhancement.
+19. Textblock => A javascript tool for adjusting size, leading, and grades to cast continuously responsive typography. 
+    It works over your current CSS as a progressive enhancement.
     https://textblock.io/
 
 20. Tone JS => Tone.js is a Web Audio framework for creating interactive music in the browser.
     https://tonejs.github.io/
 
-21. Freezeframe JS => Freezeframe.js is a library that pauses animated .gifs and enables them to animate on mouse hover / mouse click / touch event, or triggered manually.
+21. Freezeframe JS => Freezeframe.js is a library that pauses animated .gifs and enables them to animate on mouse hover / mouse click / 
+    touch event, or triggered manually.
     https://github.com/ctrl-freaks/freezeframe.js/
     http://ctrl-freaks.github.io/freezeframe.js/
 
@@ -345,16 +393,19 @@ JavaScript & Libraries
 24. Flatpickr => Written in vanilla JavaScript, flatpickr is a lightweight datetimepicker and calendar solution.
     https://flatpickr.js.org/
 
-25. React JS => React is another extremely popular name and can never be missed out in a roundup of free JavaScript libraries. React has earned a reputation for being the ultimate JavaScript library for designing user interfaces.
+25. React JS => React is another extremely popular name and can never be missed out in a roundup of free JavaScript libraries. 
+    React has earned a reputation for being the ultimate JavaScript library for designing user interfaces.
     https://reactjs.org/
 
-26. Clipboard JS => As the name suggests, Clipboard JS lets you copy the content to the clipboard without any dependencies. This means your app can copy data to the clipboard without relying on Flash or anything else.
+26. Clipboard JS => As the name suggests, Clipboard JS lets you copy the content to the clipboard without any dependencies. 
+    This means your app can copy data to the clipboard without relying on Flash or anything else.
     https://clipboardjs.com/
 
 27. Textillate JS 
     https://textillate.js.org/
 
-28. Chartist JS => Chartist lets you create simple responsive charts for your web projects. You can customize every single aspect of the charts and since Chartist uses SVG to render them, your charts can also obey CSS rules and custom code.
+28. Chartist JS => Chartist lets you create simple responsive charts for your web projects. You can customize every single aspect of the 
+    charts and since Chartist uses SVG to render them, your charts can also obey CSS rules and custom code.
     https://gionkunz.github.io/chartist-js/
 
 29. Three JS => Three JS is a 3D library for JavaScript. It lets you create 3D visualizations as well as render 3D to HTML5, SVG and WebGL.
@@ -363,6 +414,31 @@ JavaScript & Libraries
 30. Simple Parallax => A tiny JavaScript library that adds parallax animation to any image.
     https://simpleparallax.com/
 
+31. Draggable JS => Draggable is a lightweight, responsive, modern drag and drop JavaScript library - the ideal choice for adding slick
+    native-feeling drag and drop behaviour to your web apps.
+    https://shopify.github.io/draggable/
+
+32. Cleave JS => Cleave JS help you to format input text content automatically.
+    https://nosir.github.io/cleave.js/
+
+33. Pick A Date JS => Lightweight plugin for date selection with multi-language support.
+    https://amsul.ca/pickadate.js/
+
+34. Fine Uploader JS => Multiple file upload plugin with progress bar and drag-and-drop feature.
+    https://fineuploader.com/
+
+35. Parsley JS => Validate your form without writing single line of JavaScript.
+    https://parsleyjs.org/
+
+36. Selectize JS => The hybrid of a textbox and select box.
+    https://selectize.dev/
+
+37. Turn JS => Making an online book reading website, this library will help you to make an interactive book reading UI.
+    http://www.turnjs.com
+
+38. Medium Zoom => Don't know how to add zooming effect in the image? This library will help you to achieve it.
+    https://medium-zoom.francoischalifour.com/
+
 
 
 
@@ -370,22 +446,25 @@ JavaScript & Libraries
 
 JavaScript Carousel Libraries
 
-1. Glide js => A dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more.
+1. Glide JS => A dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more.
     https://glidejs.com/
 
-2. Splide => Splide is a lightweight, powerful and flexible slider and carousel, written in pure JavaScript without any dependencies. It is small in size, less than 29KB.
+2. Splide => Splide is a lightweight, powerful and flexible slider and carousel, written in pure JavaScript without any dependencies. 
+    It is small in size, less than 29KB.
     https://splidejs.com/
 
 3. Swiper => Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior.
     https://swiperjs.com/
 
-4. Glider js => A blazingly fast, crazy small, fully responsive, mobile-friendly, dependency free, native scrolling list with paging controls.
+4. Glider JS => A blazingly fast, crazy small, fully responsive, mobile-friendly, dependency free, native scrolling list with paging controls.
     https://nickpiscitelli.github.io/Glider.js/
 
-5. Embla Carousel => A lightweight carousel library with fluid motion and great swipe precision. Build awesome carousels by extending Embla Carousel with your own CSS and JavaScript.
+5. Embla Carousel => A lightweight carousel library with fluid motion and great swipe precision. Build awesome carousels by extending 
+    Embla Carousel with your own CSS and JavaScript.
     https://www.embla-carousel.com/
 
-6. BaguetteBox JS => BaguetteBox JS is a simple and easy-to-use responsive image lightbox script with swipe gesture support on mobile devices. It has been written in pure JavaScript.
+6. BaguetteBox JS => BaguetteBox JS is a simple and easy-to-use responsive image lightbox script with swipe gesture support on mobile devices. 
+    It has been written in pure JavaScript.
     https://feimosi.github.io/baguetteBox.js/
 
 
@@ -431,7 +510,8 @@ React JS & Libraries
 12. YouTube Clone => Channel Name - Backbench Coder
     https://www.youtube.com/watch?v=Mos5QJAje28&ab_channel=BackbenchCoder
 
-13. MUI / Material UI => Material UI is a set of components created by Google, that implements their famous Material Design. With over 36K stars on Github. It's the most popular UI package of all React libraries. It's simple, eye-catching, light and user-friendly.    
+13. MUI / Material UI => Material UI is a set of components created by Google, that implements their famous Material Design. 
+    With over 36K stars on Github. It's the most popular UI package of all React libraries. It's simple, eye-catching, light and user-friendly.    
     https://mui.com/
 
 14. Shards React
@@ -440,10 +520,12 @@ React JS & Libraries
 15. Chakra
     https://chakra-ui.com/
 
-16. React Bootstrap => React Bootstrap, a UI kit that retains it's Bootstrap core. In order to give you more control over the form and function of each component, it replaces Bootstrap's JavaScript with React.
+16. React Bootstrap => React Bootstrap, a UI kit that retains it's Bootstrap core. In order to give you more control over the form and 
+    function of each component, it replaces Bootstrap's JavaScript with React.
     https://react-bootstrap.github.io/
 
-17. Semantic UI React => Semantic UI uses human-friendly HTML for it's development framework, and has integrations with React, Angular, Meteor, Ember and many other frameworks. All jQuery functionality has been re-implemented in React.
+17. Semantic UI React => Semantic UI uses human-friendly HTML for it's development framework, and has integrations with React, Angular,
+    Meteor, Ember and many other frameworks. All jQuery functionality has been re-implemented in React.
     https://react.semantic-ui.com/
 
 18. React Animation => Add unique pre-built animated effects to page elements based on content changes.
@@ -455,16 +537,20 @@ React JS & Libraries
 22. Calculator
 23. React Dashboard
 
-24. Redux => Redux is a state management solution for JavaScript applications. It's mostly used in combination with React. Redux makes it possible to connect every component directly to the entire state and thus eliminates the need to use props or callbacks.
+24. Redux => Redux is a state management solution for JavaScript applications. It's mostly used in combination with React. 
+    Redux makes it possible to connect every component directly to the entire state and thus eliminates the need to use props or callbacks.
     https://redux.js.org/
 
-25. Storybook => Storybook has been popular for some time now. It isn't exactly a component library itself but is an open source tool for developing UI components in isolation for React and many other technologies and platforms.
+25. Storybook => Storybook has been popular for some time now. It isn't exactly a component library itself but is an open source tool for 
+    developing UI components in isolation for React and many other technologies and platforms.
     https://storybook.js.org/
 
-26. React Toolbox => React UI components library that you can use to implement Google's material design principles in your proect is React Toolbox. It relies on CSS modules for this purpose. Though you can use any module bundler, it integrates neatly with webpack workflow.
+26. React Toolbox => React UI components library that you can use to implement Google's material design principles in your project is 
+    React Toolbox. It relies on CSS modules for this purpose. Though you can use any module bundler, it integrates neatly with webpack workflow.
     http://react-toolbox.io/#/
 
-27. Evergreen => Evergreen contains a set of React components that's suitable for enterprise grade web applications. Since it uses React Primitive. It's highly flexible. At the same time, it works just as easily right out of the box.
+27. Evergreen => Evergreen contains a set of React components that's suitable for enterprise grade web applications. 
+    Since it uses React Primitive. It's highly flexible. At the same time, it works just as easily right out of the box.
     https://evergreen.segment.com/
 
 28. Formik => Forms & Validation -> Build forms in React, without the tears.
@@ -476,7 +562,8 @@ React JS & Libraries
 30. Styled Components => Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress.
     https://styled-components.com/
 
-31. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or set every time.
+31. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or 
+    set every time.
     https://axios-http.com/docs/intro
 
 32. Full React JS Course - 10 Hours - English from Free Code Camp
@@ -535,6 +622,28 @@ Node JS
     https://www.youtube.com/watch?v=jD7FnbI76Hg&ab_channel=TraversyMedia
     https://www.youtube.com/watch?v=ZwFA3YMfkoc&ab_channel=JavaScriptMastery
 
+4. Cytoscape JS => An open-source JavaScript library used for visualization and graph analysis which comes with rich and interactive 
+    implementation. It includes all out-of-the-box gestures which include box selection, panning, pinch-to-zoom and so on.
+    https://js.cytoscape.org/
+
+5. Socket.io => Bi-directional, real-time event-based communication and works on every browser device with equal focus on speed. 
+    A basic chat app is an example of two-way communication that the tool provides.
+    https://socket.io/
+
+6. Strapi => An opensource content management system which a backend only system that provides functions to use with RESTful APIs,
+    the main aim to get and deliver content across all devices structurally.
+    https://strapi.io/
+
+7. Date-fns => Still, the most consistent and simple set of tools to manipulate JavaScript dates in Node.js and a browser and works well 
+    with modern modeule bundlers like Browserify, webpack and Rollup. With amazing community support, the tool has dozen of locales where 
+    each function has a detailed description along with examples.
+    https://date-fns.org/
+
+8. Sheet JS => A Node.js library that allows you to manipulate spreadsheets in Excel and a lot of other things with Excel, for example,
+    exporting workbooks from scratch and converting HTML tables, JSON arrays into xlsx files that are downloadable. Comes with a big
+    community and a well-documented contribution guide.
+    https://sheetjs.com/
+
 
 
 
@@ -563,7 +672,8 @@ Icons & images & Illustrations
 2. World Vector Logo
     https://worldvectorlogo.com/
 
-3. SVGOMG => SVGOMG is an almost perfect example of a fully responsive and capable tool written with web technologies. It features a beautiful Material Design look, ServiceWorker ensures that the app loads quickly and is available offline.
+3. SVGOMG => SVGOMG is an almost perfect example of a fully responsive and capable tool written with web technologies. 
+    It features a beautiful Material Design look, ServiceWorker ensures that the app loads quickly and is available offline.
     https://jakearchibald.github.io/svgomg/
 
 4. Remove BG (Background) => Remove image background 100% automatically - in 5 seconds - without a single click - for free. 
@@ -630,6 +740,40 @@ Icons & images & Illustrations
 24. Flaticon => Add isometric PNG images in your website which will make it look real.
     https://www.flaticon.com/
 
+25. IconStore => The IconStore is a library of free, vector (SVG) icons created by talented designers to download for commercial use.
+    https://iconstore.co/
+
+26. Tilda Icons => Download free icons for landing pages. More than 400 vector icons, collected in 27 sets for business.
+    https://tilda.cc/
+    https://tilda.cc/free-icons/
+
+27. Ikonate => Customise, adjust and download free vector icons. Ikonate is an adaptable set of optimised, accessible SVG icons that 
+    can easily use in both development and design apps such as Sketch and Photoshop.
+    https://ikonate.com/
+
+28. Eva Icons => Eva Icons is a pack of more than 480 delightful icons available for free. Download Eva Icons to use them in your projects for
+    mobile and web apps. Available as SVG, PNG, Web Font and Sketch.
+    https://akveo.github.io/eva-icons/#/
+
+29. Animated Icons => Download 1000+ Flat Animated Icons Pack for After Effects available on Videohive. Download 49 Free Animated Icons 
+    (One click download).
+    https://animated-icons.com/
+
+30. Font Awesome
+    https://fontawesome.com/
+    https://fontawesome.com/v5.15/icons?d=gallery&p=2
+
+31. IonIcons
+    https://ionic.io/ionicons
+    https://ionic.io/ionicons/v4
+
+32. HeroIcons
+    https://heroicons.com/
+
+33. Feather Icons
+    https://feathericons.com/
+
+
 
 
 
@@ -637,7 +781,8 @@ Icons & images & Illustrations
 
 colors
 
-1. Coolors => Coolors is a super fast color scheme generator, of use to anyone involved in user-facing design. Coolors is one of the smartest color scheme generator, for those looking for the perfect scheme.
+1. Coolors => Coolors is a super fast color scheme generator, of use to anyone involved in user-facing design. 
+    Coolors is one of the smartest color scheme generator, for those looking for the perfect scheme.
     https://coolors.co/
     https://coolors.co/palettes/popular
 
@@ -647,7 +792,8 @@ colors
 3. Paletton => Beautiful CSS color palette generator.
     https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
 
-4. CSS Gradient => As a free CSS Gradient generator tool, this website lets you create a colorful gradient background for your website, blog, or social media profile.
+4. CSS Gradient => As a free CSS Gradient generator tool, this website lets you create a colorful gradient background for your website, 
+    blog, or social media profile.
     https://cssgradient.io/
 
 5. My color Space
@@ -682,7 +828,8 @@ API's
 4. Count API => The Count API gives you the ability to create numeric counters and track the number of times a page was visited.
     https://countapi.xyz/
 
-5. Yahoo Finance API => This API helps to query financial summary, stocks, quotes, movers, etc to create a financial site / app such as Yahoo Finance.
+5. Yahoo Finance API => This API helps to query financial summary, stocks, quotes, movers, etc to create a financial site / app 
+    such as Yahoo Finance.
     https://www.yahoofinanceapi.com/
 
 6. TempMail API => A disposable temporary E-mail services which self-destructs after a certain time elapses.
@@ -691,35 +838,45 @@ API's
 
 7. Drag & Drop API => HTML Drag and Drop interfaces enable applications to use drag-and-drop features in browsers.
 
-8. Full Screen API => This API adds methods to present a specific Element in full-screen mode, and to exit full-screen mode once it is no longer needed.
+8. Full Screen API => This API adds methods to present a specific Element in full-screen mode, and to exit full-screen mode once it is 
+    no longer needed.
 
-9. Web Speech API => This API enables you to incorporate voice data into web apps. The API has two parts - SpeechSynthesis (Text-to-Speech), and SpeechRecognition (Asynchronous Speech Recognition).
+9. Web Speech API => This API enables you to incorporate voice data into web apps. The API has two parts - SpeechSynthesis (Text-to-Speech), 
+    and SpeechRecognition (Asynchronous Speech Recognition).
 
-10. Vibration API => Most modern mobile devices include vibration hardware and the Vibration API offers Web apps the ability to access this hardware, if it exists, and does nothing if the device doesn't support it.
+10. Vibration API => Most modern mobile devices include vibration hardware and the Vibration API offers Web apps the ability to 
+    access this hardware, if it exists, and does nothing if the device doesn't support it.
 
-11. Geo Location API => The Geolocation API allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information.
+11. GeoLocation API => The Geolocation API allows the user to provide their location to web applications if they so desire. 
+    For privacy reasons, the user is asked for permission to report location information.
 
-12. Removal AI API => Removal.AI API makes it easy for you, it uses AI to remove background from your images, the final image which you get is more clean and good. Simple to use you just have to drag and drop your image into the website and see the awesome result.
+12. Removal AI API => Removal.AI API makes it easy for you, it uses AI to remove background from your images, the final image which you 
+    get is more clean and good. Simple to use you just have to drag and drop your image into the website and see the awesome result.
     https://removal.ai/api-documentation/
     https://removal.ai/services/marketing/
 
 13. Random Jokes API => The random jokes API allows you to fetch random jokes data in an easy way using Fetch, Aax XHR and etc.
     https://icanhazdadjoke.com/api
 
-14. Marvel API => The Marvel Comics API allows developers everywhere to access information about Marvel's vast library of comics - from what's coming up, to 70 years ago.
+14. Marvel API => The Marvel Comics API allows developers everywhere to access information about Marvel's vast library of 
+    comics - from what's coming up, to 70 years ago.
     https://developer.marvel.com/
 
 15. Breaking bad quotes API => A free API to retrieve some quotes of Breaking Bad, bitch!
     https://breakingbadquotes.xyz/
 
-16. The Meal API => The meal API gives you access to random meal data to use it in your application. This API contains all the meal categories with images, ingredients, videos, the country of each meal and many more features.
+16. The Meal API => The meal API gives you access to random meal data to use it in your application. This API contains all the meal categories 
+    with images, ingredients, videos, the country of each meal and many more features.
     https://www.themealdb.com/
     https://www.themealdb.com/api.php
 
-17. Hue API => The official app can become a bit busy when you have multiple devices, so you could build an app that can control Hue bulbs around the house, changing their color and brightness. You could also go back to basic and build a command-line app to control your lights.
+17. Hue API => The official app can become a bit busy when you have multiple devices, so you could build an app that can control 
+    Hue bulbs around the house, changing their color and brightness. You could also go back to basic and build a command-line app to 
+    control your lights.
     https://developers.meethue.com/
 
-18. Public APIs => Public API is an extremely useful repository that has over 116 Github stars. It curates a list of different types of APIs that you can use as a web developer. Almost every API you will need is available in this repository.
+18. Public APIs => Public API is an extremely useful repository that has over 116 Github stars. It curates a list of different types of APIs 
+    that you can use as a web developer. Almost every API you will need is available in this repository.
     https://github.com/public-apis/public-apis
 
 19. Free to Game
@@ -760,32 +917,56 @@ API's
 
 31. Meme API => This API is used to generate Memes from the internet.
 
-32. News API => News API is a simple, easy-to-use Rest API that returns JSON search results for current and historic news articles published by over 80,000 worldwide sources.
+32. News API => News API is a simple, easy-to-use Rest API that returns JSON search results for current and historic news articles published 
+    by over 80,000 worldwide sources.
     https://newsapi.org/
 
-33. Covid-19 API => Every 15 minutes updated statistic about Corona virus. Latest stats by country are collected from several reliable sources. You can also see total stats and daily reports.
+33. Covid-19 API => Every 15 minutes updated statistic about Corona virus. Latest stats by country are collected from several reliable sources. 
+    You can also see total stats and daily reports.
 
 34. Blockchain API => Blockchain API is used to track global rates of crypto currencies like Bitcoin, Ethereum etc.
     https://www.blockchain.com/api
 
-35. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or set every time.
+35. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or 
+    set every time.
     https://axios-http.com/docs/intro
+
+36. Face Api JS => JavaScript API for face detection and face recognition in the browser and Node.js with tenserflow.js. Using this API, 
+    you can predict the age, color and probable accuracy ratio.
+    https://justadudewhohacks.github.io/face-api.js/docs/index.html
+
+37. IP Geolocation API => Free IP Geolocation and IP Address Lookup Location API.
+    https://ipgeolocation.io/
+
+38. Spotify => Fetch data from the Spotify music catalogue, manage user's playlists and saved music, get recommendations, control Spotify
+    Connect and more.
+    https://developer.spotify.com/documentation/web-api/
+
+39. The Open Movie Database => This API allows you to search a title by its name, year, plot and returns a response in either JSON or XML.
+    All content and images on the site are contributed and maintained by our users.
+    http://www.omdbapi.com/
+
+40. Turn JS API => Making an online book reading website, this library will help you to make an interactive book reading UI.
+    http://www.turnjs.com/#api
 
 
 
 
 Github Repositories
 
-1. Clean JavaScript Code => Clean-code-javascript is an awesome repository that helps you to write clean JavaScript code. It takes the concepts of Robert C.Martin's book and adopts them for JavaScript.
+1. Clean JavaScript Code => Clean-code-javascript is an awesome repository that helps you to write clean JavaScript code. 
+    It takes the concepts of Robert C.Martin's book and adopts them for JavaScript.
     https://github.com/ryanmcdermott/clean-code-javascript
 
 2. Free Programming Books => This repository has a massive collection of free programming books useful for learning all sorts of technology.
     https://github.com/EbookFoundation/free-programming-books
 
-3. Awesome Courses => This repository contains CS courses offered by universities. The unique aspect of the material compiled in this repository. (Such as lecture notes, lecture videos and assignments).
+3. Awesome Courses => This repository contains CS courses offered by universities. The unique aspect of the material compiled in this 
+    repository. (Such as lecture notes, lecture videos and assignments).
     https://github.com/prakhar1989/awesome-courses
 
-4. Developer Roadmap => The developer roadmap is one of the popular useful repositories contains lot of roadmaps on what type of developer you want to become (backend, frontend etc). So it,s a web developers roadmap that helps you choose your path.
+4. Developer Roadmap => The developer roadmap is one of the popular useful repositories contains lot of roadmaps on what type of developer 
+    you want to become (backend, frontend etc). So it,s a web developers roadmap that helps you choose your path.
     https://github.com/kamranahmedse/developer-roadmap
 
 5. Chart.xkcd => Chart.xkcd is a chart library plots "sketchy", "cartoony" or "hand-drawn" styled charts.
@@ -813,7 +994,8 @@ SEO Tools
 5. Free Code Tools => Collection of free SEO and code tools.
     https://freecodetools.org/
 
-6. Nibbler => Nibbler is a free tool for testing websites. Enter the address of any website and Nibbler will give you a report scoring the website out of 10 for key areas, including accessibility, SEO, social media and technology.
+6. Nibbler => Nibbler is a free tool for testing websites. Enter the address of any website and Nibbler will give you a report scoring the 
+    website out of 10 for key areas, including accessibility, SEO, social media and technology.
     https://nibbler.silktide.com/
 
 7. Pentest Tools => Pentest Tools allows you to quickly discover and report vulnerabilities in websites and network infrastructures.
@@ -871,10 +1053,12 @@ Others
 16. Gumroad => It's an online platform that facilitates the sale of product by creators directly to customers.
     https://gumroad.com/
 
-17. Ngrok => Ngrok is a cross-platform application that enables developers to expose a local development server to the Internet with minimal effort.
+17. Ngrok => Ngrok is a cross-platform application that enables developers to expose a local development server to the Internet with minimal 
+    effort.
     https://ngrok.com/
 
-18. What web can do => This tool allows you to check what APIs are available in the browser you are currently using. After selecting an API you will receive a set of instructions on how to use theme.
+18. What web can do => This tool allows you to check what APIs are available in the browser you are currently using. After selecting an API 
+    you will receive a set of instructions on how to use theme.
     https://whatwebcando.today/
 
 19. UI Design Daily
@@ -882,6 +1066,18 @@ Others
 
 20. Smart Mockups => Add interactive mockups in your website so that you website look amazing.
     https://smartmockups.com/
+
+21. Hidden Tools => It will help you to find any tool you need in the project.
+    https://hiddentools.dev/
+
+22. Codelf => It gives you real world usage variable name.
+    https://unbug.github.io/codelf/
+
+23. DevHints => It will help you to find any document of any particular function or code in seconds.
+    https://devhints.io/
+
+24. BundlePhobia => Sometimes NPM packages takes a lot of space. BundlePhobia tells you the size of the package you need.
+    https://bundlephobia.com/
 
 
 
@@ -945,19 +1141,24 @@ websites
 8. Free Code Camp
     https://www.freecodecamp.org/
 
-9. Code Well => If you want to level up your HTML, CSS and JavaScript skills, Codewell offers real world Figma templates that you can use to improve.
+9. Code Well => If you want to level up your HTML, CSS and JavaScript skills, Codewell offers real world Figma templates that you can use to 
+    improve.
     https://www.codewell.cc/
 
-10. Tree House => Treehouse is a great platform to help you learn certain languages like JavaScript, or even backend languages like PHP. You can use their course and a wide variety of quiz.
+10. Tree House => Treehouse is a great platform to help you learn certain languages like JavaScript, or even backend languages like PHP. 
+    You can use their course and a wide variety of quiz.
     https://teamtreehouse.com/
 
-11. Codepen Challenges => Codepen challenges provide prompts for variety of languages and technologies. HTML, CSS, JavaScript, Flutter you name it, which is best for the developer to challenge it and share the solution who participated.
+11. Codepen Challenges => Codepen challenges provide prompts for variety of languages and technologies. HTML, CSS, JavaScript, 
+    Flutter you name it, which is best for the developer to challenge it and share the solution who participated.
     https://codepen.io/challenges
 
-12. Frontend Mentor => Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges while working to professional designs.
+12. Frontend Mentor => Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges while 
+    working to professional designs.
     https://www.frontendmentor.io/
 
-13. JavaScript 30 => A 30 day vanilla JS coding challenge by Wes Bos. You get to build clocks, drum kits, and so much more using just JavaScript. It's also free.
+13. JavaScript 30 => A 30 day vanilla JS coding challenge by Wes Bos. You get to build clocks, drum kits, and so much more using just 
+    JavaScript. It's also free.
     https://javascript30.com/
 
 
@@ -1087,7 +1288,8 @@ VS Code Extensions
 
 Fonts
 
-1. Fontspring Matcherator => The most robust font detection tool available. This tool is one more example of Fontspring leading the industry in font curation and discovery. Upload an image with type and we will identify the fonts that match.
+1. Fontspring Matcherator => The most robust font detection tool available. This tool is one more example of Fontspring leading the 
+    industry in font curation and discovery. Upload an image with type and we will identify the fonts that match.
     https://www.fontspring.com/matcherator
 
 2. Befonts
@@ -1155,7 +1357,8 @@ Templates
 
 Navigation Menu Projects
 
-1. Flat Vertical Navigation => An easy flat vertical navigation with multi animated drop-down menu. Additionally together with Font tremendous and Animate CSS.
+1. Flat Vertical Navigation => An easy flat vertical navigation with multi animated drop-down menu. Additionally together with Font 
+    tremendous and Animate CSS.
     https://codepen.io/andytran/pen/eIgoJ/
 
 2. Rings Navigation Concept => Links are obviously placed on prime of every other making a number of rings.
@@ -1169,3 +1372,25 @@ Navigation Menu Projects
 
 5. Full-screen Menu Overlay => A full-reveal menu, showcasing your manufacturer and website navigation.
     https://codepen.io/ettrics/pen/JoaaxW
+
+
+
+
+Remote Jobs
+
+1. We Work Remotely
+    https://weworkremotely.com/
+
+2. Virtual Vocations
+    https://www.virtualvocations.com/
+
+3. Flex Jobs 
+    https://www.flexjobs.com/
+
+4. Just Remote
+    https://justremote.co/
+
+5. Remote
+    https://remote.co/
+
+
