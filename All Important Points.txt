@@ -50,6 +50,79 @@ Frameworks
 3. Myresponsee
     https://www.myresponsee.com/
 
+4. React JS - 82% => It is used to develop and operate the dynamic UI of the web pages with high incoming traffic.
+    https://reactjs.org/
+
+    Main Features => Virtual DOM
+                     Event handling
+                     Use JSX
+                     High Performance
+                     React Native
+                     Component-Based
+
+5. Node JS - 64% => Node.js is a server-side JavaScript run-time environment, which works on cross platforms and is open-source.
+    https://nodejs.org/en/
+
+    Main Features => Highly scalable
+                     No buffering
+                     Open source
+                     High Performance
+                     Very Fast Execution
+                     It is asynchronous
+
+6. Angular JS - 51% => It is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you 
+    extend HTML's syntax to express your application's components clearly.
+    https://angularjs.org/
+    https://angular.io/
+
+    Main Features => Progressive Web Apps
+                     Model View Controller
+                     User Interface with HTML
+                     Rich Data binding
+                     High Performance
+
+7. Vue JS - 43% => It is used for dual integration mode which is one of the most attractive features for the creation of high-end
+    Single Pgae Application.
+    https://vuejs.org/
+
+    Main Features => Virtual DOM
+                     Rich Data binding
+                     CSS Transitions & Animations
+                     Provides Template
+                     Methods
+                     No Complexity
+
+8. Ember JS - 38% => Ember.js is an open source, free JavaScript client-side framework used for developing web applications.
+    https://emberjs.com/
+
+    Main Features => No Complexity
+                     Rich in routes
+                     Provides instance initializer
+                     Easy to maintain
+                     Allow Reusable code
+
+9. Polymer -18.9% => Polymer is an open-source JavaScript library for building web applications using Web Components. 
+    It is developed by Google.
+    https://polymer-library.polymer-project.org/
+
+    Main Features => Easy customization
+                     Allow Reusable elements
+                     Provide Google material design
+
+10. Meteor - 16.1% => It is used to work with significant areas like back-end development, management of the database, business logic,
+    and rendering of the front-end.
+    https://www.meteor.com/
+
+    Main Features => Isomorphic JavaScript Code
+                     Front-end Solution
+                     Database Integration
+                     Development Ecosystem                   
+
+
+
+
+
+
 
 
 
@@ -439,6 +512,17 @@ JavaScript & Libraries
 38. Medium Zoom => Don't know how to add zooming effect in the image? This library will help you to achieve it.
     https://medium-zoom.francoischalifour.com/
 
+39. Resume Builder Application
+40. Slack-Clone
+41. Amazon Clone
+42. Markdown Editor
+43. 450 DSA Tracker
+
+44. Particle JS => Particle.js is a simple JavaScript library to create moving particles as a background for web pages.
+    https://vincentgarreau.com/particles.js/
+
+
+
 
 
 
@@ -664,7 +748,7 @@ PHP
 
 
 
-Icons & images & Illustrations
+Icons & images & Illustrations & Videos
 
 1. CSS GG => Open-source CSS, SVG and Figma UI Icons available in SVG Sprite, styled-components, NPM & API.
     https://css.gg/
@@ -677,6 +761,7 @@ Icons & images & Illustrations
     https://jakearchibald.github.io/svgomg/
 
 4. Remove BG (Background) => Remove image background 100% automatically - in 5 seconds - without a single click - for free. 
+   Don't spend hours manually picking pixels. Upload your photo now & see the magic.
     https://www.remove.bg/
 
 5. BG Jar => Free svg background generator for your websites, blogs and app.
@@ -772,6 +857,74 @@ Icons & images & Illustrations
 
 33. Feather Icons
     https://feathericons.com/
+
+34. Nucleo App => Nucleo is a Mac / Windows app to organize, customize and export all your icons as SVG files, SVG symbols, and icon fonts,
+    and a library of 30000+ icons that work seamlessly with the app.
+    https://nucleoapp.com/
+
+35. Upscaler => Free online smart upscaler software to enlarge images and photos (JPG, PNG) without losing quality. Enlarge and enhance 
+    pictures automatically using AI.
+    https://icons8.com/upscaler 
+
+36. PNGGuru
+    https://www.pngguru.in/
+
+37. Clean PNG
+    https://www.cleanpng.com/
+
+38. Kind PNG
+    https://www.kindpng.com/
+
+39. PNG Item
+    https://www.pngitem.com/
+
+40. PNG Wing
+    https://www.pngwing.com/
+
+41. Fav PNG
+    https://favpng.com/
+
+42. Icon Finder => Millions of icons for all kind of projects.
+    https://www.iconfinder.com/
+
+43. Coverr => Download royalty free (for personal and commercial use), unique and beautiful video footage for your website or any project.
+    No attribution required.
+    https://coverr.co/
+
+44. MixKit => Download Free Stock Video Footage, Stock Music & Premiere Pro Templates for your next video editing project.
+    All assets can be downloaded for free.
+    https://mixkit.co/
+
+45. Pexels => Free stock photos and videos you can use everywhere. High-quality. 100% free. No attribution needed.
+    https://www.pexels.com/
+
+46. Unscreen => Remove the background of any video - 100% automatically, online & free. Goodbye Greenscreen. Hello Unscreen.
+    https://www.unscreen.com/
+
+47. Generated Photos => AI-generated images have never looked better. Explore and download our diverse, copyright-free headshot images from 
+    our production-ready database.
+    https://generated.photos/
+
+48. Duotone => Find beautiful free duotone images to use in any project, or make custom duotone images by uploading your own image and 
+    applying a duotone effect in seconds.
+    https://duotone.shapefactory.co/
+
+49. Unsplash
+    https://unsplash.com/
+
+50. Pixabay
+    https://pixabay.com/
+
+51. Stocksnap
+    https://stocksnap.io/
+
+52. Brust Shopify
+    https://burst.shopify.com/
+
+53. Pinterest
+    https://in.pinterest.com/
+
+
 
 
 
@@ -958,7 +1111,8 @@ Github Repositories
     It takes the concepts of Robert C.Martin's book and adopts them for JavaScript.
     https://github.com/ryanmcdermott/clean-code-javascript
 
-2. Free Programming Books => This repository has a massive collection of free programming books useful for learning all sorts of technology.
+2. Free Programming Books / Learning Resources => This repository has a massive collection of free programming books useful for learning 
+    all sorts of technology.
     https://github.com/EbookFoundation/free-programming-books
 
 3. Awesome Courses => This repository contains CS courses offered by universities. The unique aspect of the material compiled in this 
@@ -971,6 +1125,36 @@ Github Repositories
 
 5. Chart.xkcd => Chart.xkcd is a chart library plots "sketchy", "cartoony" or "hand-drawn" styled charts.
     https://github.com/timqian/chart.xkcd
+
+6. Real World => "The mother of all demo apps" -- Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django and many more.
+    https://github.com/gothinkster/realworld
+
+7. StoryBook => The UI component explorer, Develop, document, & test React, Vue, Angular, Web Components, Ember, Svelte & more!
+    https://github.com/storybookjs/storybook
+
+8. NodeJS Best Practices => This repository is a summary and curation of the top-ranked content on Node.js best practices, as well as
+    content written here by collaborators.
+    https://github.com/goldbergyoni/nodebestpractices
+
+9. You Don't Know JS => This is a series of books diving deep into the core mechanisms of the JavaScript language.
+    https://github.com/getify/You-Dont-Know-JS
+
+10. Front-End Checklist => The perfect Front-End Checklist for modern websites and meticulous developers.
+    https://github.com/thedaviddias/Front-End-Checklist
+
+11. CSS Protips => The CSS protips repositories contains a bunch of tips that help you to improve your CSS skills.
+    https://github.com/AllThingsSmitty/css-protips
+
+12. Build Your Own X => Build Your Own X is a list of resources for building whatever you want to build like OS, Shell, Bot, Git, Database.
+    https://github.com/danistefanovic/build-your-own-x
+
+13. App Ideas => The repo has a list of app ideas for practicing your skills fro Beginner, Intermediate to Advanced level.
+    https://github.com/florinpop17/app-ideas
+
+14. Design Resources => The repo consist of many resources for developers like UI Libraries, stock assets, animation and much more.
+    https://github.com/bradtraversy/design-resources-for-developers
+
+
 
 
 
@@ -1000,6 +1184,10 @@ SEO Tools
 
 7. Pentest Tools => Pentest Tools allows you to quickly discover and report vulnerabilities in websites and network infrastructures.
     https://pentest-tools.com/website-vulnerability-scanning/website-scanner
+
+
+
+
 
 
 
@@ -1078,6 +1266,69 @@ Others
 
 24. BundlePhobia => Sometimes NPM packages takes a lot of space. BundlePhobia tells you the size of the package you need.
     https://bundlephobia.com/
+
+25. Checklist Design => Checklist Design is a curated list of checklists ranging from website pages, to UI components, all the way to 
+    branding assets.
+    https://www.checklist.design/
+
+26. Design Systems Repo => An organized and frequently updated collection of Design System examples, resources, tools, articles and videos.
+    https://designsystemsrepo.com/
+
+27. Bit Degree
+    https://www.bitdegree.org/
+
+28. Play Code
+    https://playcode.io/
+
+29. StackBlitz
+    https://stackblitz.com/
+
+30. Code Sandbox
+    https://codesandbox.io/
+
+31. JSFiddle
+    https://jsfiddle.net/
+
+32. LiveWeave
+    https://liveweave.com/
+
+33. JS Bin
+    https://jsbin.com/?html,output
+
+34. File Pizza => Peer-to-Peer file transfer over WebRTC without any middleman.
+    https://file.pizza/
+
+35. WeTransfer => For sharing really big files online.
+    https://wetransfer.com/
+
+36. Calligraphr => Transform your handwriting into a real font.
+    https://www.calligraphr.com/en/
+
+37. copy char => copy special characters and emojis that aren't on your keyboard.
+    https://copychar.cc/
+
+38. Snapdrop => This is for the web, share files directly between devices in the same network without having to upload them to any server 
+    first.
+    https://snapdrop.net/
+
+39. Privnote => Create text notes that will self-destruct after being read.
+    https://privnote.com/
+
+40. AutoDraw => Create freehand doodles and watch them magically transform into beautiful drawings powered by machine learning.
+    https://www.autodraw.com/
+
+41. Awwwards
+    https://www.awwwards.com/
+
+42. Dribbble
+    https://dribbble.com/
+
+43. Behance
+    https://www.behance.net/
+
+
+
+
 
 
 
@@ -1160,6 +1411,9 @@ websites
 13. JavaScript 30 => A 30 day vanilla JS coding challenge by Wes Bos. You get to build clocks, drum kits, and so much more using just 
     JavaScript. It's also free.
     https://javascript30.com/
+
+14. MDN Web Docs 
+    https://developer.mozilla.org/en-US/
 
 
 
@@ -1285,6 +1539,16 @@ VS Code Extensions
 
 
 
+Chrome Extensions
+
+1. CSS Peeper => Get access to the styles with our Chrome extension, Our mission is to let Designers focus on design, and spend as little
+    time as possible digging in a code.
+    https://csspeeper.com/
+    https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk
+
+
+
+
 
 Fonts
 
@@ -1294,6 +1558,21 @@ Fonts
 
 2. Befonts
     https://befonts.com/
+
+3. Google Fonts
+    https://fonts.google.com/
+
+4. Font Squirrel
+    https://www.fontsquirrel.com/
+
+5. Fonts
+    https://www.fonts.com/
+
+6. 1001 Fonts
+    https://www.1001fonts.com/
+
+7. Font Space
+    https://www.fontspace.com/
 
 
 
@@ -1342,15 +1621,28 @@ Templates
 14. Hongkiat
     https://www.hongkiat.com/blog/
 
-15. Cruip
+15. Cruip  
     https://cruip.com/
     https://cruip.com/free-templates/
+    https://cruip.com/solid/ => This HTML template has been designed with a focus on technology products, and it comes with a clean and 
+    straight forward layout to let you set up and launch your next project in a breeze.
+    https://cruip.com/switch/ => Our landing page template works on all devices, so you only have to set it up once, and get beautiful 
+    results forever.
+    https://cruip.com/april/ => Free HTML Landing page template for startups.
+    https://cruip.com/venus/ => Free and responsive HTML landing page template for startups.
+    https://cruip.com/ellie/ => Free and elegant HTML landing page template for startups.
 
 16. UI Deck
     https://uideck.com/
 
 17. Tooplate
     https://www.tooplate.com/
+
+18. Shades => Create custom landing pages with Shades that convert more visitors than any website -- no coding required.
+    https://shade-sass-landing.webflow.io/
+
+19. One Page Love
+    https://onepagelove.com/templates
 
 
 
@@ -1393,4 +1685,26 @@ Remote Jobs
 5. Remote
     https://remote.co/
 
+6. Fiverr
+    https://www.fiverr.com/
 
+7. Upwork
+    https://www.upwork.com/
+
+8. People Per Hour
+    https://www.peopleperhour.com/
+
+9. Freelancer
+    https://www.freelancer.in/
+    https://www.freelancer.com/jobs/
+
+
+
+
+
+Hosting
+
+1. Github
+2. Heroku
+3. Netlify
+4. Firebase
