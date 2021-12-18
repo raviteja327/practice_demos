@@ -225,7 +225,8 @@ CSS Tools & Libraries
 15. Smooth shadow Generator (CSS shadows Generator) => Make a smooth CSS shadow.
     https://shadows.brumm.af/
 
-16. CSS Clip - Path Maker
+6. CSS Clip - Path Maker => If you're looking for a tool to create a CSS clip-path to create a complex shape on your site, this is the one 
+    for you.
     https://bennettfeely.com/clippy/
 
 17. Get Waves
@@ -261,14 +262,14 @@ CSS Tools & Libraries
 26. All Animation CSS3
     https://all-animation.github.io/
 
-27. CSS Shake
+27. CS Shake
     https://elrumordelaluz.github.io/csshake/
 
 28. Vivify CSS => Vivify CSS is a powerful animate CSS library, CSS3 animation library which comes with 68+ animations with support for 
     delay and duration.
     http://vivify.mkcreative.cz/
 
-29. Hover.css
+29. Hover.css => A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on.
     https://ianlunn.github.io/Hover/
 
 30. Infinite
@@ -324,7 +325,7 @@ CSS Tools & Libraries
     commonly-used layouts, styling and Animating elements, as well as snippets for handling user interactions.
     https://www.30secondsofcode.org/css/p/1
 
-46. Section Separator => A collection of customizable CSS section separators, with the possibility to easily copy the code.
+46. CSS Section Separator Generator => A collection of customizable CSS section separators, with the possibility to easily copy the code.
     https://wweb.dev/resources/css-separator-generator/
 
 47. Block Reveal Effect => Ideas for revealing content in a schematic box look.
@@ -335,6 +336,13 @@ CSS Tools & Libraries
 
 49. CSS Accordion Slider Generator
     https://accordionslider.com/
+
+50. Wicked CSS
+    https://kristofferandreasen.github.io/wickedCSS/
+
+51. Patternify => Patternify is a CSS pattern generator that let you create your own pattern that can be embedded into your CSS without
+    the need of the actual image file.
+    http://www.patternify.com/
 
 
 
@@ -521,6 +529,12 @@ JavaScript & Libraries
 44. Particle JS => Particle.js is a simple JavaScript library to create moving particles as a background for web pages.
     https://vincentgarreau.com/particles.js/
 
+45. Dann JS => Neural Network Library for Javascript
+    https://dannjs.org/
+
+46. 1Loc => Get 286+ Favorite JS Utilities in Single Line of Code.
+    https://1loc.dev/
+
 
 
 
@@ -624,6 +638,7 @@ React JS & Libraries
 24. Redux => Redux is a state management solution for JavaScript applications. It's mostly used in combination with React. 
     Redux makes it possible to connect every component directly to the entire state and thus eliminates the need to use props or callbacks.
     https://redux.js.org/
+    https://www.npmjs.com/package/redux
 
 25. Storybook => Storybook has been popular for some time now. It isn't exactly a component library itself but is an open source tool for 
     developing UI components in isolation for React and many other technologies and platforms.
@@ -639,16 +654,21 @@ React JS & Libraries
 
 28. Formik => Forms & Validation -> Build forms in React, without the tears.
     https://formik.org/
+    https://www.npmjs.com/package/formik
 
-29. React Router => Router
+29. React Router / React Router DOM => Router
     https://reactrouter.com/
+    https://www.npmjs.com/package/react-router
+    https://www.npmjs.com/package/react-router-dom
 
 30. Styled Components => Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress.
     https://styled-components.com/
+    https://www.npmjs.com/package/styled-components
 
 31. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or 
     set every time.
     https://axios-http.com/docs/intro
+    https://www.npmjs.com/package/axios
 
 32. Full React JS Course - 10 Hours - English from Free Code Camp
     https://www.youtube.com/watch?v=4UZrsTqkcW4&ab_channel=freeCodeCamp.org
@@ -665,6 +685,15 @@ React JS & Libraries
 36. Full React JS Course Playlist - 32 Videos - English from The Net Ninja
     https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&ab_channel=TheNetNinja
 
+37. Jest
+    https://jestjs.io/
+    https://www.npmjs.com/package/jest
+
+38. DOM Purify
+    https://www.npmjs.com/package/dompurify
+
+39. Validator
+    https://www.npmjs.com/package/validator
 
 
 
@@ -727,6 +756,14 @@ Node JS
     exporting workbooks from scratch and converting HTML tables, JSON arrays into xlsx files that are downloadable. Comes with a big
     community and a well-documented contribution guide.
     https://sheetjs.com/
+
+
+
+
+Vanilla JS
+
+1. HTML DOM => Manage DOM Manipulation with Vanilla JS.
+    https://htmldom.dev/
 
 
 
@@ -924,6 +961,18 @@ Icons & images & Illustrations & Videos
 53. Pinterest
     https://in.pinterest.com/
 
+54. Pure PNG
+    https://purepng.com/
+
+55. Stick PNG
+    https://www.stickpng.com/
+
+56. SVG Porn => Get High Quality SVG Logos For Free.
+    https://svgporn.com/
+
+57. Trianglify => If you want to create a triangle mesh background, this amazing tool can help you customize and generate your own in no time.
+    https://trianglify.io/
+
 
 
 
@@ -960,6 +1009,25 @@ colors
 
 8. Color Zilla
     https://www.colorzilla.com/gradient-editor/
+
+9. Color Hunt
+    https://colorhunt.co/
+
+10. Muzil Colors => With this website You can also extract color palettes from your own pictures.
+    https://colors.muz.li/
+
+11. Colors & Fonts => Get Amazing Colors and Typography.
+    https://www.colorsandfonts.com/
+
+12. Colorinspo
+    https://colorsinspo.com/
+
+13. Adobe Color
+    https://color.adobe.com/create/color-wheel
+
+14. GradPad => GradPad is a tool to help you with creating a CSS gradient color. Once you have done with the customization, just click
+    "Get CSS for this Gradient" and copy it over to your CSS.
+    http://ourownthing.co.uk/gradpad.html
 
 
 
@@ -1038,7 +1106,9 @@ API's
 20. Open Library
     https://openlibrary.org/
 
-21. Open Weather 
+21. Open Weather API => Simple and fast and free weather API from openWeatherMap you have access to current weather data, hourly,
+    5 and 16-day forecasts. Historical weather data for 40 years back for any coordinate. Weather maps, UV Index, air pollution and
+    historical data.
     https://openweathermap.org/api
 
 22. Agify
@@ -1095,12 +1165,29 @@ API's
     Connect and more.
     https://developer.spotify.com/documentation/web-api/
 
-39. The Open Movie Database => This API allows you to search a title by its name, year, plot and returns a response in either JSON or XML.
-    All content and images on the site are contributed and maintained by our users.
+39. The Open Movie Database API / OMDB API => This API allows you to search a title by its name, year, plot and returns a response in either 
+    JSON or XML. All content and images on the site are contributed and maintained by our users.
     http://www.omdbapi.com/
 
 40. Turn JS API => Making an online book reading website, this library will help you to make an interactive book reading UI.
     http://www.turnjs.com/#api
+
+41. Random Facts API => Get Random Facts On Different Topics.
+    https://fungenerators.com/api/facts/
+
+42. WIT.AI API => With the Wit.ai API, you can process text or speech and turn it into recognizable actions that your app / website can use.
+    You could use this to build an intelligent bot for your app / website.
+    https://wit.ai/
+
+43. Fixer API => Fixer provides a free, simple and lightweight API for current and historical foreign exchange rates and currency 
+    conversion. The API tracks rate published daily by the European Central Bank.
+    https://fixer.io/
+
+44. Food API => With over 360K recipes and 90K products, you can build a great food app using this API.
+    https://spoonacular.com/food-api
+
+45. SuperHero API => Get all SuperHeroes and Villians data from all universes under a single API.
+    https://superheroapi.com/
 
 
 
@@ -1325,6 +1412,12 @@ Others
 
 43. Behance
     https://www.behance.net/
+
+44. Goal Kicker => Get Free Programming Book For All Type of Programming Language.
+    https://books.goalkicker.com/
+
+45. All The Tags
+    https://allthetags.com/
 
 
 
@@ -1587,6 +1680,7 @@ Templates
 
 3. Nicepage
     https://nicepage.com/
+    https://nicepage.com/website-templates
 
 4. Bootstrap Made
     https://bootstrapmade.com/
@@ -1637,12 +1731,23 @@ Templates
 
 17. Tooplate
     https://www.tooplate.com/
+    https://www.tooplate.com/free-templates
 
 18. Shades => Create custom landing pages with Shades that convert more visitors than any website -- no coding required.
     https://shade-sass-landing.webflow.io/
 
 19. One Page Love
     https://onepagelove.com/templates
+
+20. Free-CSS
+    https://www.free-css.com/free-css-templates
+
+21. OS Templates
+    https://www.os-templates.com/
+
+22. HTML5xCSS3
+    https://www.html5xcss3.com/
+
 
 
 
@@ -1708,3 +1813,13 @@ Hosting
 2. Heroku
 3. Netlify
 4. Firebase
+
+
+
+
+
+
+
+Movies
+
+1. The Social Dilemmma
