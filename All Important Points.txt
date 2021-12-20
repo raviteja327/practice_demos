@@ -17,6 +17,15 @@ Useful Tools
 
 
 
+VS Code
+
+1. VS Code Remote Development => Visual Studio Code Remote Development allows you to use a container, remote machine, or 
+    the Windows Subsystem for Linux (WSL) as a full-featured development environment.
+    https://code.visualstudio.com/docs/remote/remote-overview
+
+
+
+
 
 
 Cheat Sheets
@@ -195,7 +204,8 @@ CSS Tools & Libraries
 6. Ken Burns Effect
     https://codepen.io/coding_beast/pen/VweyYZm
 
-7. Keyframes => Keyframes gives you a visual timeline to help you create, view and run animmations.
+7. Keyframes => Keyframes gives you a visual timeline to help you create, view and run animations without having to go back and forth
+    between your browser and editor.
     https://keyframes.app/
 
 8. Griddy => Easily learn CSS Grid with amazing examples and create CSS Grid.
@@ -344,6 +354,30 @@ CSS Tools & Libraries
     the need of the actual image file.
     http://www.patternify.com/
 
+52. Project Wallace => Project Wallace is an analyzer that tracks your CSS so you can view changes in your complexity, Design Tokens and 
+    much more. And all of that in a single web app.
+    https://www.projectwallace.com/
+
+53. DebuCSSer => CSS debugging tool with an unpronounceable name.
+    https://github.com/lucagez/Debucsser
+
+54. Hamburgers => Tasty CSS-animated hamburgers
+    https://jonsuh.com/hamburgers/
+
+55. DropCSS => An exceptionally fast, thorough and tiny (~10 KB min) unused-CSS cleaner.
+    https://github.com/leeoniya/dropcss
+
+56. CSSFx => A carefully crafted collection designed with a focus on fluidity, simplicity, and ease of use. Powered by CSS with minimal markup. 
+    Completely open source and MIT licensed.
+    https://cssfx.netlify.app/
+
+57. CSS Grid Generator => You can set the numbers and units of your columns and rows, and I'll generate a CSS grid for you. 
+    Drag within the boxes to create divs placed within the grid.
+    https://cssgrid-generator.netlify.app/
+
+58. Materialize => Materialize is a modern responsive CSS framework based on Material Design by Google.
+    https://materializecss.com/
+
 
 
 
@@ -415,125 +449,149 @@ JavaScript & Libraries
 19. Dark MOde Js => This project lets you add a dark mode toggle to pages and many more. 
     https://darkmodejs.learn.uno/
 
-11. Lodash => One of the most popular utility libraries is Lodash. Lodash has a huge feature set of functions that can help complete 
+20. Lodash => One of the most popular utility libraries is Lodash. Lodash has a huge feature set of functions that can help complete 
     certain tasks when you're working with arrays or objects. The syntax is intuitive and the documentation provides good examples.
     https://lodash.com/
 
-12. Nodemon => When you're developing a web application, Nodemon can't miss. Nodemon makes developing web applications easier by restarting 
+21. Nodemon => When you're developing a web application, Nodemon can't miss. Nodemon makes developing web applications easier by restarting 
     the server automatically when it senses a change in the files. This saves having to restart the server yourself for every change you mske.
     https://nodemon.io/
     https://www.npmjs.com/package/nodemon
     https://github.com/remy/nodemon
 
-13. NanoID => Creating IDs that aren't just auto-incremented can be a hassle. NanoID creates an alphanumeric ID that is smaller than usual 
+22. NanoID => Creating IDs that aren't just auto-incremented can be a hassle. NanoID creates an alphanumeric ID that is smaller than usual 
     UUIDs and still very safe. The library itself can be minified and zipped to only 180 bytes.
     https://www.npmjs.com/package/nanoid
     https://github.com/ai/nanoid
     https://zelark.github.io/nano-id-cc/
 
-14. Passport => Authentication used to be difficult to implement, or just outright annoying if you need to do it. Passport helps with that. 
+23. Passport => Authentication used to be difficult to implement, or just outright annoying if you need to do it. Passport helps with that. 
     Passport is authentication middleware for Node server. It can be used with all major types of authentication such as Facebook login 
     and Google Auth.
     http://www.passportjs.org/
 
-15. Faker JS => Faker is a great way of quickly adding fake data into your application for testing purposes. Don't waste any more time on 
+24. Faker JS => Faker is a great way of quickly adding fake data into your application for testing purposes. Don't waste any more time on 
     filling your database with real-looking names, pictures or bank info.
     https://fakerjsdocs.netlify.app/
 
-16. UUID => UUID or Universally Unique Identifiers are a way of sorting unique values. It is compliant with the rules of typical UUIDs 
+25. UUID => UUID or Universally Unique Identifiers are a way of sorting unique values. It is compliant with the rules of typical UUIDs 
     and can be used in a database as the UUID type in most cases. It is more secure than auto-increment IDs or NanoIDs because of the 
     size and its inability to guess one correct.
     https://www.npmjs.com/package/uuid
     https://github.com/uuidjs/uuid
 
-17. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or 
+26. Axios => Axios is a very well-known HTTP request library. It is easy to use and doesn't require anything you don't want to send or 
     set every time.
     https://axios-http.com/docs/intro
 
-18. Lax JS => Simple & lightweight vanilla JavaScript plugin to create smooth & beautiful animations when you scroll.
-    https://github.com/alexfoxy/lax.js
+27. 
 
-19. Textblock => A javascript tool for adjusting size, leading, and grades to cast continuously responsive typography. 
+28. Textblock => A javascript tool for adjusting size, leading, and grades to cast continuously responsive typography. 
     It works over your current CSS as a progressive enhancement.
     https://textblock.io/
 
-20. Tone JS => Tone.js is a Web Audio framework for creating interactive music in the browser.
+29. Tone JS => Tone.js is a Web Audio framework for creating interactive music in the browser.
     https://tonejs.github.io/
 
-21. Freezeframe JS => Freezeframe.js is a library that pauses animated .gifs and enables them to animate on mouse hover / mouse click / 
+30. Freezeframe JS => Freezeframe.js is a library that pauses animated .gifs and enables them to animate on mouse hover / mouse click / 
     touch event, or triggered manually.
     https://github.com/ctrl-freaks/freezeframe.js/
     http://ctrl-freaks.github.io/freezeframe.js/
 
-22. Scene JS => Scene Js is a JavaScript & CSS timeline-based animation library.
+31. Scene JS => Scene.js is a JavaScript & CSS timeline-based animation library.
     https://daybrush.com/scenejs/
 
-23. Microlight JS => Microlight JS is a lightweight code highlighting library, for any programming language, that greatly improves readability.
+32. Microlight JS => Microlight JS is a lightweight code highlighting library, for any programming language, that greatly improves readability.
     https://asvd.github.io/microlight/
 
-24. Flatpickr => Written in vanilla JavaScript, flatpickr is a lightweight datetimepicker and calendar solution.
+33. Flatpickr => Written in vanilla JavaScript, flatpickr is a lightweight datetimepicker and calendar solution.
     https://flatpickr.js.org/
 
-25. React JS => React is another extremely popular name and can never be missed out in a roundup of free JavaScript libraries. 
+34. React JS => React is another extremely popular name and can never be missed out in a roundup of free JavaScript libraries. 
     React has earned a reputation for being the ultimate JavaScript library for designing user interfaces.
     https://reactjs.org/
 
-26. Clipboard JS => As the name suggests, Clipboard JS lets you copy the content to the clipboard without any dependencies. 
+35. Clipboard JS => As the name suggests, Clipboard JS lets you copy the content to the clipboard without any dependencies. 
     This means your app can copy data to the clipboard without relying on Flash or anything else.
     https://clipboardjs.com/
 
-27. Textillate JS 
+36. Textillate JS 
     https://textillate.js.org/
 
-28. Chartist JS => Chartist lets you create simple responsive charts for your web projects. You can customize every single aspect of the 
+37. Chartist JS => Chartist lets you create simple responsive charts for your web projects. You can customize every single aspect of the 
     charts and since Chartist uses SVG to render them, your charts can also obey CSS rules and custom code.
     https://gionkunz.github.io/chartist-js/
 
-29. Three JS => Three JS is a 3D library for JavaScript. It lets you create 3D visualizations as well as render 3D to HTML5, SVG and WebGL.
+38. Three JS => Three JS is a 3D library for JavaScript. It lets you create 3D visualizations as well as render 3D to HTML5, SVG and WebGL.
     https://threejs.org/
 
-30. Simple Parallax => A tiny JavaScript library that adds parallax animation to any image.
+39. Simple Parallax => A tiny JavaScript library that adds parallax animation to any image.
     https://simpleparallax.com/
 
-31. Draggable JS => Draggable is a lightweight, responsive, modern drag and drop JavaScript library - the ideal choice for adding slick
+40. Draggable JS => Draggable is a lightweight, responsive, modern drag and drop JavaScript library - the ideal choice for adding slick
     native-feeling drag and drop behaviour to your web apps.
     https://shopify.github.io/draggable/
 
-32. Cleave JS => Cleave JS help you to format input text content automatically.
+41. Cleave JS => Cleave JS help you to format input text content automatically.
     https://nosir.github.io/cleave.js/
 
-33. Pick A Date JS => Lightweight plugin for date selection with multi-language support.
+42. Pick A Date JS => Lightweight plugin for date selection with multi-language support.
     https://amsul.ca/pickadate.js/
 
-34. Fine Uploader JS => Multiple file upload plugin with progress bar and drag-and-drop feature.
+43. Fine Uploader JS => Multiple file upload plugin with progress bar and drag-and-drop feature.
     https://fineuploader.com/
 
-35. Parsley JS => Validate your form without writing single line of JavaScript.
+44. Parsley JS => Validate your form without writing single line of JavaScript.
     https://parsleyjs.org/
 
-36. Selectize JS => The hybrid of a textbox and select box.
+45. Selectize JS => The hybrid of a textbox and select box.
     https://selectize.dev/
 
-37. Turn JS => Making an online book reading website, this library will help you to make an interactive book reading UI.
+46. Turn JS => Making an online book reading website, this library will help you to make an interactive book reading UI.
     http://www.turnjs.com
 
-38. Medium Zoom => Don't know how to add zooming effect in the image? This library will help you to achieve it.
+47. Medium Zoom => Don't know how to add zooming effect in the image? This library will help you to achieve it.
     https://medium-zoom.francoischalifour.com/
 
-39. Resume Builder Application
-40. Slack-Clone
-41. Amazon Clone
-42. Markdown Editor
-43. 450 DSA Tracker
+48. Resume Builder Application
+49. Slack-Clone
+50. Amazon Clone
+51. Markdown Editor
+52. 450 DSA Tracker
 
-44. Particle JS => Particle.js is a simple JavaScript library to create moving particles as a background for web pages.
+53. Particle JS => Particle.js is a simple JavaScript library to create moving particles as a background for web pages.
     https://vincentgarreau.com/particles.js/
 
-45. Dann JS => Neural Network Library for Javascript
+54. Dann JS => Neural Network Library for Javascript
     https://dannjs.org/
 
-46. 1Loc => Get 286+ Favorite JS Utilities in Single Line of Code.
+55. 1Loc => Get 286+ Favorite JS Utilities in Single Line of Code.
     https://1loc.dev/
+
+56. Indigo Player => Indigo player is an extensible, modern, JavaScript player. With our module system, it's childsplay for developers to add 
+    their own logic.
+    https://matvp91.github.io/indigo-player/#/
+
+57. FrenchKiss JS => FrenchKiss.js is a blazing fast lightweight i18n library written in JavaScript, working both in the browser and 
+    Node.js environments. It provides a simple and really fast solution for handling internationalization.
+    https://github.com/koala-interactive/frenchkiss.js
+
+58. Moveable JS => Moveable is Draggable, Resizable, Scalable, Rotatable, Warpable, Pinchable, Groupable, Snappable
+    https://github.com/daybrush/moveable
+
+59. HotKeys JS => A robust Javascript library for capturing keyboard input and key combinations entered. It has no dependencies. 
+    Try to press your keyboard, The following button will highlight.
+    https://wangchujiang.com/hotkeys/
+
+60. Pagemap => Mini map for web pages.
+    https://larsjung.de/pagemap/
+
+61. Packem => Packem is an extensively precompiled general-purpose JavaScript module bundler with a focus on performance, flexibility and
+    extendibility.
+    https://packem.github.io/
+
+62. Pika => Find modern, web-ready packages on npm. Get faster, smaller JavaScript bundles.
+    https://www.pika.dev/
 
 
 
@@ -564,6 +622,10 @@ JavaScript Carousel Libraries
 6. BaguetteBox JS => BaguetteBox JS is a simple and easy-to-use responsive image lightbox script with swipe gesture support on mobile devices. 
     It has been written in pure JavaScript.
     https://feimosi.github.io/baguetteBox.js/
+
+7. FsLighbox JS => Easy to use, but powerful plugin for displaying various types of sources in beautiful overlying box with tons of features 
+    such as captions, thumbnails, zooming and more.
+    https://fslightbox.com/ 
 
 
 
@@ -695,6 +757,23 @@ React JS & Libraries
 39. Validator
     https://www.npmjs.com/package/validator
 
+40. Base Web => Base Web offers a robust suite of components out of the box. These include complex, ready-to-use components such as
+    Datepicker and low-level composable primitives, such as Layer.
+    https://baseweb.design/
+
+41. React Animations => A collection of animations that can be used with any inline style library that supports using objects to define 
+    keyframe animations, such as Radium or Aphrodite.
+    https://react-animations.herokuapp.com/
+
+42. React Redux Loading Bar => A React component that provides Loading Bar (aka Progress Bar) for long running tasks.
+    https://mironov.github.io/react-redux-loading-bar/
+    https://github.com/mironov/react-redux-loading-bar/
+
+43. React Image Magnifiers => A collection of responsive, image magnifying React components for mouse and touch. Useful for product images 
+    in ecommerce sites, image galleries, stock photos, etc.
+    https://github.com/AdamRisberg/react-image-magnifiers
+    https://adamrisberg.github.io/react-image-magnifiers/
+
 
 
 
@@ -764,6 +843,26 @@ Vanilla JS
 
 1. HTML DOM => Manage DOM Manipulation with Vanilla JS.
     https://htmldom.dev/
+
+2. AutoComplete JS => AutoComplete.js is a simple, pure vanilla JavaScript library progressively designed for speed, high versatility and
+    seamless integration with a wide range of projects & systems.
+    https://tarekraafat.github.io/autoComplete.js/#/
+
+3. Rallax JS => Rallax.js is a vanilla JS plugin that implements a dynamic parallax scrolling effect, without dependencies.
+    https://chriscavs.github.io/rallax-demo/
+
+4. Lax JS => Simple & lightweight (<4KB gzipped) vanilla JavaScript plugin to create smooth & beautiful animations when you scroll.
+    https://github.com/alexfoxy/lax.js
+
+
+
+
+
+Vue JS
+
+1. Quasar => Quasar is the number one solution based on Vue whether you're only building a desktop website, a desktop app, a mobile app or
+    even all of them.
+    https://quasar.dev/
 
 
 
@@ -973,6 +1072,15 @@ Icons & images & Illustrations & Videos
 57. Trianglify => If you want to create a triangle mesh background, this amazing tool can help you customize and generate your own in no time.
     https://trianglify.io/
 
+58. useAnimations => Animated icons in Lottie Framework for immediate implementation to your apps or websites.
+    https://useanimations.com/
+
+59. Optimal => Managing and resizing image files drains your storage, processing resources, and development time. 
+    Optimole stores, handles and scales your images with 80% less size while looking just as great!
+    https://optimole.com/
+
+60. 
+
 
 
 
@@ -1163,6 +1271,7 @@ API's
 
 38. Spotify => Fetch data from the Spotify music catalogue, manage user's playlists and saved music, get recommendations, control Spotify
     Connect and more.
+    https://developer.spotify.com/documentation/
     https://developer.spotify.com/documentation/web-api/
 
 39. The Open Movie Database API / OMDB API => This API allows you to search a title by its name, year, plot and returns a response in either 
@@ -1188,6 +1297,21 @@ API's
 
 45. SuperHero API => Get all SuperHeroes and Villians data from all universes under a single API.
     https://superheroapi.com/
+
+46. Instamojo
+    https://www.instamojo.com/payment-gateway-integration/
+
+47. MailChimp
+    https://mailchimp.com/developer/
+
+48. Facebook
+    https://developers.facebook.com/
+
+49. GraphQL Editor => It is an ultimate tool for both advanced GraphQL users as well as those taking their first steps with GraphQL APIs.
+    https://graphqleditor.com/
+
+50. React Simple Img => React lazy load images with Intersection Obderver API and Priority Hints.
+    https://react-simple-img.vercel.app/
 
 
 
@@ -1256,7 +1380,8 @@ SEO Tools
 2. Poet => Capture and share Twitter posts as beautiful images.
     https://poet.so/
 
-3. Meta Tags Generators => Meta tags are important for SEO, This Website will help you to generate general meta tags based on your inputs.
+3. Meta Tag Generator => Meta tags are important for SEO, This Website will help you to generate general important meta tags based on your 
+    inputs.
     https://webcode.tools/generators/meta-tags
 
 4. Site Checker Pro => Get free on page SEO audit report. Find the mistakes in technical SEO for specific URL.
@@ -1272,6 +1397,8 @@ SEO Tools
 7. Pentest Tools => Pentest Tools allows you to quickly discover and report vulnerabilities in websites and network infrastructures.
     https://pentest-tools.com/website-vulnerability-scanning/website-scanner
 
+8. 
+
 
 
 
@@ -1286,7 +1413,8 @@ Others
 2. Apption => Add 3rd party apps embed or create a custom embed for your Notion Document.
     https://apption.co/
 
-3. Can I Use => A website that provides up to date browser support tables of front end web technologies on desktop and mobile web browsers.
+3. Can I Use => A website that provides up-to-date browser support tables for support of front-end web technologies on desktop and 
+    mobile web browsers.
     https://caniuse.com/
 
 4. Learn-anything.xyz => Search interactive mind maps to learn anything.
@@ -1418,6 +1546,52 @@ Others
 
 45. All The Tags
     https://allthetags.com/
+
+46. ARC Toolkit => Quickly uncover and resolve accessibility issues on any web page with TPGi’s single-page, on-demand, accessibility 
+    testing tool.
+    https://www.tpgi.com/arc-platform/arc-toolkit/
+
+47. Microsoft Clarity => Replay user sessions and explore heatmaps to make your website work better for your customers and your business,
+    for free.
+    https://clarity.microsoft.com/
+
+48. Accessibility Insights => Solve accessibility issues before they reach your customers.
+    https://accessibilityinsights.io/
+
+49. Measure => See how well your website performs. Then, get tips to improve your user experience. Sign in to track your progress over time.
+    https://web.dev/measure/
+
+50. ZapChart => A neat online tool to build shareable data in chart format. Just plug in the numbers for the x and y axes and this app will
+    generate a bar chart downloadable as PNG or shareable via URL.
+    https://zapchart.com/
+
+51. Static Site Boilerplate / Generator => A better workflow for building modern static websites. Automated build processes, 
+    a local development server, production minification and optimizations, and the latest standards for static websites.
+    https://staticsiteboilerplate.com/
+
+52. Packtracker => Analyze your webpack bundle, on every commit your application delivery performance is costing you money. 
+    Let us help you speed it up.
+    https://packtracker.io/
+
+53. Commento => Commento is more than just a Comments widget you can embed -- it's a return to the roots of the internet. An internet 
+    without the tracking and invasions of privacy.
+    https://commento.io/
+
+54. Just___ => Just simplifies your life in managing build tasks. It stands on the shoulders of excellent and well tested libraries :
+    undertaker, yargs and plop.js.
+    https://microsoft.github.io/just/
+
+55. Git History => Quickly browse the history of a file from Github, GitLab, Bitbucket or any git repository.
+    https://githistory.xyz/
+
+56. Sublime Merge => Sublime Merge gives you to tools to breeze through code reviews : Side by Side Diffs, Syntax Highlighting, 
+    Character Diffs. You can drag the top or bottom of a hunk to interactively show more context lines.
+    https://www.sublimemerge.com/
+
+57. Zdog => This page will walk you through how to design, display and animate a basic 3D model with Zdog.
+    https://zzz.dog/
+
+
 
 
 
@@ -1628,6 +1802,7 @@ Responsive Screen Breakpoints CSS
 VS Code Extensions
 
 1. Debug Visualizer => It is a VS Code extension and allows you to Visualize data structures while debugging.
+2. VS Code Fabulous => Fabulous introduces a CSS properties sidebar into Visual Studio Code.
 
 
 
@@ -1823,3 +1998,14 @@ Hosting
 Movies
 
 1. The Social Dilemmma
+
+
+
+
+
+
+
+
+Flutter => Flutter SDK is Google's UI toolkit for creating beautiful, natively compiled applications for mobile, web and desktop from a 
+    single codebase.
+    https://flutter.dev/
