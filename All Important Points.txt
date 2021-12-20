@@ -235,7 +235,7 @@ CSS Tools & Libraries
 15. Smooth shadow Generator (CSS shadows Generator) => Make a smooth CSS shadow.
     https://shadows.brumm.af/
 
-6. CSS Clip - Path Maker => If you're looking for a tool to create a CSS clip-path to create a complex shape on your site, this is the one 
+16. CSS Clip - Path Maker => If you're looking for a tool to create a CSS clip-path to create a complex shape on your site, this is the one 
     for you.
     https://bennettfeely.com/clippy/
 
@@ -321,7 +321,7 @@ CSS Tools & Libraries
     create the tooltips.
     https://kushagra.dev/lab/hint/
 
-42. CSS3 Button Generator
+42. CSS3 / CSS Button Generator
     https://css3buttongenerator.com/
 
 43. CSS Reference => cssreference.io is a free visual guide to CSS. It features the most popular properties, and explains them with 
@@ -377,6 +377,46 @@ CSS Tools & Libraries
 
 58. Materialize => Materialize is a modern responsive CSS framework based on Material Design by Google.
     https://materializecss.com/
+
+59. CSS Layouts 
+    https://csslayout.io/
+
+60. Layout It
+    https://www.layoutit.com/
+
+61. Pure CSS
+    https://purecss.io/
+
+62. Loading.io
+    https://loading.io/
+
+63. CSSGR.ID
+    https://cssgr.id/
+
+64. ScrollOut 
+    https://scroll-out.github.io/
+
+65. Tridiv
+    http://tridiv.com/
+
+66. iHover
+    https://gudh.github.io/ihover/dist/
+
+67. Image Hover Effects
+    https://miketricking.github.io/bootstrap-image-hover/
+    https://github.com/miketricking/bootstrap-image-hover
+
+68. Image Caption Hover
+    https://hasinhayder.github.io/ImageCaptionHoverAnimation/
+
+69. Image Hover
+    https://imagehover.io/
+
+70. Hover Effect Ideas
+    https://tympanus.net/Development/HoverEffectIdeas/
+
+71. Caption Hover Effects
+    https://tympanus.net/Tutorials/CaptionHoverEffects/
 
 
 
@@ -484,7 +524,8 @@ JavaScript & Libraries
     set every time.
     https://axios-http.com/docs/intro
 
-27. 
+27. Vivus JS
+    https://maxwellito.github.io/vivus/
 
 28. Textblock => A javascript tool for adjusting size, leading, and grades to cast continuously responsive typography. 
     It works over your current CSS as a progressive enhancement.
@@ -593,6 +634,75 @@ JavaScript & Libraries
 62. Pika => Find modern, web-ready packages on npm. Get faster, smaller JavaScript bundles.
     https://www.pika.dev/
 
+63. Itype JS
+    https://ityped.surge.sh/
+
+64. AOS JS
+    https://michalsnik.github.io/aos/
+
+65. Wiv JS
+    https://jjkaufman.github.io/wiv.js/
+
+66. ScrollMagic JS 
+    https://scrollmagic.io/
+
+67. Kute JS
+    https://thednp.github.io/kute.js/
+
+68. ScrollReveal JS 
+    https://scrollrevealjs.org/
+
+69. Popmotion JS
+    https://popmotion.io/
+
+70. MO JS
+    https://mojs.github.io/
+
+71. Leaflet JS
+    https://leafletjs.com/
+
+72. Hammer JS
+    https://hammerjs.github.io/
+
+73. FullPage JS
+    https://alvarotrigo.com/fullPage/
+
+74. Moment JS
+    https://momentjs.com/
+
+75. Screenfull JS
+    https://sindresorhus.com/screenfull/
+
+76. Value vs Reference Types From Academind
+    https://www.youtube.com/watch?v=9ooYYRLdg_g&t=133s&ab_channel=Academind
+
+77. Async Programming From Traversy Media
+    https://www.youtube.com/watch?v=PoRJizFvM7s&t=501s&ab_channel=TraversyMedia
+
+78. Spread & Rest Operators From Anagh Technologies Inc.
+    https://www.youtube.com/watch?v=oob7bxg-Ctc&t=150s&ab_channel=AnaghTechnologiesInc.
+
+79. Array / Object Destructuring From Web Dev Simplified
+    https://www.youtube.com/watch?v=NIq3qLaHCIs&t=99s&ab_channel=WebDevSimplified
+
+80. OOP Concepts From Traversy Media
+    https://www.youtube.com/watch?v=vDJpGenyHaA&t=235s&ab_channel=TraversyMedia
+
+81. Scopes, Hoisting & Closures From uidotdev
+    https://www.youtube.com/watch?v=Nt-qa_LlUH0&t=112s&ab_channel=uidotdev
+
+82. Higher Order Functions From Traversy Media
+    https://www.youtube.com/watch?v=rRgD1yVwIvE&t=85s&ab_channel=TraversyMedia
+
+83. GreenSock - GSAP
+    https://greensock.com/
+
+84. Tingle JS
+    https://tingle.robinparisi.com/
+
+85. Choices JS
+    https://choices-js.github.io/Choices/
+
 
 
 
@@ -609,7 +719,8 @@ JavaScript Carousel Libraries
     It is small in size, less than 29KB.
     https://splidejs.com/
 
-3. Swiper => Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior.
+3. Swiper JS => Swiper is one of the most modern free mobile ready touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used 
+    in mobile websites, mobile web apps and mobile native / hybrid apps.
     https://swiperjs.com/
 
 4. Glider JS => A blazingly fast, crazy small, fully responsive, mobile-friendly, dependency free, native scrolling list with paging controls.
@@ -626,6 +737,24 @@ JavaScript Carousel Libraries
 7. FsLighbox JS => Easy to use, but powerful plugin for displaying various types of sources in beautiful overlying box with tons of features 
     such as captions, thumbnails, zooming and more.
     https://fslightbox.com/ 
+
+8. Flickity => Flickity is a useful library that allows you to create touch, responsive, flickable carousels. Flickity can be used with vanilla.js.
+    https://flickity.metafizzy.co/
+    
+9. Slidr JS => Slidr.js is a very simple, lightweight JavaScript library for adding slide transitions to your page. It is totally agnostic, which means that doesn't rely on
+    another library to work.
+    http://bchanx.com/slidr
+    https://github.com/bchanx/slidr
+
+10. Sly => Sly is a library for one-directional scrolling with item-based navigation support. The main features of Sly are mouse wheel scrolling, scrollbar 
+    (dragging the handler or clicking on scrollbar), pages bar, various navigation butttons.
+    https://darsa.in/sly/
+
+11. Tiny Slider => Tiny Slider is a vanilla JavaScript slider that can be used for all purposes. It was inspired by Owl Carousel and works on Firefox 12+, Chrome 15+,
+    Safari 4+, Opera 12.1+, IE 8+.
+    https://ganlanyuan.github.io/tiny-slider/
+    https://ganlanyuan.github.io/tiny-slider/demo/
+    https://github.com/ganlanyuan/tiny-slider
 
 
 
@@ -774,6 +903,22 @@ React JS & Libraries
     https://github.com/AdamRisberg/react-image-magnifiers
     https://adamrisberg.github.io/react-image-magnifiers/
 
+44. Fun Fun Function
+    https://www.youtube.com/c/funfunfunction
+
+45. Academind
+    https://www.youtube.com/c/Academind
+
+46. The Net Ninja
+    https://www.youtube.com/c/TheNetNinja
+
+47.Techsith
+    https://www.youtube.com/c/Techsithtube
+    https://www.youtube.com/user/Techsithtube
+
+48. Pusher
+    https://www.youtube.com/user/pusherapp
+
 
 
 
@@ -879,12 +1024,33 @@ PHP
 3. Chat Application
     https://www.youtube.com/watch?v=Xq8LIOj6AWI&ab_channel=CodingCafe
 
+4. Helping Develop
+    https://www.youtube.com/c/TheHelpingDevelop
+    https://www.youtube.com/user/TheHelpingDevelop
+
+5. Derek Banas
+    https://www.youtube.com/c/derekbanas
+    https://www.youtube.com/user/derekbanas
+
+6. PHP Roundtable
+    https://www.youtube.com/c/PHPRoundtable
+    https://www.youtube.com/user/PHPRoundtable
+
+7. Brad Hussey
+    https://www.youtube.com/c/hussey17
+    https://www.youtube.com/user/hussey17
+
+8. JREAM
+    https://www.youtube.com/c/Jream
+
 
 
 
 
 
 Icons & images & Illustrations & Videos
+
+All in One => https://arpitbrandings.in/freeicons/
 
 1. CSS GG => Open-source CSS, SVG and Figma UI Icons available in SVG Sprite, styled-components, NPM & API.
     https://css.gg/
@@ -952,7 +1118,7 @@ Icons & images & Illustrations & Videos
 21. Open Peeps
     https://www.openpeeps.com/
 
-22. humaaans
+22. Humaaans By Pablo Stanley
     https://www.humaaans.com/
 
 23. Blush
@@ -1079,7 +1245,46 @@ Icons & images & Illustrations & Videos
     Optimole stores, handles and scales your images with 80% less size while looking just as great!
     https://optimole.com/
 
-60. 
+60. Saly - 3D Illustration Pack By Aleza
+    https://www.figma.com/community/file/890095002328610853
+
+61. Error 404 By Storytale
+    https://storytale.io/browse/?searchText=error%20404
+
+62. Handz By Samuel Briskar
+    https://www.handz.design/
+
+63. Diversity Avatars By Netguru
+    https://dribbble.com/shots/8934409-Diversity-Avatars
+
+64. Frontliner Heroes By Pixel True Designs
+    https://www.pixeltrue.com/frontliner-heroes
+
+65. 3D Weather Pack By Hosein Bagheri
+    https://ui8.net/hosein_bagheri/products
+
+66. Phosphor Icons
+    https://phosphoricons.com/
+
+67. Coolicons
+    https://coolicons.cool/
+
+68. Iconshock
+    https://www.iconshock.com/
+
+69. BoxIcons
+    https://boxicons.com/
+
+70. PNG Tree
+    https://pngtree.com/
+
+71. Vecteezy
+    https://www.vecteezy.com/
+
+72. Icons8
+    https://icons8.com/
+
+
 
 
 
@@ -1467,8 +1672,8 @@ Others
 19. UI Design Daily
     https://www.uidesigndaily.com/
 
-20. Smart Mockups => Add interactive mockups in your website so that you website look amazing.
-    https://smartmockups.com/
+20. Music for Programming
+    https://musicforprogramming.net/
 
 21. Hidden Tools => It will help you to find any tool you need in the project.
     https://hiddentools.dev/
@@ -1591,6 +1796,12 @@ Others
 57. Zdog => This page will walk you through how to design, display and animate a basic 3D model with Zdog.
     https://zzz.dog/
 
+58. Programming Language Convertor
+    https://ide.onelang.io/
+
+59. HTTP Cat
+    https://http.cat/
+
 
 
 
@@ -1650,7 +1861,8 @@ websites
 5. Guru99
     https://www.guru99.com/
 
-6. Tutorials point
+6. Tutorials point => Another Great website for learning JavaScript. It has many topics covered, from beginner concepts such as Loops, conditions to advance concepts like Regex,
+    Validations, Error Handling, Debugging etc.
     https://www.tutorialspoint.com/index.htm
 
 7. Sololearn
@@ -1681,6 +1893,26 @@ websites
 
 14. MDN Web Docs 
     https://developer.mozilla.org/en-US/
+
+15. Tutorial Republic => Tutorial Republic is designed to help beginner programmers who want to learn web development technologies like JavaScript, Bootstrap,
+    CSS, HTML etc.
+    https://www.tutorialrepublic.com/
+
+16. Learn JavaScript => Learn JavaScript Developers says that it is the easiest, most interactive way to learn & practice modern JavaScript online.
+    You can Read short lessons, solve challenges & answer flashcards.
+    https://learnjavascript.online/
+
+17. David Walsh Blog => This is an amazing blog for those people who always like to learn extra. David Walsh is a software engineer and he post amazing blog posts mostly
+    related to JavaScript.
+    https://davidwalsh.name/
+
+18. HTML Dog => This website contains 3 sections you can learn, Beginner Concepts, Intermediate Concepts and Advanced Concepts. Overall it's a good site for any level of
+    JavaScript developer.
+    https://htmldog.com/
+
+19. JavaScript Tutorial => JavaScript Tutorial provides you with many practical tutorials that help you learn JavaScript from scratch quickly and effectively.
+    https://www.javascripttutorial.net/
+
 
 
 
@@ -1755,6 +1987,7 @@ YouTube Channels
 
 4. Yahoo Baba
     https://www.youtube.com/c/YahooBaba
+    https://www.youtube.com/user/YahooBaba
 
 5. Clever Programmer
     https://www.youtube.com/c/CleverProgrammer
@@ -1770,9 +2003,51 @@ YouTube Channels
 
 9. Wes Bos
     https://www.youtube.com/c/WesBos
+    https://www.youtube.com/user/WesBos
 
 10. Online Tutorials
     https://www.youtube.com/c/OnlineTutorials4Designers
+
+11. WebDevMentors
+    https://www.youtube.com/c/webdevmentors
+    https://www.youtube.com/user/webdevmentors
+
+12. Code Course
+    https://www.youtube.com/c/codecourse
+
+13. Adam Khoury
+    https://www.youtube.com/c/AdamKhoury
+
+14. Google Chrome Developers
+    https://www.youtube.com/c/GoogleChromeDevelopers
+    https://www.youtube.com/user/ChromeDevelopers
+
+15. LevelUpTuts
+    https://www.youtube.com/c/LevelUpTuts
+    https://www.youtube.com/user/LevelUpTuts
+
+16. Learn Code Academy
+    https://www.youtube.com/c/learncodeacademy  
+    https://www.youtube.com/user/learncodeacademy  
+
+17. Dev Tips
+    https://www.youtube.com/c/DevTipsForDesigners
+    https://www.youtube.com/user/DevTipsForDesigners
+
+18. Learn Web Code
+    https://www.youtube.com/user/LearnWebCode
+
+19. Close Brace
+    https://www.youtube.com/c/CloseBrace
+
+20. Edureka
+    https://www.youtube.com/c/edurekaIN
+    https://www.youtube.com/user/edurekaIN
+
+21. Great Learning
+    https://www.youtube.com/c/GreatLearningOfficial
+
+
 
 
 
@@ -1850,20 +2125,22 @@ Templates
 1. Theme Fisher
     https://themefisher.com/
 
-2. Webflow
+2. Webflow => The website which is know for its elegance, Here you will get tons of website templates which is interactive and elegant.
     https://webflow.com/
+    https://webflow.com/templates/free-website-templates
 
-3. Nicepage
+3. Nicepage => The second best templates which always look into for website inspiration.
     https://nicepage.com/
     https://nicepage.com/website-templates
 
 4. Bootstrap Made
     https://bootstrapmade.com/
 
-5. Colorlib
+5. Colorlib => One of the best website for getting free and interactive templates.
     https://colorlib.com/
+    https://colorlib.com/wp/themes/
 
-6. Templatemo
+6. Templatemo => Get different types of templates in one place for free.
     https://templatemo.com/
 
 7. Mockplus
@@ -1922,6 +2199,9 @@ Templates
 
 22. HTML5xCSS3
     https://www.html5xcss3.com/
+
+23. Themezy => These website provide large number of template for free with all in one package.
+    https://www.themezy.com/
 
 
 
@@ -1998,9 +2278,42 @@ Hosting
 Movies
 
 1. The Social Dilemmma
+2. Jobs
+3. The Internship
+4. The Social Network
+5. The Pireates of Silicon Valley
+6. Hackers
+7. The Limitation Game
 
 
 
+
+
+Mockups
+
+1. Smart Mockups => Add interactive mockups in your website so that you website look amazing.
+    https://smartmockups.com/
+
+2. MCKUPS
+    https://mckups.com/
+
+3. Place It
+    https://placeit.net/c/mockups
+
+4. Mockuuups
+    https://mockuuups.studio/
+
+5. PixelBuddha
+    https://pixelbuddha.net/mockups
+
+6. PSD Repo
+    https://psdrepo.com/tag/free-psd-mockups/
+
+7. MockupMark
+    https://mockupmark.com/create/free
+
+8. Mockups Design
+    https://mockups-design.com/
 
 
 
