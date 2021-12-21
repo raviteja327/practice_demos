@@ -280,6 +280,7 @@ CSS Tools & Libraries
     http://vivify.mkcreative.cz/
 
 29. Hover.css => A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on.
+    Easily apply to your own elements, modify or just use for inspiration. Available in CSS, Sass and LESS.
     https://ianlunn.github.io/Hover/
 
 30. Infinite
@@ -288,7 +289,7 @@ CSS Tools & Libraries
 31. vhs
     https://jxnblk.com/vhs
 
-32. Magic Animations / Effects CSS => Magic CSS are a set of simple animation to include in your web or app project's.
+32. Magic Animations / Effects CSS => Magic CSS are a set of simple animations to include in your web or app project's.
     https://www.minimamente.com/project/magic/
 
 33. Woah.css
@@ -312,7 +313,7 @@ CSS Tools & Libraries
 39. Animated CSS Burgers => A small library of animated mobile hamburger menus that should satisfy your needs.
     https://march08.github.io/animated-burgers/
 
-40. Motion UI => Motion UI is a Sass library for quickly creating CSS transitions and animations. We originally bundled this code with 
+40. Motion UI => Motion UI is a SASS library for quickly creating CSS transitions and animations. We originally bundled this code with 
     Foundation for Apps, but we've souped it up, made it its own library, and open sourced it ahead of the launch of Foundation for Sites 6.
     https://zurb.com/playground/motion-ui
 
@@ -361,7 +362,8 @@ CSS Tools & Libraries
 53. DebuCSSer => CSS debugging tool with an unpronounceable name.
     https://github.com/lucagez/Debucsser
 
-54. Hamburgers => Tasty CSS-animated hamburgers
+54. Hamburgers => Hamburgers is a collection of 10+ examples of CSS hamburger animations which are very well suited for navigation for
+    mobile devices.
     https://jonsuh.com/hamburgers/
 
 55. DropCSS => An exceptionally fast, thorough and tiny (~10 KB min) unused-CSS cleaner.
@@ -417,6 +419,10 @@ CSS Tools & Libraries
 
 71. Caption Hover Effects
     https://tympanus.net/Tutorials/CaptionHoverEffects/
+
+72. Whirl => Made by Jhey Tompkins, a CSS wizard in himself, Whirl is a curation of CSS loading animations. It takes the pain out of a 
+    developer because it already has 106 whirls and more.
+    https://whirl.netlify.app/
 
 
 
@@ -634,7 +640,7 @@ JavaScript & Libraries
 62. Pika => Find modern, web-ready packages on npm. Get faster, smaller JavaScript bundles.
     https://www.pika.dev/
 
-63. Itype JS
+63. Ityped JS
     https://ityped.surge.sh/
 
 64. AOS JS
@@ -658,16 +664,16 @@ JavaScript & Libraries
 70. MO JS
     https://mojs.github.io/
 
-71. Leaflet JS
+71. Leaflet JS => Leaflet is one of the best JavaScript libraries that you can use to include interactive maps into your website.
     https://leafletjs.com/
 
 72. Hammer JS
     https://hammerjs.github.io/
 
-73. FullPage JS
+73. FullPage JS => It helps you create full-screen scrolling sites or one-page websites very easily.
     https://alvarotrigo.com/fullPage/
 
-74. Moment JS
+74. Moment JS => Moment.js helps you manage time and date effectively when working with different time zones.
     https://momentjs.com/
 
 75. Screenfull JS
@@ -694,14 +700,52 @@ JavaScript & Libraries
 82. Higher Order Functions From Traversy Media
     https://www.youtube.com/watch?v=rRgD1yVwIvE&t=85s&ab_channel=TraversyMedia
 
-83. GreenSock - GSAP
+83. GreenSock - GSAP => Simply put, GSAP is the most robust high-performance JavaScript animation library on the planet, which is probably 
+    why Google recommends it for JS-based animations and every major ad network excludes it from file size calculations.
     https://greensock.com/
+    https://greensock.com/gsap/
 
 84. Tingle JS
     https://tingle.robinparisi.com/
 
 85. Choices JS
     https://choices-js.github.io/Choices/
+
+86. BIDEO JS => A JS library that makes it super easy to add fullscreen background videos.
+    https://rishabhp.github.io/bideo.js/
+
+87. Tilt JS 
+    https://gijsroge.github.io/tilt.js/
+
+88. Granim JS => Granim.js is a JS library that helps you create fluid and interactive gradient animations.
+    https://sarcadass.github.io/granim.js/
+
+89. Choreographer JS => Use Choreographer.js to animate complex CSS effectively.
+    https://christinecha.github.io/choreographer-js/
+
+90. Thanos JS => Thanos JS reduce the file size of your project down to 50% with a simple command. But instead of achieving this 
+    impressive feat by some clever JavaScript magic and advanced optimization techniques. Thanos JS simply randomly deletes half of your 
+    project files. Needless to say, this JavaScript tool isn't intended for serious use. It was created as a joke.
+    https://thanosjs.org/
+
+91. Cowsay => Originally written in Perl by Tony Monroe, Cowsay is a talking cow that can say any words you put into her mouth.
+    Just don't be disappointed when you find out that Cowsay doesn't really speak.
+    https://github.com/piuccio/cowsay
+
+92. Elevator JS => Elevator.js is a stand-alone funny JavaScript library that lets you add a "back to top" button that behaves like a real
+    elevator, complete with elevator music to make the smooth scrolling feel to the top less boring. Since Elevator.js is a simple library
+    that handles only the audio management and the scroll functionality, you can easily customize it to fit your needs and make it less 
+    funny and more useful.
+    https://tholman.com/elevator.js/
+    https://github.com/tholman/elevator.js
+
+93. Fartscroll JS => Everyone farts--men, women, children, dogs, cats--and fartscroll.js can make your website fart too. What this funny
+    JavaScript library actually does it insert fart noises as you scroll. To use it, simply insert a single line in your page and initialize
+    it. You can even specify how often your page should fart to suit your own personal farting tastes.
+    https://theonion.github.io/fartscroll.js/
+    https://github.com/theonion/fartscroll.js/
+
+94. FuckIt JS => 
 
 
 
@@ -715,7 +759,7 @@ JavaScript Carousel Libraries
 1. Glide JS => A dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more.
     https://glidejs.com/
 
-2. Splide => Splide is a lightweight, powerful and flexible slider and carousel, written in pure JavaScript without any dependencies. 
+2. Splide JS => Splide is a lightweight, powerful and flexible slider and carousel, written in pure JavaScript without any dependencies. 
     It is small in size, less than 29KB.
     https://splidejs.com/
 
@@ -1112,7 +1156,7 @@ All in One => https://arpitbrandings.in/freeicons/
 19. Ouch
     https://icons8.com/illustrations
 
-20. Iconscout
+20. Iconscout => Tons of resources, Cuated SVGs, Vector Icons, Illustrations, 3D Graphics and lot of animations.
     https://iconscout.com/
 
 21. Open Peeps
@@ -1284,6 +1328,30 @@ All in One => https://arpitbrandings.in/freeicons/
 72. Icons8
     https://icons8.com/
 
+73. 10clouds
+    https://10clouds.com/valentine-illustrations
+
+74. BAM Free 3D Illustration Kit
+    https://www.uistore.design/items/bam-free-3d-illustration-kit/
+
+75. This is Chloe
+    https://www.behance.net/gallery/111365565/THIS-IS-CHLOE?tracking_source=search_projects_recommended%7CFREE%203D%20illustration
+
+76. Reebie 3D
+    https://www.behance.net/gallery/111618509/FREE-Reebie3D-Fast-Food-3D-Icons?tracking_source=search_projects_recommended%7CFREE%203D%20illustration
+
+77. Business 3D
+    https://icons8.com/illustrations/business
+
+78. Kitchen Icon Pack
+    https://fruto.gumroad.com/
+
+79. Casual life 3D
+    https://icons8.com/illustrations/style--casual-life-3d
+
+80. Iconshock 3D Icons
+    https://www.iconshock.com/3d-icons
+
 
 
 
@@ -1341,6 +1409,18 @@ colors
 14. GradPad => GradPad is a tool to help you with creating a CSS gradient color. Once you have done with the customization, just click
     "Get CSS for this Gradient" and copy it over to your CSS.
     http://ourownthing.co.uk/gradpad.html
+
+15. Paaatterns
+    https://products.ls.graphics/paaatterns/
+
+16. The Pattern Library
+    http://thepatternlibrary.com/
+
+17. Hero Patterns
+    https://heropatterns.com/
+
+18. PatterIco
+    https://patternico.com/
 
 
 
@@ -1518,6 +1598,9 @@ API's
 50. React Simple Img => React lazy load images with Intersection Obderver API and Priority Hints.
     https://react-simple-img.vercel.app/
 
+51. HTTP Cat => This is a fun website. An API for the awesome HTTP Cats. Use it in your website to show funny error messages.
+    https://http.cat/
+
 
 
 
@@ -1672,10 +1755,11 @@ Others
 19. UI Design Daily
     https://www.uidesigndaily.com/
 
-20. Music for Programming
+20. Music for Programming => This website will improve your productivity. It's a kind of music player with editor like theme.
     https://musicforprogramming.net/
 
-21. Hidden Tools => It will help you to find any tool you need in the project.
+21. Hidden Tools => Discover a wide collection of some amazing & useful tools for programmers. It will help you to find any tool you need 
+    in the project.
     https://hiddentools.dev/
 
 22. Codelf => It gives you real world usage variable name.
@@ -1796,11 +1880,11 @@ Others
 57. Zdog => This page will walk you through how to design, display and animate a basic 3D model with Zdog.
     https://zzz.dog/
 
-58. Programming Language Convertor
+58. Programming Language Convertor => This is very very helpful tool where you can write & convert your code from one programming 
+    language into another.
     https://ide.onelang.io/
 
-59. HTTP Cat
-    https://http.cat/
+59. 
 
 
 
@@ -2203,6 +2287,29 @@ Templates
 23. Themezy => These website provide large number of template for free with all in one package.
     https://www.themezy.com/
 
+24. HTML5 UP => Responsive HTML5 and CSS3 site templates. Built on intelligent HTML5 + CSS3, super customizable, 100% FREE under the
+    Creative Commons.
+    https://html5up.net/
+
+25. Free HTML5 => Free & Premium HTML5 Bootstrap templates. We carefully crafted beautiful & functional free / premium Bootstrap templates.
+    https://freehtml5.co/
+
+26. Start Bootstrap => Free, open source, MIT license, Bootstrap themes, templates, and code snippets for you to use on any project, 
+    guides to help you learn more about designing and developing with the Bootstrap framework, and premium Bootstrap UI products.
+    https://startbootstrap.com/
+
+27. StyleShout => We Craft Simple, Clean, Beautiful Free HTML Website Templates. StyleShout provides an awesome collection of stunning and
+    brilliantly crafted HTML website templates for free.
+    https://www.styleshout.com/
+
+28. Zero Theme => Free Html5 and Css3 Website Templates. Website templates is designed based on the zero grid responsive layout and
+    uses an HTML5 doctype.
+    https://www.zerotheme.com/
+
+29. Bootstrap Taste => Premium & Free Bootstrap Templates 2021. Looking for a good collection of Bootstrap templates and themes ? 
+    You have landed on the right page.
+    https://bootstraptaste.com/
+
 
 
 
@@ -2268,6 +2375,21 @@ Hosting
 2. Heroku
 3. Netlify
 4. Firebase
+5. Infinity Free => Free web hosting with unlimited disk space, unlimited bandwidth and unlimited websites from Infinity Free. 
+    With PHP and MySQL and no forced ads on your site.
+    https://infinityfree.net/
+
+6. 000webhost => Absolutely free web hosting with cPanel, PHP & MySQL for a stunning blogging start. Get free website hosting together
+    with a free domain name at no cost at all.
+    https://in.000webhost.com/?__cf_chl_jschl_tk__=Qm9njRlln9BG.aJ.MTKAWC8Y76M2Shr.c9aIk92Oyiw-1640050700-0-gaNycGzNCFE
+
+7. Award Space => AwardSpace is a free web hosting provider with NO ADS, paid web hosting, VPS hosting, reseller hosting, 
+    domain name registration and SSL certificates.
+    https://www.awardspace.com/
+
+8. Free Hostia => FreeHostia offers free hosting services incl. an industry-best Control Panel & a 1-click installation of 50+ free apps.
+    Instant setup. No forced ads.
+    https://www.freehostia.com/
 
 
 
@@ -2284,6 +2406,15 @@ Movies
 5. The Pireates of Silicon Valley
 6. Hackers
 7. The Limitation Game
+8. Objectified
+9. Her
+10. Abstract : The Art of Design
+11. The Wind Rises
+12. Ex Machina
+13. Blade Runner 2047
+14. Art and Copy
+15. The Pixar Story
+16. 6 Days to Air : The Making of South Park
 
 
 
@@ -2314,6 +2445,19 @@ Mockups
 
 8. Mockups Design
     https://mockups-design.com/
+
+
+
+
+Weirdest Coding Languages
+
+1. LOLCODE => All words are capitalized and meme-field. The language isn't as complete as traditional ones.
+2. Brainfuck => The language uses only eight commands and an instruction pointer, making this an incredibly minimalistic language.
+3. Chicken => This is a programming language consisting of only one word : "chicken".
+4. ArnoldC => This is a programming language made entirely out of one-liners from movies featuring Arnold Schwarzenegger.
+5. Piet => Programs are bitmaps that look like abstract paintings, and the basic building block.
+6. Shakespeare => The main aim of this programming language was to make a programming language that didn't look like one.
+    Variables must be named after Shakespearian characters and constants. A "Hello World!" sample is quite long, reading exactly like a play.
 
 
 
