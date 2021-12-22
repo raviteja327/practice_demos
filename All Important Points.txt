@@ -239,7 +239,7 @@ CSS Tools & Libraries
     for you.
     https://bennettfeely.com/clippy/
 
-17. Get Waves
+17. Get Waves => It's a wave generator that helps to make different waves and allows you to copy and download the SVG.
     https://getwaves.io/
 
 18. Wait! Animate
@@ -511,10 +511,7 @@ JavaScript & Libraries
     https://github.com/ai/nanoid
     https://zelark.github.io/nano-id-cc/
 
-23. Passport => Authentication used to be difficult to implement, or just outright annoying if you need to do it. Passport helps with that. 
-    Passport is authentication middleware for Node server. It can be used with all major types of authentication such as Facebook login 
-    and Google Auth.
-    http://www.passportjs.org/
+23. 
 
 24. Faker JS => Faker is a great way of quickly adding fake data into your application for testing purposes. Don't waste any more time on 
     filling your database with real-looking names, pictures or bank info.
@@ -745,7 +742,27 @@ JavaScript & Libraries
     https://theonion.github.io/fartscroll.js/
     https://github.com/theonion/fartscroll.js/
 
-94. FuckIt JS => 
+94. FuckIt JS => All programmers get tired of fixing bugs and pondering the meaning of cryptic error messages. FuckIt.js is a JavaScript
+    library that can make all bugs and error messages instantly go away. How? By repeatedly compiling your code, detecting errors and
+    slicing those lines out of the script through a process known as Eval-Rinse-Reload-And-Repeat. Of course, you won't really make your
+    application run any better by yanking problematic lines of code out of it like stray nose hair, but it may make you feel better.
+    https://github.com/mattdiamond/fuckitjs
+
+95. Penis JS => Penis.js makes comparing variables easy. Instead of using the traditional, boring method for comparing variables in
+    JavaScript, Penis.js uses the global variables "B" and "D", allowing you to use the awesome command "B==D" to compare 2 variables
+    everywhere. You can simply include Penis.js as a script tag in a browser, but this funny JavaScript library is also compatible with
+    AMD and common JS. Creator Edan Kwan also creates Vagina JS.
+    https://github.com/edankwan/penis.js/
+
+96. Firebase Authentication => Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to
+    authenticate users to your app also supports authentication using passwords, phone numbers, identity providers like Google, 
+    Facebook and Twitter.
+    https://firebase.google.com/products/auth
+    https://firebase.google.com/docs/auth
+
+97. Grant => A rather new and promising library providing OAuth Middleware for Express, Koa and Hapi with a live playground. In case you 
+    want to use it with your own private OAuth provider, you can specify the required key yourself.
+    https://www.npmjs.com/package/grant
 
 
 
@@ -1024,6 +1041,26 @@ Node JS
     exporting workbooks from scratch and converting HTML tables, JSON arrays into xlsx files that are downloadable. Comes with a big
     community and a well-documented contribution guide.
     https://sheetjs.com/
+
+9. Passport => Authentication used to be difficult to implement, or just outright annoying if you need to do it. Passport helps with that. 
+    Passport is authentication middleware for Node server. It can be used with all major types of authentication such as Facebook login 
+    and Google Auth.
+    http://www.passportjs.org/
+
+10. Auth0 => Auth0 provides a wide universal authentication & authorization platform for web, mobile and legacy applications using Node.js.
+    https://auth0.com/docs/libraries/auth0js
+
+11. Permit JS => A Permit.js aims to provide an "unopinionated" authentication (used with multiple types of API from REST to GraphQL) 
+    library for building Node.js APIs. It can be used with frameworks like Express, Koa, Hapi and Fastify.
+    https://technotarek.com/permit/permit.html
+    https://www.npmjs.com/package/permit
+
+12. Feathers Authentication Management => Feathers is an open-source real-time, micro-service web framework for Node.js that gives you
+    control over your data via RESTful resources, sockets and flexible plugins.
+    https://docs.feathersjs.com/api/authentication/
+    https://www.npmjs.com/package/feathers-authentication-management
+
+13. 
 
 
 
@@ -1600,6 +1637,11 @@ API's
 
 51. HTTP Cat => This is a fun website. An API for the awesome HTTP Cats. Use it in your website to show funny error messages.
     https://http.cat/
+
+52. Permit JS => A Permit.js aims to provide an "unopinionated" authentication (used with multiple types of API from REST to GraphQL) 
+    library for building Node.js APIs. It can be used with frameworks like Express, Koa, Hapi and Fastify.
+    https://technotarek.com/permit/permit.html
+    https://www.npmjs.com/package/permit
 
 
 
@@ -2395,17 +2437,75 @@ Hosting
 
 
 
+Books
+
+1. The Mythical Man Month by Fred Brooks => Who invented the whole field of software engineering with a single book.
+
+2. The Design of Everyday Things by Don Norman => It's all about doors and teapots, but it might as well be about user interfaces.
+    It's only about 150 pages. Easy to read on the train, and it will change the way you see the whole world.
+    pdf => http://kowym.com/wp-content/uploads/2018/08/The-Design-of-Everyday-Things-Don-Norman.pdf
+
+3. Hacker's Delight by Henry Warren => The bit twiddling code in this book is the ultimately condensed course in algorithm design.
+    Warren loves the perfection of the tightest possible code loop. Reading this book is not only useful, it's also a delight.
+    pdf => https://doc.lagout.org/security/Hackers%20Delight.pdf
+
+4. Programming Pearls by John Bentley => There's an amazing amount of knowledge in these little essays.
+    pdf => https://tfetimes.com/wp-content/uploads/2015/04/ProgrammingPearls2nd.pdf
+
+5. The Pragmatic Programmer by David Thomas & Andrew Hunt => What you will find in this book is now an integral part of all the 
+    programming best practices that get repeated over and over on sites like Stack Overflow, software engineering blogs and what not.
+    pdf => https://www.cin.ufpe.br/~cavmj/104The%20Pragmatic%20Programmer,%20From%20Journeyman%20To%20Master%20-%20Andrew%20Hunt,
+            %20David%20Thomas%20-%20Addison%20Wesley%20-%201999.pdf
+
+6. Clean Code by Robert Cecil Martin => Since I read this book, I completely changed my way to code. Before, I was focusing on algorithmic
+    performance. Now, I focus more on maintainability and cleanliness. In the end, what costs a lot is not the computer, it's the 
+    human resources, so you better code clean for your projects. Even bad code can function. But if code isn't clean, it can bring a 
+    development organization to its knees. Instead of high-level processes, Clean Code focuses on specific tactical principles, such as
+    how to write classes and functions.
+    pdf => https://enos.itcollege.ee/~jpoial/oop/naited/Clean%20Code.pdf
+
+7. Refactoring by Martin Fowler => Improving the design of Existing Code, by Martin Fowler. The guide to how to transform code with a safe
+    and rapid process, vital to keeping it cheap and easy to modify for future needs. This book offers a thorough discussion of the
+    principles of refactoring and how to set up the required tests.
+    pdf => http://silab.fon.bg.ac.rs/wp-content/uploads/2016/10/Refactoring-Improving-the-Design-of-Existing-Code-Addison-Wesley-Professional-1999.pdf
+    pdf => https://rodrigorgs.github.io/mata62-20161/files/Refactoring-Presentation-from-JavaOne.pdf
+
+8. The Passionate Programmer by Chad Fowler => In this book, you'll learn how to become an entrepreneur, driving your career in the direction
+    of your choosing. You'll learn how to build your software development career step by step, following the same path that you would follow
+    if you were building, marketing and selling a product.
+    pdf => http://index-of.es/Programming/Pragmatic%20Programmers/The%20Passionate%20Programmer.pdf
+
+9. Think like a Programmer by V. Anton Spraul => The real challenge of programming isn't learning a language's syntax, it's learning to 
+    creatively solve problems so you can build something great. In this one-of-a kind text, author V. Anton Spraul braks down the ways
+    that programmers solve problems and teaches you what other introductory books often ignore.
+    pdf => http://www.r-5.org/files/books/computers/overviews/patterns/V_Anton_Spraul-Think_Like_a_Programmer-EN.pdf
+
+10. Code Complete by Steve McConnell => Code Complete is a software development book written by Steve McConnell and published in 1993 by
+    Microsoft Press, encouraging developers to continue past code-and-fix programming and the big design upfront and waterfall models.
+    pdf => http://aroma.vn/web/wp-content/uploads/2016/11/code-complete-2nd-edition-v413hav.pdf
+
+11. Clean Architecture by Robert Cecil Martin => A must-read Software Design Book for Developers. In the Clean Architecture book, Uncle Bob
+    shows you how to get your software projects right from your very first decisions, yes, right before you design or code. He reveals the
+    rules and practices that will guide you as you plan and build software.
+    pdf => http://prof.mau.ac.ir/images/Uploaded_files/Clean%20Architecture_%20A%20Craftsman%E2%80%99s%20Guide%20to%20Software
+            %20Structure%20and%20Design-Pearson%20Education%20(2018)%5B7615523%5D.PDF
+
+
+
+
 
 
 Movies
 
 1. The Social Dilemmma
-2. Jobs
+2. Jobs => The movie sheds light on Stev Job's personal and college life. The movie revolves around how Apple became the business enterprise
+    that it is today.
 3. The Internship
 4. The Social Network
 5. The Pireates of Silicon Valley
 6. Hackers
-7. The Limitation Game
+7. The Imitation Game => As a programmer, You will find this movie extremely engaging. With the help of his fellow mathematicians. 
+    Alan Turing builds a machine to crack the codes.
 8. Objectified
 9. Her
 10. Abstract : The Art of Design
@@ -2415,6 +2515,11 @@ Movies
 14. Art and Copy
 15. The Pixar Story
 16. 6 Days to Air : The Making of South Park
+17. Source Code => As the name suggests, there is some code involved. The hero in the movie enters the body of another person using his 
+    programming skills.
+18. The Founder => This movie doesn't involve a programmer but is highly recommended if you want to start your first startup.
+19. The Great Hack => We end up rooting for ourselves, and the long odds of not being one of the fooled, the foiled and the exploited, 
+    unmindful victims of "psy-ops" warfare.
 
 
 
