@@ -125,7 +125,13 @@ Frameworks
     Main Features => Isomorphic JavaScript Code
                      Front-end Solution
                      Database Integration
-                     Development Ecosystem                   
+                     Development Ecosystem     
+
+11. Taiwind
+12. Materialize
+13. Bulma 
+14. Semantic UI
+15. Foundation                                   
 
 
 
@@ -198,8 +204,9 @@ CSS Tools & Libraries
 4. CSS / Fancy Border Radius Generator
     https://9elements.github.io/fancy-border-radius/
 
-5. CSS Glassmorphism Generator
+5. CSS Glassmorphism Generator => Help to Create Interactive and cool UI for your Projects.
     https://hype4.academy/tools/glassmorphism-generator
+    https://glassmorphism.com/
 
 6. Ken Burns Effect
     https://codepen.io/coding_beast/pen/VweyYZm
@@ -423,6 +430,30 @@ CSS Tools & Libraries
 72. Whirl => Made by Jhey Tompkins, a CSS wizard in himself, Whirl is a curation of CSS loading animations. It takes the pain out of a 
     developer because it already has 106 whirls and more.
     https://whirl.netlify.app/
+
+73. WebGradients => WebGradients is a free collection of 180 linear gradients that you can use as content backdrops in any part of your website. 
+    Easy copy CSS3 crossbrowser code and use it in a moment! They've also prepared a .PNG version of each gradient. 
+    As a bonus, there are packs for Sketch & Photoshop.
+    https://webgradients.com/
+
+74. Ultimate CSS Generator => A Simple tool to create amazing UI Elements.
+    https://webcode.tools/generators/css
+
+75. SCSS Compiler => SCSS Compiler generates formatted css styles from scss code. Beautify or minify compiled css if necessary.
+    https://beautifytools.com/scss-compiler.php
+
+76. CSS3 Menu => Amazing tool to create Hundreds of Responsive menus.
+    https://css3menu.com/
+
+77. Flexy Boxes 
+    https://the-echoplex.net/flexyboxes/
+
+78. Layer Styles
+    http://layerstyles.org/
+    http://layerstyles.org/builder.html
+
+79. CSS Portal
+    https://www.cssportal.com/
 
 
 
@@ -764,6 +795,15 @@ JavaScript & Libraries
     want to use it with your own private OAuth provider, you can specify the required key yourself.
     https://www.npmjs.com/package/grant
 
+98. Lottie JS
+    https://airbnb.io/lottie/#/
+
+99. Ani JS
+    https://anijs.github.io/
+
+100. Popmotion Pure JS
+    https://popmotion.io/pure/
+
 
 
 
@@ -979,6 +1019,14 @@ React JS & Libraries
 
 48. Pusher
     https://www.youtube.com/user/pusherapp
+
+49. Ant Design => An enterprise-class UI design language and React UI library with a set of high-quality React components, 
+    one of best React UI library for enterprises.
+    https://ant.design/
+
+50. React Admin => A frontend Framework for building B2B applications running in the browser on top of REST / GraphQL APIs using ES6,
+    React and Material Design.
+    https://marmelab.com/react-admin/
 
 
 
@@ -1227,7 +1275,7 @@ All in One => https://arpitbrandings.in/freeicons/
     (One click download).
     https://animated-icons.com/
 
-30. Font Awesome
+30. Font Awesome => Font Awesome is a free library of more than 600 scalable vector icons that can be sized, colored and arranged using CSS.
     https://fontawesome.com/
     https://fontawesome.com/v5.15/icons?d=gallery&p=2
 
@@ -1332,7 +1380,7 @@ All in One => https://arpitbrandings.in/freeicons/
 61. Error 404 By Storytale
     https://storytale.io/browse/?searchText=error%20404
 
-62. Handz By Samuel Briskar
+62. Handz Design By Samuel Briskar
     https://www.handz.design/
 
 63. Diversity Avatars By Netguru
@@ -1388,6 +1436,26 @@ All in One => https://arpitbrandings.in/freeicons/
 
 80. Iconshock 3D Icons
     https://www.iconshock.com/3d-icons
+
+81. Pixlr => A Photo Editor that lets you edit photos and create great designs right in your browser for free. Experience next level,
+    intuitive photo editing and graphical design with AI-powered tools for quick yet professional edits.
+    https://pixlr.com/
+
+82. Freepik => Freepik is the #1 resources site for vector graphics for graphic designers or web designers. Freepik helps you to find free
+    vector art, illlustrations, icons, PSD and photos for use in websites, banners etc.
+    https://www.freepik.com/
+
+83. Toy Faces
+    https://amritpaldesign.com/toy-faces
+
+84. IsometricLove
+    https://www.isometriclove.com/
+
+85. IsoFlat
+    https://isoflat.com/
+
+86. 3D-Shapes-Pack
+    https://dribbble.com/shots/3421366-3D-shapes-pack
 
 
 
@@ -1648,7 +1716,7 @@ API's
 
 Github Repositories
 
-1. Clean JavaScript Code => Clean-code-javascript is an awesome repository that helps you to write clean JavaScript code. 
+1. Clean Code JavaScript => Clean-code-javascript is an awesome repository that helps you to write clean JavaScript code. 
     It takes the concepts of Robert C.Martin's book and adopts them for JavaScript.
     https://github.com/ryanmcdermott/clean-code-javascript
 
@@ -1694,6 +1762,34 @@ Github Repositories
 
 14. Design Resources => The repo consist of many resources for developers like UI Libraries, stock assets, animation and much more.
     https://github.com/bradtraversy/design-resources-for-developers
+
+15. 33-js-concepts => This repository was created with the intention of helping developers master their concepts in JavaScript. 
+    It is not a requirement, but a guide for future studies.
+    https://github.com/leonardomso/33-js-concepts
+
+16. wtfjs => A list of funny and tricky JavaScript examples. This repo is a collection of those very special irregularities, 
+    inconsistencies and just plain painfully unintuitive moments for the language of the web.
+    https://github.com/denysdovhan/wtfjs
+
+17. JavaScript30 => A repo of awesome mini JavaScript projects all created by WES BOS, it's a part of the 30days Vanilla JavaScript
+    Challenge Series from WES BOS YouTube Channel.
+    https://github.com/wesbos/JavaScript30
+
+18. Front End Interview Handbook => Almost complete answers to "Front-end Job Interview Questions" which you can use to interview 
+    potential candidates, test yourself or completely ignore.
+    https://github.com/yangshun/front-end-interview-handbook
+
+19. JavaScript Questions => Basic to advanced: test how well you know JavaScript, refresh your knowledge a bit, or prepare for your 
+    coding interview.
+    https://github.com/lydiahallie/javascript-questions
+
+20. ES6 Cheatsheet => A cheatsheet containing ES2015 [ES6] tips, tricks, best practices and code snippet examples for your day to day workflow.
+    https://github.com/DrkSephy/es6-cheatsheet
+
+21. You Don't Need jQuery => Examples of how to do query, style, dom, ajax, event etc like jQuery with plain JavaScript.
+    https://github.com/nefe/You-Dont-Need-jQuery
+
+
 
 
 
@@ -1866,7 +1962,8 @@ Others
 41. Awwwards
     https://www.awwwards.com/
 
-42. Dribbble
+42. Dribbble => Dribbble is where designers gain inspiration, feedback, community, jobs and is your best resource to discover and 
+    connect with designers worldwide.
     https://dribbble.com/
 
 43. Behance
@@ -1926,8 +2023,12 @@ Others
     language into another.
     https://ide.onelang.io/
 
-59. 
+59. Smashing Magazine => Smashing Magazine delivers reliable, useful but most importantly practical articles to web designers and 
+    developers. They don't care about trends. They care about things that work or fail in actual projects.
+    https://www.smashingmagazine.com/
 
+60. Typing Test => Test your typing speed in 1 minute.
+    https://www.typingtest.com/
 
 
 
@@ -2203,7 +2304,22 @@ Responsive Screen Breakpoints CSS
 VS Code Extensions
 
 1. Debug Visualizer => It is a VS Code extension and allows you to Visualize data structures while debugging.
-2. VS Code Fabulous => Fabulous introduces a CSS properties sidebar into Visual Studio Code.
+2. Fabulous => Fabulous introduces a CSS properties sidebar into Visual Studio Code.
+3. Polacode => Polacode screenshots you code with the same theme you are using, so it is useful for sharing or for a tutorial.
+4. Regex Previewer => Regex Previewer Shows the current regular expression's matches in a side-by-side document.
+5. cdnjs => This extension uses the cdnjs.com API to search for libraries that are hosted on cdnjs.com.
+6. ES7 Snippets => It is a time saving extension for React devs, as it enables useful snippets of React, Redux, React Native and JS etc.
+7. Prettier => Prettier is a code formatter. It formats HTML, CSS, SCSS, JavaScript, JSON, GraphQL and many more.
+8. Live Share => It enables you to collaboratively edit and debug with others in real time, without needing to clone any repos.
+9. Live Server => It launches a local development server with live reload feature for static & dynamic pages.
+10. Debugger for Chrome
+11.VScode-styled-components
+12. Markdown PDF
+13. Auto Rename Tag
+14. Live Sass Compiler
+15. Bracket Pair Colorizer
+16. GitLens - Git Supercharged
+17. Thunder Client
 
 
 
