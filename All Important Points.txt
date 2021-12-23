@@ -198,7 +198,7 @@ CSS Tools & Libraries
 2. CSS Type Set
     http://csstypeset.com/
 
-3. Blobmaker
+3. Blobmaker => Blobmaker helps you to generate really gooey looking SVG blobs of various sizes, colors and shapes randomly.
     https://www.blobmaker.app/
 
 4. CSS / Fancy Border Radius Generator
@@ -452,7 +452,7 @@ CSS Tools & Libraries
     http://layerstyles.org/
     http://layerstyles.org/builder.html
 
-79. CSS Portal
+79. CSS Portal => CSS Portal is home to a large range of CSS generators, tools and resources.
     https://www.cssportal.com/
 
 
@@ -1028,6 +1028,31 @@ React JS & Libraries
     React and Material Design.
     https://marmelab.com/react-admin/
 
+51. Blueprint => A React-based UI toolkit for the web.
+    https://blueprintjs.com/
+
+52. MobX => This state management solution was created to make it impossible to build a messy state and thus create a bug-packed app.
+    MobX works in any ES5 environment, which includes browsers and Node.js.
+    https://mobx.js.org/installation.html
+
+53. Enzyme => Enzyme is a JavaScript library created to test React components. It was created by the AirBnB engineering team and released 
+    as an open source in 2015. The tool is meant to be intuitive in use and make it easier to assert, manipulate and traverse your
+    React components output.
+    https://enzymejs.github.io/enzyme/ 
+
+54. React Virtualized => React Virtualized library helps you improve the efficiency of the large list and tabular data rendering.
+    It helps to restrict the number of requests and DOM elements and enhance the overall performance of React apps.
+    https://www.npmjs.com/package/react-virtualized
+
+55. React DnD => React DnD is a library used to build complex drag and drop interfaces. There are plenty of great drag and drop
+    Libraries, but React DnD is unlike most of them as it's built on top of the modern HTML5 drag and drop API.
+    However, it has one major downside - it doesn't support touchscreens.
+    https://react-dnd.github.io/react-dnd/about
+
+56. Next JS => It renders pages via server side rendering, this requires a Node.js server to run applications and handle dynamic HTML rendering.
+    If you don't like that Next.js also supports SSG since version 9.3. What you use for data fetching is up to you, hell you can even use
+    GraphQL. Prominent uses of Next.js include TikTok, Hulu and Twitch mobile.
+
 
 
 
@@ -1241,7 +1266,7 @@ All in One => https://arpitbrandings.in/freeicons/
 19. Ouch
     https://icons8.com/illustrations
 
-20. Iconscout => Tons of resources, Cuated SVGs, Vector Icons, Illustrations, 3D Graphics and lot of animations.
+20. Iconscout => Tons of resources, Curated SVGs, Vector Icons, Illustrations, 3D Graphics and lot of animations.
     https://iconscout.com/
 
 21. Open Peeps
@@ -1526,6 +1551,18 @@ colors
 
 18. PatterIco
     https://patternico.com/
+
+19. Image Color Picker
+    https://imagecolorpicker.com/
+
+20. Color Hex
+    https://www.color-hex.com/
+
+21. Brand Colors
+    https://brandcolors.net/
+
+22. Flat UI Colors
+    https://flatuicolors.com/
 
 
 
@@ -2029,6 +2066,8 @@ Others
 
 60. Typing Test => Test your typing speed in 1 minute.
     https://www.typingtest.com/
+
+61. 
 
 
 
@@ -2666,6 +2705,9 @@ Mockups
 
 8. Mockups Design
     https://mockups-design.com/
+
+9. Screely => This helps you to create awesome and beautiful mockups of screenshots of websites.
+    https://www.screely.com/
 
 
 
