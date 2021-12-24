@@ -516,9 +516,8 @@ JavaScript & Libraries
     effort as possible.
     https://docs.afterglowplayer.com/
 
-17. Projekktor => Projekktor is a self-hosted, open source video (and audio) player for the web. It simplifies the way you implement and 
-    work with web video by solving tons of cross browser - and compatibility - issues, adding eye candy extremely powerful non standard 
-    features.
+17. Webpack JS => Here all the goodness you will find in webpack.
+    https://webpack.js.org/
 
 18. Simple Keyboard => An elegant, responsive virtual keyboard component that offers ready-to-use demos of every device.
     https://virtual-keyboard.js.org/
@@ -607,7 +606,7 @@ JavaScript & Libraries
     native-feeling drag and drop behaviour to your web apps.
     https://shopify.github.io/draggable/
 
-41. Cleave JS => Cleave JS help you to format input text content automatically.
+41. Cleave JS => Cleave JS help you to format input text content automatically. Format your input text content when you are typing.
     https://nosir.github.io/cleave.js/
 
 42. Pick A Date JS => Lightweight plugin for date selection with multi-language support.
@@ -616,7 +615,8 @@ JavaScript & Libraries
 43. Fine Uploader JS => Multiple file upload plugin with progress bar and drag-and-drop feature.
     https://fineuploader.com/
 
-44. Parsley JS => Validate your form without writing single line of JavaScript.
+44. Parsley JS => Validate your form without writing single line of JavaScript. It is the ultimate JavaScript form validation library.
+    Validating forms frontend have never been so powerful and easy.
     https://parsleyjs.org/
 
 45. Selectize JS => The hybrid of a textbox and select box.
@@ -803,6 +803,39 @@ JavaScript & Libraries
 
 100. Popmotion Pure JS
     https://popmotion.io/pure/
+
+101. Reveal JS => Reveal.js is an open source HTML presentation framework. It's a tool that enables anyone with a web browser to create 
+    fully-featured and beautiful presentations for free.
+    https://revealjs.com/
+
+102. Uppy => Uppy fetches files locally and from remote places like Dropbox or Instagram. With its seamless integration, reliability and 
+    ease of use, Uppy is truly your best friend in file uploading.
+    https://uppy.io/
+
+103. Impress JS => Impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and 
+    inspired by the idea behind prezi.com.
+    https://impress.js.org/#/bored
+
+104. jsPDF => The leading HTML5 client solution for generating PDFs. Perfect for event tickets, reports, certificates, you name it!
+    https://parall.ax/products/jspdf
+
+105. Intro JS => Introduce users to your product. Intro.js is a lightweight library for creating step-by-step customer onboarding.
+    https://introjs.com/
+
+106. MediaElement JS => It has a customizable content library that is accommodative of multiple formats of data files to be uploaded and
+    Streamed.
+    https://www.mediaelementjs.com/
+
+107. jPlayer JS
+    https://jplayer.org/
+
+108. Quill JS => Quill is a free, open source WYSIWYG editor built for the modern web. With its modular architecture and expressive API, 
+    it is completely customizable to fit any need.
+    https://quilljs.com/
+
+109. Filepond => A JavaScript library that can upload anything you throw at it, optimizes images for faster uploads, and offers a great, 
+    accessible, silky smooth user experience.
+    https://pqina.nl/filepond/
 
 
 
@@ -1153,6 +1186,10 @@ Vanilla JS
 4. Lax JS => Simple & lightweight (<4KB gzipped) vanilla JavaScript plugin to create smooth & beautiful animations when you scroll.
     https://github.com/alexfoxy/lax.js
 
+5. Vanilla JS Datepicker => A vanilla JavaScript remake of bootstrap-datepicker for Bulma and other CSS frameworks. It can work either
+    standalone or with CSS framework.
+    https://mymth.github.io/vanillajs-datepicker/#/
+
 
 
 
@@ -1482,6 +1519,9 @@ All in One => https://arpitbrandings.in/freeicons/
 86. 3D-Shapes-Pack
     https://dribbble.com/shots/3421366-3D-shapes-pack
 
+87. Logo Crunch => Logo Crunch is a logotype maker that specializes in creating beautiful responsive graphics.
+    https://brandmark.io/logo-crunch/
+
 
 
 
@@ -1576,10 +1616,12 @@ API's
 2. NASA API => NASA APIs gives you access to different type of data about astronomy, Space weather, Moon, Mars and much more.
     https://api.nasa.gov/
 
-3. MovieDB API => It's very useful API that allow you to fetch data about movie actors, TV shows and much more.
+3. MovieDB API => It's very useful API that allow you to fetch data about movie actors, TV shows and much more. In this movie APIs, we get the 
+    top movie list, thumbnail of the movie, an overview of movie, rating of movies.
     https://www.themoviedb.org/
-    https://developers.themoviedb.org/3/getting-started/introduction
+    https://developers.themoviedb.org
     https://www.themoviedb.org/documentation/api
+    https://developers.themoviedb.org/4/getting-started/authorization
 
 4. Count API => The Count API gives you the ability to create numeric counters and track the number of times a page was visited.
     https://countapi.xyz/
@@ -1611,7 +1653,7 @@ API's
     https://removal.ai/api-documentation/
     https://removal.ai/services/marketing/
 
-13. Random Jokes API => The random jokes API allows you to fetch random jokes data in an easy way using Fetch, Aax XHR and etc.
+13. Random Jokes API => The random jokes API allows you to fetch random jokes data in an easy way using Fetch, Ajax XHR and etc.
     https://icanhazdadjoke.com/api
 
 14. Marvel API => The Marvel Comics API allows developers everywhere to access information about Marvel's vast library of 
@@ -1621,8 +1663,8 @@ API's
 15. Breaking bad quotes API => A free API to retrieve some quotes of Breaking Bad, bitch!
     https://breakingbadquotes.xyz/
 
-16. The Meal API => The meal API gives you access to random meal data to use it in your application. This API contains all the meal categories 
-    with images, ingredients, videos, the country of each meal and many more features.
+16. The Meal API / Food API => The meal API gives you access to random meal data to use it in your application. This API contains all 
+    the meal categories with images, ingredients, videos, the country of each meal and many more features.
     https://www.themealdb.com/
     https://www.themealdb.com/api.php
 
@@ -2179,6 +2221,33 @@ websites
 19. JavaScript Tutorial => JavaScript Tutorial provides you with many practical tutorials that help you learn JavaScript from scratch quickly and effectively.
     https://www.javascripttutorial.net/
 
+20. Wedding websites
+21. E-commerce websites
+22. Blog websites
+23. Magazine websites
+24. Portfolio websites
+25. Landing page websites
+26. Social media websites
+27. Directory and contact websites
+28. JavaScript Info 
+    https://javascript.info/
+
+29. Khan Academy
+    https://www.khanacademy.org/
+
+30. Coursera
+    https://www.coursera.org/in
+
+31. Amigos Code
+    https://amigoscode.com/
+
+32. Clever Programmer
+    https://www.cleverprogrammer.com/
+
+33. w3resource
+    https://www.w3resource.com/
+
+
 
 
 
@@ -2370,6 +2439,23 @@ Chrome Extensions
     https://csspeeper.com/
     https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk
 
+2. Font Picker => A simple extension to identify font and its details from any website. Just right click on any text and grab the font details.
+    https://chrome.google.com/webstore/detail/font-picker/mmjbimgpcbaegjiieojddickpjbdkeej  
+
+3. Dimensions => Perfect extension if you want to measure distances between elements on a website.
+    https://chrome.google.com/webstore/detail/dimensions/baocaagndhipibgklemoalmkljaimfdj?hl=en
+
+4. Wappalyzer => It is a technology profiler that shows you what websites are built with. It uncovers more tons of technologies in dozens of
+    categories such as programming languages, analytics, marketing tools, payment processors, CRM, CDN and others.
+    https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en
+
+5. React Developer Tools => A no-brainer if you're working with React. This extension allows you to inspect the React component 
+    hierarchies in the Chrome Developer Tools.
+    https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
+
+6. Responsive Viewer => This extension shows multiple screens in one view that allows will developers to test multiple screens while
+    developing responsive websites / applications.
+
 
 
 
@@ -2532,7 +2618,7 @@ Navigation Menu Projects
 
 
 
-Remote Jobs
+Remote Jobs / Jobs
 
 1. We Work Remotely
     https://weworkremotely.com/
@@ -2548,6 +2634,7 @@ Remote Jobs
 
 5. Remote
     https://remote.co/
+    https://remoteok.com/
 
 6. Fiverr
     https://www.fiverr.com/
@@ -2561,6 +2648,35 @@ Remote Jobs
 9. Freelancer
     https://www.freelancer.in/
     https://www.freelancer.com/jobs/
+
+10. Github
+    https://jobs.github.com 
+    https://github.blog/changelog/2021-04-19-deprecation-notice-github-jobs-site/
+
+11. Glassdoor
+    https://www.glassdoor.co.in/index.htm
+
+12. Indeed
+    https://in.indeed.com/
+
+13. Monster
+    https://www.monsterindia.com/
+
+14. Linkedin
+    https://in.linkedin.com/
+    https://www.linkedin.com/
+
+15. Product Hunt
+    https://www.producthunt.com/jobs
+
+16. Angel 
+    https://angel.co/jobs
+
+17. Dice
+    https://www.dice.com/
+
+18. Stack Overflow
+    https://stackoverflow.com/jobs
 
 
 
@@ -2675,6 +2791,12 @@ Movies
 18. The Founder => This movie doesn't involve a programmer but is highly recommended if you want to start your first startup.
 19. The Great Hack => We end up rooting for ourselves, and the long odds of not being one of the fooled, the foiled and the exploited, 
     unmindful victims of "psy-ops" warfare.
+20. BlackHat
+21. Untraceable
+22. Eagle Eye
+23. The Matrix
+24. Cybergeddon
+
 
 
 
@@ -2708,6 +2830,30 @@ Mockups
 
 9. Screely => This helps you to create awesome and beautiful mockups of screenshots of websites.
     https://www.screely.com/
+
+
+
+
+
+
+
+Players
+
+1. Flow Player => Flow Player is a video player for Flash Video in FLV format. It provides an easy way to embed video in websites.
+    https://flowplayer.com/
+
+2. VPlayed => A HLS-built Buffer-free Player Ensures High Quality Viewing Experience Across All Devices.
+    https://www.vplayed.com/
+
+3. Elmedia Player => A free multi-functional video player for Mac with a full set of Streaming features. Watch videos and Stream them.
+    https://www.elmedia-video-player.com/
+
+4. JWPlayer => It is a fully customizable, responsive HTML5 video player. Features : from analytics to accessibility and full HTML5 video
+    controls.
+    https://www.jwplayer.com/
+
+5. Kaltura
+    https://corp.kaltura.com/
 
 
 
