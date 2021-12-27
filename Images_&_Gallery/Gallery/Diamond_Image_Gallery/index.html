@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Diamond Shaped Image Gallery</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            .main-nav {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0;
+                padding: 0;
+                width: 600px;
+                height: 150px;
+            }
+            .main-nav li {
+                list-style: none;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background: #000;
+                transform: rotate(45deg);
+                transition: 0.5s;
+                margin: -100px;
+                overflow: hidden;
+                opacity: 0.6;
+            }
+            .main-nav li:hover {
+                opacity: 1;
+            }
+            .main-nav li.item1 {
+                top: 0;
+                left: 0;
+            }
+            .main-nav li.item2 {
+                bottom: 0;
+                left: 25%;
+            }
+            .main-nav li.item3 {
+                top: 0;
+                left: 50%;
+            }
+            .main-nav li.item4 {
+                bottom: 0;
+                left: 75%;
+            }
+            .main-nav li.item5 {
+                top: 0;
+                left: 100%;
+            }
+            .main-nav li .bg {
+                width: 100%;
+                height: 100%;
+                transform: scale(1.1);
+            }
+            .main-nav li.item1 .bg {
+                background: url(https://images.unsplash.com/photo-1636900741619-97032a3d4794?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1084&q=80);
+                background-size: cover;
+                background-position: center;
+            }
+            .main-nav li.item2 .bg {
+                background: url(https://images.unsplash.com/photo-1607707053756-210e12af7ab3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+                background-size: cover;
+                background-position: center;
+            }
+            .main-nav li.item3 .bg {
+                background: url(https://images.unsplash.com/photo-1631112214068-25d3f2acee1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+                background-size: cover;
+                background-position: center;
+            }
+            .main-nav li.item4 .bg {
+                background: url(https://images.unsplash.com/photo-1628143651406-04c07dbde4be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+                background-size: cover;
+                background-position: center;
+            }
+            .main-nav li.item5 .bg {
+                background: url(https://images.unsplash.com/photo-1622645615869-9c144a19d7e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=413&q=80);
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <ul class="main-nav">
+            <li class="item1">
+                <div class="bg"></div>
+            </li>
+            <li class="item2">
+                <div class="bg"></div>
+            </li>
+            <li class="item3">
+                <div class="bg"></div>
+            </li>
+            <li class="item4">
+                <div class="bg"></div>
+            </li>
+            <li class="item5">
+                <div class="bg"></div>
+            </li>
+        </ul>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

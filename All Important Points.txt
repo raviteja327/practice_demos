@@ -853,8 +853,8 @@ JavaScript Carousel Libraries
     It is small in size, less than 29KB.
     https://splidejs.com/
 
-3. Swiper JS => Swiper is one of the most modern free mobile ready touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used 
-    in mobile websites, mobile web apps and mobile native / hybrid apps.
+3. Swiper JS => Swiper is one of the most modern free mobile ready touch slider with hardware accelerated transitions and amazing 
+    native behavior. It is intended to be used in mobile websites, mobile web apps and mobile native / hybrid apps.
     https://swiperjs.com/
 
 4. Glider JS => A blazingly fast, crazy small, fully responsive, mobile-friendly, dependency free, native scrolling list with paging controls.
@@ -872,20 +872,21 @@ JavaScript Carousel Libraries
     such as captions, thumbnails, zooming and more.
     https://fslightbox.com/ 
 
-8. Flickity => Flickity is a useful library that allows you to create touch, responsive, flickable carousels. Flickity can be used with vanilla.js.
+8. Flickity => Flickity is a useful library that allows you to create touch, responsive, flickable carousels. 
+    Flickity can be used with vanilla.js.
     https://flickity.metafizzy.co/
     
-9. Slidr JS => Slidr.js is a very simple, lightweight JavaScript library for adding slide transitions to your page. It is totally agnostic, which means that doesn't rely on
-    another library to work.
+9. Slidr JS => Slidr.js is a very simple, lightweight JavaScript library for adding slide transitions to your page. 
+    It is totally agnostic, which means that doesn't rely on another library to work.
     http://bchanx.com/slidr
     https://github.com/bchanx/slidr
 
-10. Sly => Sly is a library for one-directional scrolling with item-based navigation support. The main features of Sly are mouse wheel scrolling, scrollbar 
-    (dragging the handler or clicking on scrollbar), pages bar, various navigation butttons.
+10. Sly => Sly is a library for one-directional scrolling with item-based navigation support. The main features of Sly are 
+    mouse wheel scrolling, scrollbar (dragging the handler or clicking on scrollbar), pages bar, various navigation butttons.
     https://darsa.in/sly/
 
-11. Tiny Slider => Tiny Slider is a vanilla JavaScript slider that can be used for all purposes. It was inspired by Owl Carousel and works on Firefox 12+, Chrome 15+,
-    Safari 4+, Opera 12.1+, IE 8+.
+11. Tiny Slider => Tiny Slider is a vanilla JavaScript slider that can be used for all purposes. 
+    It was inspired by Owl Carousel and works on Firefox 12+, Chrome 15+, Safari 4+, Opera 12.1+, IE 8+.
     https://ganlanyuan.github.io/tiny-slider/
     https://ganlanyuan.github.io/tiny-slider/demo/
     https://github.com/ganlanyuan/tiny-slider
@@ -1998,23 +1999,18 @@ Others
 27. Bit Degree
     https://www.bitdegree.org/
 
-28. Play Code
-    https://playcode.io/
+28. 
 
-29. StackBlitz
-    https://stackblitz.com/
+29. 
 
-30. Code Sandbox
-    https://codesandbox.io/
+30. 
 
-31. JSFiddle
-    https://jsfiddle.net/
+31. 
 
 32. LiveWeave
     https://liveweave.com/
 
-33. JS Bin
-    https://jsbin.com/?html,output
+33. 
 
 34. File Pizza => Peer-to-Peer file transfer over WebRTC without any middleman.
     https://file.pizza/
@@ -2614,6 +2610,35 @@ Navigation Menu Projects
 
 5. Full-screen Menu Overlay => A full-reveal menu, showcasing your manufacturer and website navigation.
     https://codepen.io/ettrics/pen/JoaaxW
+
+
+
+IDEs
+
+1. Code Share => Code Share is an online code editor for interviews, troubleshooting, teaching & more.
+    https://codeshare.io/
+
+2. Codepen => Codepen is a social development environment for front-end designers and developers. You can build , deploy and show your
+    work to others.
+    https://codepen.io/
+
+3. JSFiddle => JSFiddle is an IDE service and online community for testing and showcasing user-created and collaborational HTML, CSS 
+    and JavaScript fiddles.
+    https://jsfiddle.net/
+
+4. JS Bin => JS Bin is ultimately a code sharing site. Along with the code, the complete output of the code is also shared with other
+    developers, colleagues and / or students.
+    https://jsbin.com/?html,output
+
+5. StackBlitz => Create, edit and deploy fullstack apps. You can create Angular and React projects that are immediately online and 
+    shareable via link.
+    https://stackblitz.com/
+
+6. Play Code => Simple JavaScript playground with-time result view and a console.
+    https://playcode.io/
+
+7. Code Sandbox => Create, Share and get feedback with collaborative Sandboxes for rapid web development.
+    https://codesandbox.io/
 
 
 
