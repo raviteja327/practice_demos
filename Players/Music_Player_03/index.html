@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player In HTML, CSS & JavaScript</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;800&display=swap');
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            height: 100%;
+            background-color: #f5e0e5;
+            background-image: linear-gradient(45deg, #ff9b9c 0%, #ffd4a7 100%);
+            position: relative;
+            font-family: "Roboto", sans-serif;
+        }
+        *::selection {
+            background-color: unset;
+        }
+
+        .player {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 330px;
+            height: 530px;
+            border-radius: 15px;
+            background-color: #fff6e7;
+            box-shadow: 0 15px 20px 0 #c58371;
+        }
+        .player input[type=range] {
+            -webkit-appearance: none !important;
+            margin: 0px;
+            padding: 0px;
+            background: #f2eae4;
+            height: 5px;
+            width: 150px;
+            outline: none;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .player input[type=range]::-ms-fill-lower {
+            background: #f2eae4;
+        }
+        .player input[type=range]::-ms-fill-upper {
+            background: #f2eae4;
+        }
+        .player input[type=range]::-moz-range-track {
+            border: none;
+            background: #f2eae4;
+        }
+        .player input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none !important;
+            background: #ff3677;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            box-shadow: -100vw 0 0 100vw #f7d9b9;
+        }
+        .player input[type=range]::-moz-range-thumb {
+            background: #ff3677;
+            height: 8px;
+            width: 8px;
+            border-radius: 100%;
+        }
+        .player input[type=range]::-ms-thumb {
+            -webkit-appearance: none !important;
+            background: #ff3677;
+            height: 8px;
+            width: 8px;
+            border-radius: 100%;
+        }
+        .player .cover {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            left: 50%;
+            top: 50px;
+            transform: translateX(-50%);
+            box-shadow: 0 5px 20px 0 #d56c006d;
+        }
+        .player .cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .player .info {
+            position: absolute;
+            left: 50%;
+            top: 240px;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        .player .info .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 2px;
+        }
+        .player .info .singer {
+            font-size: 12px;
+            color: #72646f;
+        }
+        .player .btn-box {
+            position: absolute;
+            top: 330px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .player .btn-box i {
+            font-size: 24px;
+            color: #72646f;
+            margin: 0 30px;
+            cursor: pointer;
+        }
+        .player .btn-box i.active {
+            color: #ff3677;
+        }
+        .player .volume-box {
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 295px;
+            transform: translateX(-50%);
+            z-index: 1;
+            padding: 0 20px;
+        }
+        .player .volume-box .volume-down {
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #72646f;
+        }
+        .player .volume-box .volume-up {
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #72646f;
+        }
+        .player .volume-box .volume-up::selection {
+            background-color: unset;
+        }
+        .player .volume-box input[type=range] {
+            height: 5px;
+            width: 150px;
+            margin: 0 0 15px 0;
+        }
+        .player .volume-box.active {
+            display: block;
+        }
+        .player .music-box {
+            position: absolute;
+            left: 50%;
+            top: 385px;
+            transform: translateX(-50%);
+        }
+        .player .music-box input[type=range] {
+            height: 5px;
+            width: 230px;
+            margin: 0 0 10px 0;
+        }
+        .player .music-box input[type=range]::-webkit-slider-thumb {
+            height: 5px;
+            width: 7px;
+        }
+        .player .music-box .current-time {
+            position: absolute;
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            color: #72646f;
+        }
+        .player .music-box .duration {
+            position: absolute;
+            right: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            color: #72646f;
+        }
+        .player .music-box .play,
+        .player .music-box .pause {
+            position: absolute;
+            left: 50%;
+            top: 55px;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #fff6e7;
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+        .player .music-box .play i,
+        .player .music-box .pause i {
+            font-size: 36px;
+            color: #72646f;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-48%, -50%);
+        }
+        .player .music-box .pause i {
+            font-size: 32px;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="player">
+        <div class="cover">
+            <img src="https://media.timeout.com/images/105805144/750/422/image.jpg" alt="">
+        </div>
+        <div class="info">
+            <div class="title">Stay</div>
+            <div class="singer">Trending Music 2021</div>
+        </div>
+        <div class="volume-box">
+            <span class="volume-down"><i class="material-icons">remove</i></span>
+            <input type="range" class="volume-range" step="1" value="80" min="0" max="100"
+                oninput="music.volume = this.value/100">
+            <span class="volume-up"><i class="material-icons">add</i></span>
+        </div>
+        <div class="btn-box">
+            <i class="material-icons repeat" onclick="handleRepeat()">repeat</i>
+            <i class="material-icons favorite active" onclick="handleFavorite()">favorite</i>
+            <i class="material-icons volume" onclick="handleVolume()">volume_up</i>
+        </div>
+        <div class="music-box">
+            <input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+            <audio class="music-element">
+                <source src="https://hosseinghanbari.ir/other/music-player/autumn.mp3" type="audio/mp3">
+            </audio>
+            <span class="current-time">0:0</span><span class="duration">0:0</span>
+            <span class="play" onclick="handlePlay()">
+                <i class="material-icons">play_arrow</i>
+            </span>
+        </div>
+    </div>
+
+    <script>
+        // player
+        var music = document.querySelector('.music-element')
+        var playBtn = document.querySelector('.play')
+        var seekbar = document.querySelector('.seekbar')
+        var currentTime = document.querySelector('.current-time')
+        var duration = document.querySelector('.duration')
+
+        function handlePlay() {
+            if (music.paused) {
+                music.play();
+                playBtn.className = 'pause'
+                playBtn.innerHTML = '<i class="material-icons">pause</i>'
+            } else {
+                music.pause();
+                playBtn.className = 'play'
+                playBtn.innerHTML = '<i class="material-icons">play_arrow</i>'
+            }
+            music.addEventListener('ended', function () {
+                playBtn.className = 'play'
+                playBtn.innerHTML = '<i class="material-icons">play_arrow</i>'
+                music.currentTime = 0
+            });
+        }
+
+        music.onloadeddata = function () {
+            seekbar.max = music.duration
+            var ds = parseInt(music.duration % 60)
+            var dm = parseInt((music.duration / 60) % 60)
+            duration.innerHTML = dm + ':' + ds
+        }
+
+        music.ontimeupdate = function () { seekbar.value = music.currentTime }
+        handleSeekBar = function () { music.currentTime = seekbar.value }
+        music.addEventListener('timeupdate', function () {
+            var cs = parseInt(music.currentTime % 60)
+            var cm = parseInt((music.currentTime / 60) % 60)
+            currentTime.innerHTML = cm + ':' + cs
+        }, false)
+
+        // like
+        var favIcon = document.querySelector('.favorite')
+        function handleFavorite() {
+            favIcon.classList.toggle('active');
+        }
+
+        // repeat
+        var repIcon = document.querySelector('.repeat')
+        function handleRepeat() {
+            if (music.loop == true) {
+                music.loop = false
+                repIcon.classList.toggle('active')
+            }
+            else {
+                music.loop = true
+                repIcon.classList.toggle('active')
+            }
+        }
+
+        // volume
+        var volIcon = document.querySelector('.volume')
+        var volBox = document.querySelector('.volume-box')
+        var volumeRange = document.querySelector('.volume-range')
+        var volumeDown = document.querySelector('.volume-down')
+        var volumeUp = document.querySelector('.volume-up')
+
+        function handleVolume() {
+            volIcon.classList.toggle('active')
+            volBox.classList.toggle('active')
+        }
+
+        volumeDown.addEventListener('click', handleVolumeDown);
+        volumeUp.addEventListener('click', handleVolumeUp);
+
+        function handleVolumeDown() {
+            volumeRange.value = Number(volumeRange.value) - 20
+            music.volume = volumeRange.value / 100
+        }
+        function handleVolumeUp() {
+            volumeRange.value = Number(volumeRange.value) + 20
+            music.volume = volumeRange.value / 100
+        }
+    </script>
+</body>
+</html>
