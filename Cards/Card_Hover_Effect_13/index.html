@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <title>Mouse Out Animation</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            width: 250px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(54, 54, 54);
+            font-size: 2.5em;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.089);
+            cursor: pointer;
+            transition: color 0.4s;
+            position: relative;
+        }
+        .card:hover {
+            color: white;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #FF5677;
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: transform 0.4s;
+            z-index: -1;
+        }
+        .card:hover::before {
+            transform: scaleY(1);
+            transform-origin: top;
+        }
+    </style>
+</head>
+<body>
+
+    
+        <div class="card">
+            Hover Me!
+        </div>
+    
+    
+</body>
+</html>
