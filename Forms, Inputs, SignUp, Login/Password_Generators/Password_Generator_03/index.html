@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random Password</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+        html,
+        body {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter", sans-serif;
+            background: #161b22;
+        }
+
+        .form {
+            display: grid;
+            grid-template-columns: 100%;
+            gap: 1rem;
+        }
+        button {
+            font-family: "Inter", sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            user-select: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            appearance: none;
+            border: none;
+            outline: none;
+            background: #58a6ff;
+            color: #0d1117;
+            border: 2px solid #4d84c3;
+            border-radius: 0.375rem;
+            height: 2.5rem;
+            min-width: 6rem;
+            padding: 0 1rem;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        button:hover {
+            background: #4d84c3;
+        }
+        button:active {
+            background: #315885;
+        }
+        button:focus {
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+        }
+        .field {
+            display: flex;
+            flex-direction: column;
+            min-width: 20rem;
+        }
+        .field__label {
+            color: #c9d1d9;
+            margin-bottom: 0.5rem;
+            user-select: none;
+        }
+        .field__input {
+            font-family: "Inter", sans-serif;
+            font-size: 1rem;
+            color: #c9d1d9;
+            background: #161b22;
+            border: 2px solid #30363d;
+            border-radius: 0.375rem;
+            outline: none;
+            padding: 0 1rem;
+            height: 2.5rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .field__input:focus {
+            border-color: #58a6ff;
+            box-shadow: 0 0 0 1px #58a6ff;
+        }
+        .field:not(:focus-within):hover .field__input {
+            border-color: #949aa2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form">
+        <div class="field">
+            <label class="field__label"> Generated Password </label>
+            <input class="field__input" type="text" disabled value="No Password generated" />
+        </div>
+
+        <button>Generate Random Password</button>
+    </div>
+    
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+    <script>
+        function generatePassword(length = 16) {
+            const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#!?";
+            let password = "";
+
+            for (let index = 0; index < length; index++) {
+                const randomValueFromCharset = charset[Math.floor(Math.random() * charset.length)];
+                password += randomValueFromCharset;
+            }
+
+            return password;
+        }
+
+        const button = document.querySelector("button");
+        const input = document.querySelector("input");
+
+        button.addEventListener("click", () => {
+            input.value = generatePassword();
+        });
+    </script>
+</body>
+
+</html>

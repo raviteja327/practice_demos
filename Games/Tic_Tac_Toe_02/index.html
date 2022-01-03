@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <title>Tic Tac Toe</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            font-weight: 800;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            height: 65px;
+            font-size: 20px;
+            font-family: "Roboto", sans-serif;
+            background: #111;
+            color: #fff;
+        }
+        nav ul {
+            list-style: none;
+        }
+        .gameContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 10vw);
+            grid-template-rows: repeat(3, 10vw);
+            font-family: "Roboto", sans-serif;
+            width: 50%;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            font-family: "Roboto", sans-serif;
+            border: 1px solid #111;
+            font-size: 8vw;
+            cursor: pointer;
+        }
+        .box:hover {
+            background: lightblue;
+        }
+        .gameinfo {
+            padding: 0 34px;
+            font-weight: 800;
+            font-family: "Roboto", sans-serif;
+        }
+        img {
+            width: 0;
+            transition: 0.5s ease-in-out;
+        }
+        .imgwidth {
+            width: 250px;
+        }
+        .br-0 {
+            border-right: 0;
+        }
+        .bl-0 {
+            border-left: 0;
+        }
+        .bb-0 {
+            border-bottom: 0;
+        }
+        .bt-0 {
+            border-top: 0;
+        }
+        .reset-btn {
+            width: 80px;
+            margin: 15px;
+            font-size: 20px;
+            font-family: "Baloo Bhaina 2", cursive;
+            background-color: lightblue;
+        }
+        .line {
+            height: 5px;
+            width: 0;
+            position: absolute;
+            background-color: #911d91;
+            transition: width 0.5s ease-in-out;
+        }
+        .linewidth {
+            height: 5px;
+            width: calc(1rem + 20vw);
+            position: absolute;
+            background-color: #911d91;
+            transition: width 0.5s ease-in-out;
+        }
+        .linewidthremove {
+            width: 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .gameContainer {
+                display: block;
+                margin-top: 30%;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .container {
+                margin-left: 12.5%;
+                grid-template-columns: repeat(3, 20vw);
+                grid-template-rows: repeat(3, 20vw);
+            }
+            .gameinfo {
+                padding: 85px 50px;
+                text-align: center;
+            }
+            .linewidth {
+                margin: auto;
+                width: calc(0em + 50vw);
+            }
+            .imgbox {
+                margin-top: 20px;
+            }
+            .imgwidth {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>My tic tac toe</li>
+        </ul>
+    </nav>
+    <div class="gameContainer">
+
+        <div class="container">
+            <div class="line"></div>
+            <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
+            <div class="box bt-0"><span class="boxtext"></span></div>
+            <div class="box bt-0 br-0"><span class="boxtext"></span></div>
+            <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box br-0"><span class="boxtext"></span></div>
+            <div class="box bb-0 bl-0"><span class="boxtext"></span></div>
+            <div class="box bb-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bb-0"><span class="boxtext"></span></div>
+        </div>
+
+        <div class="gameinfo">
+            <h1>Welcome to tic tac toe</h1>
+            <div>
+                <span id="info" class="info">Turn for x</span>
+                <button class="reset-btn" id="reset">Reset</button>
+            </div>
+            <div class="imgbox">
+                <img src="win.gif" alt="win gif" />
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        // console.log("welcome to tic tac toe");
+
+        let turn = "x";
+        let gameOver = false;
+
+        // function to change the turn
+        const changeTurn = () => {
+        return turn === "x" ? "0" : "x";
+        };
+
+        // function to check win
+        const checkWin = () => {
+            let boxtext = document.getElementsByClassName("boxtext");
+            // giving a possibility of wining & transforming position
+            let win = [
+                [0, 1, 2, 5, 5, 0],
+                [3, 4, 5, 5, 15, 0],
+                [6, 7, 8, 5, 25, 0],
+                [0, 3, 6, -5, 15, 90],
+                [1, 4, 7, 5, 15, 90],
+                [2, 5, 8, 15, 15, 90],
+                [0, 4, 8, 5, 15, 45],
+                [2, 4, 6, 5, 15, 135],
+            ];
+
+            win.forEach((e) => {
+                // condition for checking if 0 === 1 && 2 === 1 && 0 is not equal to empty
+                if (
+                boxtext[e[0]].innerText === boxtext[e[1]].innerText &&
+                boxtext[e[2]].innerText === boxtext[e[1]].innerText &&
+                boxtext[e[0]].innerText !== ""
+                ) {
+                // if condition pass then add e[0] it could be x or o + "won"
+                document.getElementById("info").innerText =
+                    boxtext[e[0]].innerText + " won ";
+                // game over should be true
+                gameOver = true;
+                // selecting a img box and giving width to img for showing winning image after won
+                document
+                    .querySelector(".imgbox")
+                    .getElementsByTagName("img")[0]
+                    .classList.add("imgwidth");
+                /* document
+                    .querySelector(".imgbox")
+                    .getElementsByTagName("img")[0].style.width = "10rem"; */
+                // transforming a line based on winning position
+                document.querySelector(
+                    ".line"
+                ).style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;
+                // document.querySelector(".line").style.width = "calc(1rem + 20vw)";
+                document.querySelector(".line").classList.add("linewidth");
+                }
+            });
+        };
+
+        // game logic
+        let boxes = document.getElementsByClassName("box");
+        Array.from(boxes).forEach((element) => {
+            let boxtext = element.querySelector(".boxtext");
+            // adding click event listner to boxes
+            element.addEventListener("click", () => {
+                // if innerText of boxtext is empty then it would be equal to turn
+                if (boxtext.innerText === "") {
+                    boxtext.innerText = turn;
+                    // assign a turn to changeTurn function
+                    turn = changeTurn();
+                    checkWin();
+                    // if game is not over we should print "turn for" + (turn) we'll get value of turn from above function
+                    if (!gameOver) {
+                        document.getElementById("info").innerHTML = "Turn for " + turn;
+                    }
+                }
+            });
+        });
+
+        // reset button function
+        reset.addEventListener("click", () => {
+            // selecting all boxes using queryselectAll
+            let boxtext = document.querySelectorAll(".boxtext");
+            // clear each boxtext element to empty after clicking reset button
+            Array.from(boxtext).forEach((element) => {
+                element.innerText = "";
+            });
+            // after reset turn always would be equal to "x"
+            turn = "x";
+            gameOver = false;
+            // print "turn for" + turn = "x"
+            document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
+            // hiding winning image after reset by giving styling width 0
+            document
+                .querySelector(".imgbox")
+                .getElementsByTagName("img")[0]
+                .classList.remove("imgwidth");
+            /* document.querySelector(".imgbox").getElementsByTagName("img")[0].style.width =
+                "0"; */
+            // hiding line after reset by giving styling width 0
+            // document.querySelector(".line").style.width = "0";
+            document.querySelector(".line").classList.remove("linewidth");
+        });
+    </script>
+</body>
+
+</html>

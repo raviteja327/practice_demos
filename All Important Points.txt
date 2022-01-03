@@ -14,6 +14,18 @@ Useful Tools
 2. SCSS to CSS Convertor => Convert any SCSS code into CSS code easily.
     https://jsonformatter.org/scss-to-css
 
+3. Clean CSS => Clean CSS accepts a URL or pasted code snippet and offers a wide variety of treatments. You can choose from between
+    five different compressor settings that offer tradeoffs between readability and file size.
+    https://www.cleancss.com/
+
+4. Code Beautifier => Code Beautifier is a simple CSS cleanup tool with no frills or frivolous features. It accepts pasted or linked CSS,
+    and carefully cleans it up based on a practical array of options.
+    https://www.freeformatter.com/css-beautifier.html
+
+5. CSS Lint => CSS Lint offers a more instructive experience compared to other CSS Cleanup Tools.
+    CSS Lint gives you a concise explanation for each of its recommended changes.
+    http://csslint.net/
+
 
 
 
@@ -387,7 +399,7 @@ CSS Tools & Libraries
 58. Materialize => Materialize is a modern responsive CSS framework based on Material Design by Google.
     https://materializecss.com/
 
-59. CSS Layouts 
+59. CSS Layouts => Popular layouts and patterns made with CSS
     https://csslayout.io/
 
 60. Layout It
@@ -454,6 +466,10 @@ CSS Tools & Libraries
 
 79. CSS Portal => CSS Portal is home to a large range of CSS generators, tools and resources.
     https://www.cssportal.com/
+
+80. Stylie => Stylie is different from a lot of CSS editors out there in regards to animation, Stylie is one of a kind.
+    To use it, you simply configure your animation, tweak the settings, and then grab the CSS code.
+    https://jeremyckahn.github.io/stylie/
 
 
 
@@ -1543,7 +1559,7 @@ colors
 2. Hex Invaders => Hex invaders is a fun way to learn and understand what hex codes are and how they work.
     http://www.hexinvaders.com/
 
-3. Paletton => Beautiful CSS color palette generator.
+3. Paletton / Color Scheme Designer => Beautiful CSS color palette generator.
     https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
 
 4. CSS Gradient => As a free CSS Gradient generator tool, this website lets you create a colorful gradient background for your website, 
@@ -2257,7 +2273,8 @@ Code Snippets
 2. Code My UI
     https://codemyui.com/
 
-3. CSS Desk
+3. CSS Desk => Focusing only on HTML and CSS, this editor is great for the beginner. You are able to see what your code is doing by
+    using the live preview window, which makes spotting mistakes easier.
     http://www.cssdesk.com/
 
 4. Free Frontend => Get all type of user interface design for free.
