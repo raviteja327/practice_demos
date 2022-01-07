@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Social Media Icons With Add Button</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 60%;
+        }
+
+        .container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            height: 100px;
+            width: 100px;
+            background: #002651;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .fa-plus {
+            margin-top: 25px;
+            font-size: 50px;
+            display: block;
+            color: white;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+        .menu_group {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            height: 100px;
+            width: 100px;
+            background: #775ada;
+            border-radius: 50%;
+            border-color: #581b98;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.7s;
+        }
+        .menu_group a {
+            position: absolute;
+            display: inline-block;
+            font-size: 12px;
+            color: #364f6b;
+        }
+        a:hover {
+            color: #2c3e50;
+        }
+        a:nth-child(1) {
+            top: 6px;
+            left: 45px;
+        }
+        a:nth-child(2) {
+            top: 24px;
+            left: 77px;
+        }
+        a:nth-child(3) {
+            top: 58px;
+            left: 76px;
+        }
+        a:nth-child(4) {
+            top: 78px;
+            left: 42px;
+        }
+        a:nth-child(5) {
+            top: 58px;
+            left: 10px;
+        }
+        a:nth-child(6) {
+            top: 23px;
+            left: 12px;
+        }
+        img {
+            height: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" onclick="expand()">
+        <i class="fa fa-plus" id="plus"></i>
+    </div>
+
+    <div class="menu_group" id="menu">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt=""></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt=""></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png" alt=""></a>
+        <a href="#"><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail.max-1100x1100.png" alt=""></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png" alt=""></a>
+        <a href="#"><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt=""></a>
+    </div>
+
+    <script>
+        var menu = document.getElementById('menu')
+        var plus = document.getElementById('plus')
+        var abc = 0
+
+        function expand() {
+            if (abc == 0) {
+                menu.style.transform = 'scale(3)'
+                plus.style.transform = 'rotate(360deg)'
+                abc = 1
+            } else {
+                menu.style.transform = 'scale(0)'
+                plus.style.transform = 'rotate(0deg)'
+                abc = 0
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

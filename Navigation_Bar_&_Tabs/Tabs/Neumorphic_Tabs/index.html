@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Neumorphic Tabs</title>
+        <style>
+            /* Import Google Font */
+            @import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+
+            /* RESET */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            /* STYLING */
+            .container {
+                display: flex;
+                height: 100vh;
+                background-color: #f4f4f4;
+                color: #a2a2a2;
+                font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+            }
+            .darkmode .container {
+                background-color: #1A1B1F;
+                color: #8a8a8a;
+            }
+            .tabs-container { 
+                width: 540px;
+                max-width: 620px; 
+                min-width: 420px;
+                margin: auto;
+            }
+
+            /* Style the tabs */
+            .tabs {
+                margin-bottom: 28px; 
+                display: flex;
+                justify-content: space-between;
+            }
+            .tabs a {
+                cursor: pointer;
+                padding: 12px 24px;
+                width: 120px;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 18px;
+                transition: background 0.1s, color 0.1s;
+                background: linear-gradient(145deg, #ffffff, #dcdcdc);
+                box-shadow:  3px 3px 5px #bebebe, 
+                            -3px -3px 5px #ffffff;
+            }
+            .darkmode .tabs a {
+                background: linear-gradient(145deg, #1c1d21, #17181c);
+                box-shadow:  3px 3px 6px #101114, 
+                            -3px -3px 6px #24252a;
+            }
+
+            /* Change background color of tabs on hover */
+            .tabs a:hover {
+                background: linear-gradient(145deg, #f4f4f4, #cecece);
+                color: #888;
+            }
+            .darkmode .tabs a:hover {
+                background: #141414;
+                color: #bbb;
+            }
+
+            /* Styling for active tab */
+            .tabs a.active {
+                background-color: #f4f4f4;
+                color: #bdbdbd;
+                cursor: default;
+                padding: 14px 22px 10px 26px;
+                background: #f4f4f4;
+                box-shadow: inset 3px 3px 5px #cbcbcb, 
+                            inset -3px -3px 5px #ffffff;
+            }
+            .darkmode .tabs a.active {
+                background: #1A1B1F;
+                box-shadow: inset  3px 3px 6px #101114, 
+                            inset -3px -3px 6px #24252a; 
+                color: #6a6a6a;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+                padding: 46px;
+                min-height: 288px;
+                display: none;    
+                border-radius: 18px;
+                background: #f4f4f4;
+                box-shadow:  3px 3px 6px #bebebe, 
+                            -3px -3px 6px #ffffff;
+            }
+            .darkmode .tabcontent {
+                background: linear-gradient(145deg, #1c1d21, #17181c);
+                box-shadow:  3px 3px 6px #101114, 
+                            -3px -3px 6px #24252a;
+            }
+            .content .active {
+                display: block;
+            }
+            .tabcontent p {
+                margin-bottom: 12px;
+            }
+            .tabcontent p:last-child {
+                margin-bottom: 0;
+            }
+            .tabcontent .read-more-link a {
+                color: #626262;
+                text-decoration: none;
+                font-size: 0.85em;
+                font-weight: bold;
+            }
+            .darkmode .tabcontent .read-more-link a {
+                color: #d4d4d4;
+            }
+            .icon {
+                padding-left: 8px;
+                font-size: 16px;
+            }
+
+            /* THE DARKMODE SWITCH */ 
+            .dark-mode-switch {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+            }
+            .switch-label {
+                cursor: pointer;
+                font-size: 0.85em;
+            }
+
+            /* the box around the slider */
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 44px;
+                height: 22px;
+                margin-left: 4px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #1A1B1F;
+                transition: .2s;
+                box-shadow:  2px 2px 3px #ffffff, 
+                            -2px -2px 3px #bebebe;
+            }
+            .darkmode .slider {
+                box-shadow:  2px 2px 3px #34353a, 
+                            -2px -2px 3px #000104;
+            }
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 18px;
+                width: 18px;
+                left: 3px;
+                bottom: 2px;
+                background: #9294b8;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+            input:checked + .slider {
+                background-color: #f4f4f4;
+            }
+            input:checked + .slider:before {
+                transform: translateX(21px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 11px;
+            }
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+            /*==============================*/
+            .small-screen {
+                display: none;
+                background-color: #f4f4f4;
+                height: 100vh;
+                color: #a2a2a2;
+                font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+            }
+            .darkmode .small-screen {
+                background-color: #1A1B1F; 
+                color: #8a8a8a;
+            }
+            .small-screen-content {
+                width: 70%;
+                margin: auto;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .container {
+                    display: none;
+                }
+                .small-screen {
+                    display: flex;
+                }
+                .tabcontent {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div id="container" class="container">  
+            <div id="tabs" class="tabs-container">  
+                <div class="tabs">  
+                    <a id="tab1" data-tab="1" class="tab">Mercury</a>  
+                    <a id="tab2" data-tab="2" class="tab">Venus</a>  
+                    <a id="tab3" data-tab="3" class="tab">Earth</a>  
+                    <a id="tab4" data-tab="4" class="tab">Mars</a>  
+                </div>  
+                <div class="content">  
+                    <div id="tabcontent1" data-tab="1" class="tabcontent">  
+                        <p>Mercury is the smallest and innermost planet in the Solar System.</p>  
+                        <p>
+                            Its orbit around the Sun takes 87.97 days, the shortest of all the planets in the Solar System.
+                        </p>  
+                        <p>It is named after the Roman deity Mercury, the messenger of the gods.</p>  
+                        <p class="read-more-link">
+                            <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Learn more
+                                <span class="icon">➡️</span>
+                            </a>
+                        </p>  
+                    </div>  
+                    <div id="tabcontent2" data-tab="2" class="tabcontent">  
+                        <p>
+                            Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty.
+                        </p>  
+                        <p>Venus orbits the Sun every 224.7 Earth days.</p>  
+                        <p>
+                            As the second-brightest natural object in the night sky after the Moon, Venus can cast shadows and, rarely, is visible to the naked eye in broad daylight.
+                        </p>  
+                        <p class="read-more-link">
+                            <a href="https://en.wikipedia.org/wiki/Venus" target="_blank">Learn more
+                                <span class="icon">➡️</span>
+                            </a>
+                        </p>  
+                    </div>
+                    <div id="tabcontent3" data-tab="3" class="tabcontent">  
+                        <p>Earth is the third planet from the Sun.</p>  
+                        <p>
+                            Earth orbits around the Sun in 365.256 days, a period known as an Earth sidereal year. During this time, Earth rotates about its axis about 366.256 times.
+                        </p>  
+                        <p>
+                            Earth's axis of rotation is tilted with respect to its orbital plane, producing seasons on Earth.
+                        </p>  
+                        <p class="read-more-link">
+                            <a href="https://en.wikipedia.org/wiki/Earth" target="_blank">Learn more
+                                <span class="icon">➡️</span>
+                            </a>
+                        </p>  
+                    </div>  
+                    <div id="tabcontent4" data-tab="4" class="tabcontent">  
+                        <p>
+                            Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury.
+                        </p>  
+                        <p> 
+                            In English, Mars carries a name of the Roman god of war and is often referred to as the 'Red Planet'. The latter refers to the effect of the iron oxide prevalent on Mars' surface.
+                        </p>  
+                        <p>Mars is a terrestrial planet with a thin atmosphere.</p>  
+                        <p class="read-more-link">
+                            <a href="https://en.wikipedia.org/wiki/Mars" target="_blank">Learn more
+                                <span class="icon">➡️</span>
+                            </a>
+                        </p>  
+                    </div>  
+                </div>  
+            </div>
+            <div class="dark-mode-switch">  
+                <label class="switch-label" for="dark-mode-switch">Dark mode</label>  
+                <label class="switch">  
+                    <input type="checkbox" id="dark-mode-switch">  
+                    <span class="slider round"></span>  
+                </label>  
+            </div>  
+        </div>  
+        <!-- ---------------------- -->  
+        <div class="small-screen">  
+            <div class="small-screen-content tabcontent">  
+                <p>You're going to need a bigger display my friend.</p>  
+                <p class="read-more-link">
+                    <a href="https://www.samsung.com/uk/monitors/monitor-c49j89-lc49j890dkuxen/" target="_blank">Learn more<span class="icon">➡️</span></a>
+                </p>  
+            </div>  
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            // DOM Elements
+            const tabs = document.querySelectorAll('.tab')
+            const tabContents = document.querySelectorAll('.tabcontent')
+            const darkModeSwitch = document.querySelector('#dark-mode-switch')
+
+            // Functions
+            const activateTab = tabnum => {
+                
+                tabs.forEach( tab => {
+                tab.classList.remove('active')
+                })
+                
+                tabContents.forEach( tabContent => {
+                    tabContent.classList.remove('active')
+                })
+            
+                document.querySelector('#tab' + tabnum).classList.add('active')
+                document.querySelector('#tabcontent' + tabnum).classList.add('active')
+                localStorage.setItem('jstabs-opentab', JSON.stringify(tabnum))
+            
+            }
+
+            // Event Listeners
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    activateTab(tab.dataset.tab)
+                })
+            })
+
+            darkModeSwitch.addEventListener('change', () => {
+                document.querySelector('body').classList.toggle('darkmode')
+                localStorage.setItem('jstabs-darkmode', JSON.stringify(!darkmode))
+            })
+
+            // Retrieve stored data
+            let darkmode = JSON.parse(localStorage.getItem('jstabs-darkmode'))
+            const opentab =  JSON.parse(localStorage.getItem('jstabs-opentab')) || '3'
+
+            // and..... Action!
+            if (darkmode === null) {
+                darkmode = window.matchMedia("(prefers-color-scheme: dark)").matches // match to OS theme
+            }
+            if (darkmode) {
+                document.querySelector('body').classList.add('darkmode')
+                document.querySelector('#dark-mode-switch').checked = 'checked'
+            }
+            activateTab(opentab)
+        </script>
+    </body>
+</html>
