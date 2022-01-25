@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Stacked Cards</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                background-color: black;
+                color: white;
+            }
+
+            .card-list {
+                display: flex;
+                padding: 3rem;
+                overflow-x: scroll;
+            }
+            .card {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                width: 350px;
+                height: 410px;
+                min-width: 250px;
+                padding: 1.5rem;
+                border-radius: 16px;
+                background-color: rgb(34, 33, 33);
+                box-shadow: -1rem 0 3rem #000;
+                transition: 0.2s;
+            }
+            .card:hover {
+                transform: translateY(-1rem);
+            }
+            .card:hover ~ .card {
+                transform: translateX(130px);
+            }
+            .card:not(:first-child) {
+                margin-left: -130px;
+            }
+            .card-header h2 {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+            .card-header p:last-child {
+                font-size: 14px;
+            }
+            .card-author {
+                position: relative;
+                display: grid;
+                grid-template-columns: 75px 1fr;
+                align-items: center;
+            }
+            .author-avatar img {
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                filter: grayscale(100%);
+                margin: 16px 10px;
+            }
+            .author-name-prefix {
+                font-style: normal;
+                font-weight: 700;
+                color: #7a7a8c;
+            }
+            .card-list::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+            .card-list::-webkit-scrollbar-thumb {
+                background-color: #201c28;
+                box-shadow: inset 2px 2px 2px hsla(0, 0, 100%, 0.25),
+                            inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+            }
+            .card-list::-webkit-scrollbar-track {
+                background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+            }
+        </style>
+    </head>
+    <body>
+    
+        <section class="card-list">
+            <article class="card">
+                <header class="card-header">
+                    <p>April 26th 2021</p>
+                    <h2>Your awesome article heading goes here!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime quo corrupti eius repellat architecto voluptatem. Quam praesentium dignissimos cupiditate dolor, laudantium beatae architecto repudiandae, maxime quaerat totam modi vitae.</p>
+                </header>
+                <div class="card-author">
+                    <a href="#" class="author-avatar">
+                        <img src="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5zdGFncmFtJTIwcHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="img-fluid" alt="">
+                    </a>
+                    <div class="author-name">
+                        <div class="author-name-prefix">Author</div>
+                        Creative Siddharth
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <header class="card-header">
+                    <p>April 26th 2021</p>
+                    <h2>Your awesome article heading goes here!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime quo corrupti eius repellat architecto voluptatem. Quam praesentium dignissimos cupiditate dolor, laudantium beatae architecto repudiandae, maxime quaerat totam modi vitae.</p>
+                </header>
+                <div class="card-author">
+                    <a href="#" class="author-avatar">
+                        <img src="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5zdGFncmFtJTIwcHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="img-fluid" alt="">
+                    </a>
+                    <div class="author-name">
+                        <div class="author-name-prefix">Author</div>
+                        Creative Siddharth
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <header class="card-header">
+                    <p>April 26th 2021</p>
+                    <h2>Your awesome article heading goes here!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime quo corrupti eius repellat architecto voluptatem. Quam praesentium dignissimos cupiditate dolor, laudantium beatae architecto repudiandae, maxime quaerat totam modi vitae.</p>
+                </header>
+                <div class="card-author">
+                    <a href="#" class="author-avatar">
+                        <img src="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5zdGFncmFtJTIwcHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="img-fluid" alt="">
+                    </a>
+                    <div class="author-name">
+                        <div class="author-name-prefix">Author</div>
+                        Creative Siddharth
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

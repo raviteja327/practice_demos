@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Product Card With Ribbon</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #131313;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+            }
+            .card {
+                width: 30rem;
+                border-radius: 1rem;
+                background: #364f6b;
+                box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.15);
+                position: relative;
+                color: #434343;
+            }
+            .card::before {
+                position: absolute;
+                top: 2rem;
+                right: -0.5rem;
+                content: '';
+                background: #fc5185;
+                height: 28px;
+                width: 28px;transform: rotate(45deg);
+            }
+            .card::after {
+                position: absolute;
+                content: attr(data-label);
+                top: 6px;
+                right: -14px;
+                padding: 0.5rem;
+                width: 10rem;
+                background: #fc5185;
+                color: white;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+            }
+            .card .card__container {
+                padding: 2rem;
+                width: 100%;
+                height: 100%;
+                background: white;
+                border-radius: 1rem;
+                position: relative;
+                border: 2px solid;
+            }
+            .card .card__header {
+                margin-bottom: 1rem;
+                font-family: 'Poppins', sans-serif;
+                color: #ff304f;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <div class="card" data-label="Coming Soon">
+                <div class="card__container">
+                    <h1 class="card__header">Lorem Ipsum</h1>
+                    <p class="card__body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, distinctio?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

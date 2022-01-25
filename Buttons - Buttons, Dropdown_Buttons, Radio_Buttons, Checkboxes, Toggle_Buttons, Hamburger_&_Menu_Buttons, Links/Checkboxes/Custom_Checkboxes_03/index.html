@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Checkbox List</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+        }
+        label {
+            position: relative;
+            display: block;
+            padding: 2px 25px;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 30px;
+            color: #b3b3b3;
+            margin: 4px;
+            font-family: 'Poppins', sans-serif;
+            transition: 0.2s;
+            background: #ededed;
+        }
+        label::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border: 2px solid orange;
+            border-radius: 20px;
+            transform: scale(0.9);
+            opacity: 0;
+            transition: 0.2s;
+        }
+        input:checked + label::after {
+            border-color: #3b72ff;
+            opacity: 1;
+            transform: scale(1);
+        }
+        input:checked + label {
+            color: #3b72ff;
+            border: none;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" id="c++">
+        <label for="c++">C++</label>
+        <input type="checkbox" id="py">
+        <label for="py">Python</label>
+    </div>
+
+</body>
+</html>

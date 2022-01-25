@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Checkboxes</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            display: none;
+        }
+        label {
+            position: relative;
+            width: 290px;
+            height: 50px;
+            background: #ededed;
+            margin: 0.1rem;
+            border-radius: 3px;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.3rem;
+            overflow: hidden;
+        }
+        label::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 320px;
+            height: 70px;
+            background: #01cd42;
+            transition: 0.4s ease;
+            clip-path: circle(0 at 260px 25px);
+        }
+        .name {
+            z-index: 1;
+            transition: 0.4s;
+        }
+        .icon {
+            display: block;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            font-size: 16px;
+            color: #ededed;
+            border: 2px solid #dbdbdb;
+            z-index: 1;
+            display: grid;
+            place-items: center;
+        }
+        input:checked + label::after {
+            clip-path: circle(100%);
+        }
+        input:checked + label .name {
+            color: #fff;
+        }
+        input:checked + label .icon {
+            border-color: #fff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <input type="checkbox" id="option-one">
+        <label for="option-one">
+            <span class="name">Option one</span>
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+        </label>
+        <input type="checkbox" id="option-two">
+        <label for="option-two">
+            <span class="name">Option two</span>
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+        </label>
+        <input type="checkbox" id="option-three">
+        <label for="option-three">
+            <span class="name">Option three</span>
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+        </label>
+    </div>
+
+</body>
+</html>
