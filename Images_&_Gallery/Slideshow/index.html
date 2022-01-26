@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Slideshow Animation</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Verdana, sans-serif;
+                margin: 0;
+                background: rgb(25, 93, 106);
+                background: radial-gradient(circle, rgba(25, 93, 106, 1) 38%, rgba(35, 35, 62, 1) 91%);
+                margin-top: 4%;
+            }
+
+            .slideshow-container {
+                width: 80vw;
+                position: relative;
+                margin: auto;
+            }
+            .tilt-in-top-1 {
+                animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            }
+            .numbertext {
+                background: linear-gradient(270deg, rgb(33 59 119) 0, rgb(28 102 44) 100%);
+                max-width: max-content;
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            img {
+                vertical-align: middle;
+            }
+            .text {
+                color: #f2f2f2;
+                background: linear-gradient(270deg, rgb(33 59 119) 0, rgb(28 102 44) 100%);
+                max-width: inherit;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: relative;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                border: 1px solid #ccc;
+                background-color: #4f7d8b5e;
+                width: auto;
+                margin-left: -100px;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                margin-right: -100px;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            @keyframes tilt-in-top-1 {
+                0% {
+                    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+                    opacity: 0;
+                }
+                100% {
+                    transform: rotateY(0) translateY(0) skewY(0);
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="slideshow-container">
+            <div class="mySlides tilt-in-top-1">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DA2E198288BFCA56AB53340211B38DE7134E40E4521EDCAFE6FFB8CD69250DE9/scale?width=2880&aspectRatio=1.78&format=jpeg" class="img-fluid" style="width: 60%;" alt="">
+                <div class="text">Caption One</div>
+            </div>
+            <div class="mySlides tilt-in-top-1">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://cdn.britannica.com/62/182362-050-BD31B42D/Scarlett-Johansson-Black-Widow-Chris-Hemsworth-Thor.jpg" class="img-fluid" style="width: 60%;" alt="">
+                <div class="text">Caption Two</div>
+            </div>
+            <div class="mySlides tilt-in-top-1">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://cdn.vox-cdn.com/thumbor/YBb8-4XPJRmmpdUJYqPP_hp0V04=/0x145:1688x1809/1400x933/filters:focal(726x441:996x711):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/61461869/captain_marvel_poster_1688.1537366019.jpg" class="img-fluid" style="width: 60%;" alt="">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName('mySlides');
+                
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = 'none';
+                }
+
+                slides[slideIndex - 1].style.display = 'block';
+            }
+
+            function changeSlide(n) {
+                showSlides((slideIndex += n));
+            }
+        </script>
+    </body>
+</html>

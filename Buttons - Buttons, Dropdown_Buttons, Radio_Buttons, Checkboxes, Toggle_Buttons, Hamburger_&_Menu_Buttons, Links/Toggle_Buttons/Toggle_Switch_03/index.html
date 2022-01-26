@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <title>Toggle Switch</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            input[type="checkbox"] {
+                width: 0;
+                height: 0;
+                visibility: hidden;
+            }
+            label {
+                width: 500px;
+                height: 150px;
+                background-color: #477a85;
+                border-radius: 100px;
+                position: relative;
+                cursor: pointer;
+                transition: 0.5s;
+                box-shadow: 0 0 20px #477a8550;
+            }
+            label::after {
+                content: '';
+                width: 120px;
+                height: 120px;
+                background-color: #e8f5f7;
+                position: absolute;
+                border-radius: 70px;
+                top: 15px;
+                left: 15px;
+                transition: 0.5s;
+            }
+            label:active::after {
+                width: 160px;
+            }
+            input:checked + label {
+                background-color: #243d42;
+            }
+            input:checked + label::after {
+                left: calc(100% - 15px);
+                transform: translateX(-100%);
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Steps to create Switch
+
+        Create the structure
+            Create input checkbox
+            Create a label for checkbox
+
+        Hide the input element
+            Use visibility property to hide the element
+
+        Style the body
+            Style the label elements to create the body
+
+        Create the toggle ball
+            Use pseudo element to create the ball
+
+        Add animation
+            On input checked ball should go to right
+            On input checked change the body background
+         -->
+    
+        <input type="checkbox" name="switch" id="switch">
+        <label for="switch"></label>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
