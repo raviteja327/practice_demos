@@ -471,6 +471,9 @@ CSS Tools & Libraries
     To use it, you simply configure your animation, tweak the settings, and then grab the CSS code.
     https://jeremyckahn.github.io/stylie/
 
+81. AnimXYZ
+    https://animxyz.com/
+
 
 
 
