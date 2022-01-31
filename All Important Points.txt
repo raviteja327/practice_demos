@@ -474,6 +474,9 @@ CSS Tools & Libraries
 81. AnimXYZ
     https://animxyz.com/
 
+82. Animation-library
+    https://animation.kaustubhmenon.com/
+
 
 
 

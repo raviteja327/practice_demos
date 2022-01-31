@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>All Shapes</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #131313;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .square {
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+                margin: 5px;
+            }
+
+            .rect {
+                width: 150px;
+                height: 50px;
+                background-color: #fff;
+                margin: 5px;
+            }
+
+            .circle {
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+                margin: 5px;
+                border-radius: 50%;
+            }
+
+            .triangle1 {
+                width: 0;
+                height: 0;
+                border-left: 50px solid grey;
+                border-right: 50px solid grey;
+                border-bottom: 100px solid white;
+                margin: 5px;
+            }
+            .triangle2 {
+                width: 0;   /* No physical appearance */
+                height: 0;  /* No physical appearance */
+                border-left: 50px solid transparent;   /* Tweaking the size of the borders will create a wide range of triangles at this angle */
+                border-right: 50px solid transparent;
+                border-bottom: 100px solid white; /* Change this to border-top to flip the triangle vertically */
+                margin: 5px;
+            }
+
+            /* Use pseudo triangles to create advanced shapes */
+            .hexagon {
+                width: 100px;
+                height: 57px;
+                background-color: #fff;
+                position: relative;  /* Allow absolute children */
+                margin: 5px;
+            }
+            .hexagon::before,
+            .hexagon::after {
+                content: '';
+                position: absolute;  /* Relative to parent */
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;  /* Setup triangle shapes */
+                border-right: 50px solid transparent;
+            }
+            .hexagon::before {
+                top: -28px;
+                border-bottom: 28px solid white;
+            }
+            .hexagon::after {
+                bottom: -28px;
+                border-top: 28px solid white;  /* Flipped triangle angle */
+            }
+
+            .cut-diamond {
+                box-sizing: content-box;
+                position: relative;
+                width: 50px;  /* Adding width creates trapezoid shape */
+                height: 0;
+                margin: 0px 5px 60px 5px;
+                border-style: solid;
+                border-color: transparent transparent white transparent;  /* Shorthand top, right, bottom, left */
+                border-width: 0 25px 25px 25px;
+            }
+            .cut-diamond::after {  /* Pseudo element */
+                content: '';  /* Must be present on empty pseudos */
+                position: absolute;
+                top: 25px;
+                left: -25px;  /* Match position with trapezoid border */
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-color: white transparent transparent transparent;
+                border-width: 70px 50px 0 50px;  /* Size the pseudo element */
+            }
+
+            .tv-screen {
+                position: relative;
+                width: 200px;
+                height: 150px;
+                margin: 20px 5px;  /* Offset spacing */
+                background-color: #fff;
+                border-radius: 50% / 10%;  /* The '/' syntax allows the creation of elliptical corners */
+            }
+            .tv-screen::before {
+                content: '';
+                position: absolute;
+                top: 10%;  /* Match position with elliptical corners */
+                bottom: 10%;
+                right: -5%;
+                left: -5%;
+                background: inherit;
+                border-radius: 50% / 50%;  /* Elliptical corners */  /* You can add up to four values between the / to create your own abstract blob shapes */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Basic Shapes -->
+
+        <!-- Square -->
+        <div class="square"></div>
+
+        <!-- Rectangle -->
+        <div class="rect"></div>
+
+        <!-- circle -->
+        <div class="circle"></div>
+
+
+
+        <!-- Advanced Shapes -->
+
+        <!-- CSS shapes are always square by default so the following code creates this -->
+        <div class="triangle1"></div>
+
+        <!-- If we set the border color to transparent we get our triangle -->
+        <div class="triangle2"></div>
+
+        <!-- Hexagon -->
+        <div class="hexagon"></div>
+
+        <!-- Cut-Diamond -->
+        <!-- Hexagon and diamonds make great badges in UI -->
+        <div class="cut-diamond"></div>
+
+        <!-- TV Screen -->
+        <!-- Elliptical corners give elements that plump look -->
+        <!-- <div class="tv-screen"></div> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

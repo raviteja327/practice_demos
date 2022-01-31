@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title></title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #131313;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins', sans-serif;
+                flex-direction: column;
+            }
+
+            .wrapper {
+                display: flex;
+            }
+            .wrapper input {
+                width: 10rem;
+                height: 2.5rem;
+                padding: 0 0.5rem;
+                /* margin-bottom: 0.5rem; */
+                border-radius: 0.25rem;
+                border: 1px solid #585858;
+                color: #363636;
+            }
+            .wrapper .validation {
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                height: 2.5rem;
+                padding: 0 0.5rem;
+                border-radius: 0.25rem;
+                background: #fd4444;
+                color: #f9f9f9;
+                transition: all 0.35s;
+            }
+            .wrapper input:valid {
+                border-color: #55d688;
+            }
+            .wrapper input:valid ~ .validation {
+                max-height: 0;
+            }
+
+            .wrapper1 {
+                position: relative;
+                overflow: hidden;
+            }
+            .wrapper1 input {
+                width: 10rem;
+                height: 2.5rem;
+                padding: 0 0.5rem;
+                border-radius: 0.25rem;
+                border: 1px solid #585858;
+                color: #363636;
+            }
+            .wrapper1 .validation {
+                position: absolute;
+                top: 50%;
+                right: 0.5rem;
+                transform: translate(5rem, -50%);
+                opacity: 0;
+                color: #f9f9f9;
+                transition: all 0.35s;
+                background: #fd4444;
+                padding: 0 0.5rem;
+            }
+            .wrapper1 input:valid {
+                border-color: #55d688;
+            }
+            .wrapper1 input:invalid {
+                border-color: #fd4444;
+            }
+            .wrapper1 input:invalid ~ .validation {
+                opacity: 1;
+                transform: translate(0, -50%);
+            }
+
+            .wrapper2 {
+                position: relative;
+            }
+            .wrapper2 input {
+                width: 10rem;
+                height: 2.5rem;
+                padding: 0 0.5rem;
+                border-radius: 0.25rem;
+                border: 1px solid #585858;
+                color: #363636;
+            }
+            .wrapper2 .validation {
+                position: absolute;
+                bottom: 3rem;
+                display: flex;
+                align-items: center;
+                height: 1.5rem;
+                padding: 0 0.5rem;
+                opacity: 0;
+                transform: translateY(0.75rem);
+                border-radius: 1.5rem;
+                background: #fd4444;
+                color: #f9f9f9;
+                transition: all 0.35s;
+            }
+            .wrapper2 .validation::after {
+                content: '';
+                position: absolute;
+                left: 15px;
+                bottom: -2px;
+                width: 4px;
+                height: 4px;
+                transform: rotate(45deg);
+                background: inherit;
+            }
+            .wrapper2 input:valid {
+                border-color: #55d688;
+            }
+            .wrapper2 input:invalid .validation {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .wrapper3 {
+                position: relative;
+                display: flex;
+            }
+            .wrapper3 input {
+                width: 10rem;
+                height: 2.5rem;
+                padding: 0 0.5rem;
+                border-radius: 0.25rem;
+                border: 1px solid #585858;
+                color: #363636;
+            }
+            .wrapper3 .validation {
+                position: absolute;
+                top: 0.55rem;
+                right: 0.7rem;
+                opacity: 0;
+                color: #fd4444;
+            }
+            .wrapper3 input:valid {
+                border-color: #55d688;
+            }
+            .wrapper3 input:invalid,
+            .wrapper3 input:invalid ~ .validation {
+                animation: shake 0.1635s 0s 3;
+            }
+            .wrapper3 input:invalid {
+                border-color: #fd4444;
+            }
+            .wrapper3 input:invalid ~ .validation {
+                opacity: 1;
+            }
+
+            @keyframes shake {
+                0%,
+                100% {
+                    transform: translateX(0);
+                }
+                25% {
+                    transform: translateX(8px);
+                }
+                75% {
+                    transform: translateX(-8px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="wrapper">
+            <input placeholder="First Name" required>
+            <div class="validation">Required</div>
+        </div>
+
+        <div class="wrapper1">
+            <input placeholder="First Name" required>
+            <div class="validation">Required</div>
+        </div>
+
+        <div class="wrapper2">
+            <input placeholder="First Name" required>
+            <div class="validation">Required</div>
+        </div>
+
+        <div class="wrapper3">
+            <input placeholder="First Name" required>
+            <div class="validation">*</div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
