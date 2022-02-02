@@ -199,12 +199,71 @@
         <h1>&#129297</h1>
         <h1>&#129327</h1>
         <h1>&#129426</h1>
+
+
+        <!-- Define starting point of -->
+
+        <!-- By using start attribute on your ordered list element <ol>, you can define the starting point -->
+        <ol start="51">
+            <li>Thara bhai joinder</li>
+            <li>Deepak kalal</li>
+            <li>Baaki sab</li>
+            <li>Cringe hai</li>
+        </ol>
+
+
+        <!-- Clear forms with a native button -->
+
+        <!-- At the end of the process or at any time before you want to provide your users the ability to clear the
+        form contents with a push of a button. Simply implement a type="reset" inside the form  -->
+        <form action="">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+
+        <!-- Display quantities without any JS -->
+        <label for="fuel">Fuel level:</label>
+        <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
+
+
+        <!-- Create sliders -->
+
+        <!-- You can use another type in the <input> element to present sliders. -->
+        <p>Audio settings:</p>
+        <div>
+            <input type="range" name="volume" id="volume" min="0" max="11">
+            <label for="volume">Volume</label>
+        </div>
+        <div>
+            <input type="range" name="Base" id="Base" min="0" max="100" value="90" step="10">
+            <label for="Base">Base</label>
+        </div>
+
+
+        <!-- Summary -->
+
+        <!-- You can use this disclosure widget simply like so -->
+        <details>
+            <summary>
+                Where i can found project code
+            </summary>
+            go to Google and type codewithrandom and you find 100+ free frontend project code.
+        </details>
         
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
-            
+            // Show unsaved changes alert
+            // window.addEventListener('beforeunload', event => {
+            //     event.preventDefault();
+            //     event.returnValue = '';
+            // })
         </script>
     </body>
 </html>
