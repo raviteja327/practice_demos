@@ -25,8 +25,6 @@
                 box-sizing: border-box;
             }
             body {
-                /* background-color: #131313; */
-                /* height: 100vh; */
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -34,6 +32,7 @@
                 flex-direction: column;
                 padding: 100px 0;
             }
+
 
             /* clamp() function */
             .item {
@@ -44,6 +43,7 @@
                 text-align: center;
             }
 
+
             /* Styling List's Marker */
             li {
                 color: #7b7b7b;
@@ -52,11 +52,13 @@
                 color: #594414;
             }
 
+
             /* The Column-Rule Property */
             p {
                 columns: 3;
                 column-rule: solid 2px #222;
             }
+
 
             /* Background Repeat Round */
             .background {
@@ -87,6 +89,7 @@
                 background-repeat: no-repeat;
             }
 
+
             /* Without Object-Fit */
             .image {
                 width: 200px;
@@ -99,6 +102,47 @@
             /* With Object-Fit - contain */
             .image2 {
                 object-fit: contain;
+            }
+
+
+            /* Glass Effect */
+            .container-fluid {
+                background-image: url(https://wallpaperaccess.com/full/187161.jpg);
+                padding: 100px;
+            }
+            .card {
+                padding: 100px;
+                border: 0;
+                background-color: #ffffff10;
+                backdrop-filter: blur(12px);
+                -webkit--backdrop-filter: blur(12px);
+                color: #fff;
+                text-transform: uppercase;
+                width: 50%;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+            /* Box-Shadow */
+            .box-shadow {
+                box-shadow: 0 0 5px black;
+            }
+
+
+            /* Drop-Shadow */
+            .drop-shadow {
+                filter: drop-shadow(0 0 5px black);
+            }
+
+
+            /* Scroll Box */
+            .scroll-box {
+                width: 50%;
+                height: 50px;
+                overflow: auto;
             }
         </style>
     </head>
@@ -121,7 +165,6 @@
 
 
         <!-- The Column-Rule Property -->
-
         <!-- CSS columns is a layout method which can divide an element into columns.
         A common use-case for it is to divide a paragraph text content into two lines.
         However, the less common thing about it is that we can add borders between the columns. -->
@@ -134,11 +177,9 @@
 
 
         <!-- Background Repeat -->
-
         <!-- It tiles the image in both directions. Never crop the image unless a single image is too large to fit.
         If multiple images can fit with leftover space, squish them or stretch them to fill the space.
         If it's less than half one image width left, stretch, if it's more, stretch. -->
-
         <p>Background Repeat - Round</p>
         <div class="background"></div>
         <br>
@@ -166,9 +207,7 @@
 
 
         <!-- Object Fit -->
-
         <!-- The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container. This property tells the content to fill the container in a variety of ways; such as 'preserve that aspect ratio' or 'stretch up and take up as much space as possible'. -->
-
         <p>I am the original picture</p>
         <img src="images/marvel.jpg" alt="" class="img-fluid">
         <br>
@@ -202,7 +241,6 @@
 
 
         <!-- Define starting point of -->
-
         <!-- By using start attribute on your ordered list element <ol>, you can define the starting point -->
         <ol start="51">
             <li>Thara bhai joinder</li>
@@ -213,7 +251,6 @@
 
 
         <!-- Clear forms with a native button -->
-
         <!-- At the end of the process or at any time before you want to provide your users the ability to clear the
         form contents with a push of a button. Simply implement a type="reset" inside the form  -->
         <form action="">
@@ -232,7 +269,6 @@
 
 
         <!-- Create sliders -->
-
         <!-- You can use another type in the <input> element to present sliders. -->
         <p>Audio settings:</p>
         <div>
@@ -246,7 +282,6 @@
 
 
         <!-- Summary -->
-
         <!-- You can use this disclosure widget simply like so -->
         <details>
             <summary>
@@ -254,6 +289,92 @@
             </summary>
             go to Google and type codewithrandom and you find 100+ free frontend project code.
         </details>
+        <br>
+
+
+
+        <!-- Glass Effect -->
+        <div class="container-fluid">
+            <div class="card">
+                <h1>Hello World!</h1>
+            </div>
+        </div>
+        <br>
+
+
+        <!-- Box-Shadow -->
+        <p>Box Shadow</p>
+        <img src="images/marvel.jpg" alt="" class="img-fluid box-shadow">
+        <br>
+
+
+        <!-- Drop-Shadow -->
+        <p>Drop Shadow</p>
+        <img src="images/marvel.jpg" alt="" class="img-fluid drop-shadow">
+        <br>
+
+
+        <!-- Scroll Box -->
+        <!-- An HTML scroll box is a box that grows scroll bars when it's contents are too large to fit in the box. -->
+        <div class="scroll-box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo nostrum eligendi suscipit? Nostrum obcaecati inventore dolore asperiores quasi, provident molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo nostrum eligendi suscipit? Nostrum obcaecati inventore dolore asperiores quasi, provident molestias?
+        </div>
+        <br>
+
+
+
+        <!-- Call & SMS Links -->
+        <!-- This is the calling one (probably more useful if the clickable text is words, as the Phone auto-detects phone numbers and does this automatically) -->
+        <a href="tel: 0000000000">1-408-555-5555</a>
+        <a href="sms: 0000000000">New SMS Message</a>
+        <br>
+
+
+
+        <!-- Downloadable Files -->
+        <!-- HTML5 allows you to force download of files using the download attribute.
+        Here is a standard link to a downloadable file. -->
+        <a href="images/marvel.jpg" download="image.jpg">Download file</a>
+        <br>
+
+
+
+        <!-- Disable Autocomplete -->
+        <!-- HTML allow us to use the autocomplete attribute to turn off autocomplete for input fields -->
+        <input type="text" name="foo" autocomplete="off">
+        <br>
+
+
+
+        <!-- Get Map Direction -->
+        <!-- We can get the map direction in HTML using form with action -->
+        <form action="http://maps.google.com/maps" method="get" target="_blank">
+            <label for="saddr">Enter your location</label>
+            <input type="text" name="saddr" id="saddr">
+            <input type="submit" value="Get Direction">
+        </form>
+        <br>
+
+
+
+        <!-- Mailto Links -->
+        <!-- HTML allow to mail by using mailto: inside the href attribute -->
+        <!-- Basic -->
+        <a href="mailto: someone@yoursite.com">Basic Email</a>
+        <!-- Adding a subject -->
+        <a href="mailto: someone@yoursite.com?subject=Mail from Our Site">Email With Subject</a>
+        <!-- Adding a subject, CC and BCC -->
+        <a href="mailto: someone@yoursite.com?cc=someoneelse@theirsite.com,another@thatsite.com,me@mysite.com&bcc=lastperson@theirsite.com&subject=Big News">Email With Subject, CC & BCC</a>
+        <!-- Adding a subject, CC and BCC, body text -->
+        <a href="mailto: someone@yoursite.com?cc=someoneelse@theirsite.com,another@thatsite.com,me@mysite.com&bcc=lastperson@theirsite.com&subject=Big News&body=Body-goes-here">Email With Subject, CC & BCC, Body</a>
+        <br>
+
+
+
+        <!-- Email Validation -->
+        <label for="">Email Validation</label>
+        <input type="text" title="email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+        
         
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
