@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Progress Bar</title>
+    
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #010101;
+        }
+
+        .progress {
+            width: 200px;
+            height: 12px;
+            border-radius: 6px;
+            background-color: #9bdfff;
+        }
+        .progress > div {
+            height: 100%;
+            border-radius: 6px;
+            background-color: #25baff;
+            transition: width 200ms;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress">
+        <div style="width: 25%;"></div>
+    </div>
+
+</body>
+
+</html>
+  

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>How to Create Four Simple Keyframe Animations</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #f9f9f9;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                font-family: 'Poppins', sans-serif;
+                flex-direction: column;
+                padding: 50px;
+            }
+
+            /* Animation Properties */
+            /* To apply keyframe animations to your element you need to use the animation properties.
+            Think of these as the settings for the animation. */
+            .animated-element {
+                /* The name of the animation keyframes */
+                animation-name: rotate;
+                /* How long the animmation should be */
+                animation-duration: 0.5s;
+                /* How many times should it play */
+                animation-iteration-count: infinite;
+                /* Any delay before the animation starts */
+                animation-delay: 1s;
+                /* Specifies the speed curve of the animation */
+                animation-timing-function: ease-in-out;
+            }
+
+            /* Animation Keyframes */
+            /* You also need to create the keyframes. An animation has a timeline (0 - 100%) and you can set a keyframe at any point in the timeline to change the look of the element using any CSS property. */
+            /* The code will then work out the frames in between and leave you with a smooth animation. */
+            @keyframes animation-name {
+                /* Start */
+                0% {
+                    width: 0;
+                }
+                /* End */
+                100% {
+                    width: 50%;
+                }
+            }
+
+            /* Rotate */
+            .animation--rotate {
+                animation-name: rotate;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0);
+                }
+                50% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            /* Scale */
+            .animation--scale {
+                animation-name: scale;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes scale {
+                0% {
+                    transform: scale(1);
+                }
+                25% {
+                    transform: scale(0.5);
+                }
+                75% {
+                    transform: scale(1.5);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            /* Translate */
+            .animation--translate {
+                animation-name: translate;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes translate {
+                0% {
+                    transform: translate(0, -50%);
+                }
+                25% {
+                    transform: translate(0, 50%);
+                }
+                50% {
+                    transform: translate(-50%, 0);
+                }
+                75% {
+                    transform: translate(50%, 0);
+                }
+                100% {
+                    transform: translate(0, -50%);
+                }
+            }
+
+            /* Fade */
+            .animation--fade {
+                animation-name: fade;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+            @keyframes fade {
+                0% {
+                    opacity: 1;
+                }
+                80% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>Keyframes</h1>
+        <br>
+        <p>
+            You can use CSS Keyframes to create some cool animations by transitioning between CSS properties.
+        </p>
+        <br>
+        <p>
+            This quick intro to keyframe animation will cover the animation properties and show you five simple animation examples.
+        </p>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

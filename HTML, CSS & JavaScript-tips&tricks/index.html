@@ -33,6 +33,11 @@
                 padding: 100px 0;
             }
 
+            /* Smooth Scrolling Without JavaScript */
+            html {
+                scroll-behavior: smooth;
+            }
+
 
             /* clamp() function */
             .item {
@@ -54,7 +59,7 @@
 
 
             /* The Column-Rule Property */
-            p {
+            p.column {
                 columns: 3;
                 column-rule: solid 2px #222;
             }
@@ -144,6 +149,45 @@
                 height: 50px;
                 overflow: auto;
             }
+
+
+            /* Box Shadow */
+            img.bs {
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.342);
+            }
+            img.bs2 {
+                box-shadow: inset 13px 20px 13px 7px rgba(0 0 0 / 48%);
+            }
+
+
+            /* SET IMAGE AS CURSOR WITH ONE LINE OF CODE */
+            .content {
+                cursor: url(images/star2.png), auto;
+            }
+
+
+            /* Truncate Paragraph */
+            p.truncate {
+                width: 300px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+
+            /* Create Wave Underline in text */
+            p.wave {
+                text-decoration: underline wavy #CDC;
+            }
+
+
+
+            /* Aspect ratio CSS Property */
+            .box {
+                width: 100px;
+                background-color: aqua;
+                aspect-ratio: 2/1;
+            }
         </style>
     </head>
     <body>
@@ -169,7 +213,7 @@
         A common use-case for it is to divide a paragraph text content into two lines.
         However, the less common thing about it is that we can add borders between the columns. -->
         <!-- The Column-rule property name might not reflect its purpose, but imagine it as border-right. -->
-        <p>
+        <p class="column">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab adipisci officia, et in numquam blanditiis recusandae vel beatae quis, laborum libero, similique perspiciatis tempora earum placeat accusamus rem natus quae architecto sunt deleniti! Eum cum quam culpa ea praesentium quas?
         </p>
         <br>
@@ -374,6 +418,187 @@
         <!-- Email Validation -->
         <label for="">Email Validation</label>
         <input type="text" title="email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+        <br>
+
+
+        <!-- Disable Right Click -->
+        <!-- You May Need To Disable Right Click To Prevent Users From Saving The Images On The Page Or Viewing The Source Of The Page.  -->
+        <!-- Many Devs Disable The Right Click Using JavaScript, But You Can Do It With HTML Only. -->
+        <!-- Disable Right Click On The Body Element -->
+        <!-- <body oncontextmenu="return false"></body> 
+        <!-- You can also Disable Right Click On Any Specific Element -->
+        <p oncontextmenu="return false">Life Goes On</p>
+        <br>
+
+
+
+        <!-- Get Input Suggestions -->
+        <!-- Using This Amazing Trick To Get Relevant And Useful Suggestions When You Will Try To Type Something In The Input Element -->
+        <input list="cities" name="city">
+        <datalist id="cities">
+            <option value="Warangal"></option>
+            <option value="Hanumakonda"></option>
+            <option value="Kazipet"></option>
+        </datalist>
+        <br>
+
+
+
+        <!-- The Poster Attribute -->
+        <!-- You Can Use The Poster Attribute To Specify An Image To Be Shown While The Video Is Loading, Or Until The User Hits The Play Button -->
+        <!-- If Poster Attribute Will Not Be Included, The First Frame Of The Video Will Be Used Instead. -->
+        <video poster="https://m.media-amazon.com/images/M/MV5BM2ZkZGIwZDAtNGU1ZS00NTlkLThjYjYtMjU5MzQzNDQyMTBmXkEyXkFqcGdeQXVyODA2ODM3NDQ@._V1_FMjpg_UX1000_.jpg" width="320" height="240" controls>
+            <source src="https://www.youtube.com/embed/4fzk4miRGw0" type="video/mp4">
+            <source src="https://www.youtube.com/embed/4fzk4miRGw0" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+
+
+        <!-- Using The Picture Tag -->
+        <!-- This Tag Helps You Display Images In A Responsive Manner, By Showing An Alternative Image Version For Different Viewports. -->
+        <picture>
+            <source media="(min-width: 700px)" srcset="https://m.media-amazon.com/images/M/MV5BM2ZkZGIwZDAtNGU1ZS00NTlkLThjYjYtMjU5MzQzNDQyMTBmXkEyXkFqcGdeQXVyODA2ODM3NDQ@._V1_FMjpg_UX1000_.jpg">
+            <source media="(min-width: 400px)" srcset="https://i1.wp.com/bestoftheyear.in/wp-content/uploads/2018/04/orange.jpg?fit=400%2C597&ssl=1">
+            <img src="https://m.media-amazon.com/images/M/MV5BM2ZkZGIwZDAtNGU1ZS00NTlkLThjYjYtMjU5MzQzNDQyMTBmXkEyXkFqcGdeQXVyODA2ODM3NDQ@._V1_FMjpg_UX1000_.jpg" alt="image">
+        </picture>
+        <br>
+
+
+        <!-- Lazy Loading Images -->
+        <!-- Lazy Loading Images Can Help To Boost Your Site Performance, It Prevents The Loading Of Images That Are Not Really Needed On The Screen Immediately. As You Scroll Down Or Closer To The Image, That Image Begins To Load. -->
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_2_5x/sources/r1/cms/prod/2029/562029-h" alt="a picture" loading="lazy">
+        <br>
+
+
+
+        <!-- Create HTML Accordian -->
+        <!-- You Can Create A Simple Accordian With HTML Using <details> And <summary> Tags Together. -->
+        <details>
+            <summary>What exactly is the metaverse?</summary>
+            <p>
+                The metaverse is portrayed in popular media as a fully immersive online realm that similar to the real world but is computer generated. 
+            </p>
+        </details>
+        <details>
+            <summary>What exactly is the metaverse?</summary>
+            <p>
+                The metaverse is portrayed in popular media as a fully immersive online realm that similar to the real world but is computer generated. 
+            </p>
+        </details>
+        <details>
+            <summary>What exactly is the metaverse?</summary>
+            <p>
+                The metaverse is portrayed in popular media as a fully immersive online realm that similar to the real world but is computer generated. 
+            </p>
+        </details>
+        <br>
+
+
+        <!-- Box Shadow -->
+        <!-- When you Use inset in box-shadow it makes or adds the shadow inside the box, instead of the outside which is an awesome thing. You can also make gradients using inset. -->
+        <img src="https://cdn.iconscout.com/icon/free/png-256/facebook-logo-2019-1597680-1350125.png" alt="fb" class="img-fluid bs">
+        <br>
+        <img src="https://cdn.iconscout.com/icon/free/png-256/facebook-logo-2019-1597680-1350125.png" alt="fb" class="img-fluid bs2">
+        <br>
+
+
+
+        <!-- SET IMAGE AS CURSOR WITH ONE LINE OF CODE  -->
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iure ducimus vitae neque non explicabo quisquam aliquid fugit molestiae quibusdam.</p>
+        </div>
+
+
+        <!-- Good & Bad Anchor Links -->
+        <!-- Bad: susceptible to tabnabbing -->
+        <a href="https://github.com/raviteja327" target="_blank">My Github Profile</a>
+        <br>
+        <!-- Good: new tab can't cause problems -->
+        <a href="https://github.com/raviteja327" target="_blank" rel="noopener noreferrer">My Github Profile</a>
+        <br>
+
+
+        <!-- Smooth Scrolling Without JavaScript -->
+        <!-- The 'scroll-behavior' property specifies whether to smoothly animate the scroll position, instead of a straight jump, when the user clicks on a link within a scrollable box.  -->
+        <!-- 'Smooth' animated "scroll effect" between elements within the scrolling box. -->
+
+
+
+        <!-- Collapsible Without CSS -->
+        <details>
+            <summary>Title</summary>
+            <p>Content</p>
+        </details>
+        <br>
+
+
+
+        <!-- Input Types in HTML -->
+        <input type="text" placeholder="xyz">
+        <br>
+        <input type="password" placeholder="******">
+        <br>
+        <input type="radio"> Yes
+        <br>
+        <input type="checkbox">
+        <br>
+        <input type="button" value="Button">
+        <br>
+        <input type="color">
+        <br>
+        <input type="email" placeholder="xyz@gmail.com">
+        <br>
+        <input type="file">
+        <br>
+        <input type="hidden">
+        <br>
+        <input type="image">
+        <br>
+        <input type="number" placeholder="4">
+        <br>
+        <input type="range">
+        <br>
+        <input type="search" placeholder="Search">
+        <br>
+        <input type="tel" placeholder="123-456-789">
+        <br>
+        <input type="time">
+        <br>
+        <input type="date">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <input type="week">
+        <br>
+        <input type="month">
+        <br>
+        <input type="url" placeholder="htpps://www.google.com/">
+        <br>
+        <input type="submit">
+        <br>
+        <input type="reset">
+        <br>
+
+
+        <!-- Truncate Paragraph -->
+        <!-- Cut of too long passage like this -->
+        <p class="truncate">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quibusdam maiores odio repudiandae sapiente illum quo quaerat ducimus, possimus iusto delectus! Similique ea neque dignissimos doloribus, assumenda ducimus quam quod.
+        </p>
+        <br>
+
+
+        <!-- Create Wave Underline in text -->
+        <p class="wave">Hello world</p>
+        <br>
+
+
+
+        <!-- Aspect ratio CSS Property -->
+        <div class="box"></div>
+        <br>
+
         
         
 
