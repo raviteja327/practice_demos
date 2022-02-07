@@ -38,6 +38,19 @@
                 scroll-behavior: smooth;
             }
 
+            /* Use Focus-within */
+            /* html:focus-within improves the scroll speed of find-in-page in the browser */
+            html:focus-within {
+                scroll-behavior: smooth;
+            }
+
+
+            /* pseudo element ::selection */
+            ::selection {
+                background-color: #42C6FF;
+                color: #ffffff;
+            }
+
 
             /* clamp() function */
             .item {
@@ -50,10 +63,10 @@
 
 
             /* Styling List's Marker */
-            li {
+            .li-marker li {
                 color: #7b7b7b;
             }
-            li::marker {
+            .li-marker li::marker {
                 color: #594414;
             }
 
@@ -151,6 +164,28 @@
             }
 
 
+            /* You can style link different based on the state of the link */
+            /* unvisited link */
+            a:link {
+                color: black;
+            }
+
+            /* mouse over link */
+            a:hover {
+                color: blue;
+            }
+
+            /* selected link */
+            a:active {
+                color: red;
+            }
+
+            /* visited link */
+            a:visited {
+                color: green;
+            }
+
+
             /* Box Shadow */
             img.bs {
                 box-shadow: 0 10px 10px rgba(0, 0, 0, 0.342);
@@ -199,7 +234,7 @@
 
 
         <!-- Styling List's Marker -->
-        <ul>
+        <ul class="li-marker">
             <li>Like the post, show some love</li>
             <li>Save & do share the post</li>
             <li>Comment other properties</li>
@@ -598,6 +633,67 @@
         <!-- Aspect ratio CSS Property -->
         <div class="box"></div>
         <br>
+
+
+
+
+
+        <!-- Create an Accordian with HTML -->
+        <!-- Yes, you can actually create an accordian purely using HTML like below -->
+        <details>
+            <summary>View Features</summary>
+            <ul>
+                <li>Unlimited bookmarks</li>
+                <li>Nested collectons</li>
+                <li>Import and export</li>
+                <li>Link to web archieve</li>
+                <li>Mobile Support</li>
+            </ul>
+        </details>
+        <br>
+
+
+        <!-- Create Gauges with the <meter> element -->
+        <label for="ruby">Ruby:</label>
+        <meter id="ruby" min="0" max="100" low="35" high="65" optimum="95" value="25"></meter>
+        <br>
+        <label for="java">Java:</label>
+        <meter id="java" min="0" max="100" low="35" high="65" optimum="95" value="50"></meter>
+        <br>
+        <label for="js">JavaScript:</label>
+        <meter id="js" min="0" max="100" low="35" high="65" optimum="85" value="90"></meter>
+        <br>
+
+
+        <!-- Accept Multiple input values -->
+        <!-- You can use the multiple attribute to accept multiple values for files and email addresses. 
+        The user experience is not that good with type="email" but it works. -->
+        <input type="email" placeholder="Email comma separated" multiple>
+        <br>
+
+
+        <!-- Create a Slider with HTML -->
+        <input type="range" min="1" max="100" value="80">
+        <br>
+
+
+        <!-- <meta> tag http-equiv -->
+        <!-- Use http-equiv to refresh or redirect to a page after a certain duration -->
+        <!-- Refreshes the document every 30 seconds -->
+        <meta http-equiv="refresh" content="30">
+        <!-- Redirects to the specified page after 5 seconds -->
+        <meta http-equiv="refresh" content="5;htpps://google.com"> 
+
+
+        <!-- Disable Right-Click -->
+        <!-- Disables right click on this element -->
+        <p oncontextmenu="return false">Hello</p>
+        <!-- Disables right click on the document -->
+        <!-- <body oncontextmenu="return false">Hello</body> -->
+        <br>
+
+
+        
 
         
         

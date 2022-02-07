@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Dank Textbox Controls</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #131313;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            div {
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                height: 4rem;
+            }
+            input {
+                height: inherit;
+                width: 16rem;
+                border: 0;
+                border-bottom: 2px solid #2e2a33;
+                outline: none;
+                background: transparent;
+                color: #f7f7f7;
+                font-size: 1rem;
+                transition: all 0.35s;
+            }
+            input:focus {
+                border-bottom-color: #1ac0a2;
+            }
+            .label,
+            .label-sm {
+                position: absolute;
+                top: 50%;
+                color: #7b7684;
+                pointer-events: none;
+                transition: all 0.35s;
+            }
+            .label {
+                left: 0;
+                transform: translate(0, -50%);
+            }
+            .label-sm {
+                right: 0;
+                transform: translate(3rem, -50%);
+                width: 6rem;
+                font-size: 0.75rem;
+                text-align: right;
+                opacity: 0;
+                transition: all 0.35s;
+            }
+            input:focus ~ .label {
+                opacity: 0;
+                transform: translate(-3rem, -50%);
+            }
+            input:focus ~ .label-sm {
+                opacity: 1;
+                transform: translate(0, -50%);
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div>
+            <input type="text">
+            <span class="label">Location</span>
+            <span class="label-sm">Location</span>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
