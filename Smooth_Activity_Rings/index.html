@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Smooth Activity Ring</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                height: 100%;
+            }
+            body {
+                display: grid;
+                place-items: center;
+                margin: 0;
+                background: #100f10;
+            }
+
+            .wrapper {
+                position: relative;
+                width: 200px;
+                height: 200px;
+            }
+            svg {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                fill: none;
+            }
+            .rail {
+                z-index: 1;
+            }
+            circle {
+                stroke-width: 20;
+            }
+            .rail > circle {
+                stroke: rgba(255, 255, 255, 0.1);
+            }
+            .bar {
+                transform: rotate(-90deg);
+                z-index: 2;
+            }
+            .bar > circle {
+                stroke: #1ac0a2;
+                stroke-linecap: round;
+                stroke-dasharray: 628 628; /* 628 is the circumference of the circle */
+                stroke-dashoffset: 400;
+                animation: load 4s infinite;
+            }
+
+            @keyframes load {
+                0% {
+                    stroke-dashoffset: 628; /* 628 is the circumference of the circle */
+                }
+                100% {
+                    stroke-dashoffset: 400;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="wrapper">
+            <svg class="rail" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="80">
+            </svg>
+            <svg class="bar" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="80">
+            </svg>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
