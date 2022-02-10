@@ -44,6 +44,18 @@
                 width: 200px;
                 background-color: aqua;
             }
+
+            /* Change the color of cursor in any editable element. */
+            input {
+                caret-color: red;
+            }
+
+
+            /* Accent color */
+            input.r2,
+            input.c2 {
+                accent-color: red;
+            }
         </style>
     </head>
     <body>
@@ -100,6 +112,34 @@
 
         <!-- Border-Radius -->
         <div class="blob"></div>
+        <br>
+
+
+
+
+        <!-- Change the color of cursor in any editable element. -->
+        <input type="text">
+        <br>
+
+
+
+
+        <!-- Accent color -->
+        <!-- In this case, the default blue color of browser will be replaced by red color. -->
+        <input type="range">
+        <br>
+        <input type="range" class="r2">
+        <br>
+        <input type="checkbox" checked>
+        <br>
+        <input type="checkbox" checked class="c2">
+
+
+
+        <!-- Disable Right Click -->
+        <!-- <body oncontextmenu="return false">
+            <div></div>  
+        </body> -->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
