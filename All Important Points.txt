@@ -234,7 +234,7 @@ CSS Tools & Libraries
     like -webkit and -moz after checking the code against caniuse.com. This tool adds, arranges and deletes prefixes for you.
     https://autoprefixer.github.io/
 
-10. CSS Buttons
+10. CSS Buttons => A Collection of HTML and CSS Buttons.
     https://cssbuttons.io/
 
 11. Neumorphism / Soft UI Generator => Generate Soft-UI CSS code
@@ -388,7 +388,7 @@ CSS Tools & Libraries
 55. DropCSS => An exceptionally fast, thorough and tiny (~10 KB min) unused-CSS cleaner.
     https://github.com/leeoniya/dropcss
 
-56. CSSFx => A carefully crafted collection designed with a focus on fluidity, simplicity, and ease of use. Powered by CSS with minimal markup. 
+56. CSSFx => A carefully crafted collection designed with a focus on fluidity, simplicity, and ease of use. Powered by CSS with minimal     markup. 
     Completely open source and MIT licensed.
     https://cssfx.netlify.app/
 
@@ -476,6 +476,9 @@ CSS Tools & Libraries
 
 82. Animation-library
     https://animation.kaustubhmenon.com/
+
+83. CSS Background Patterns => A bunch of cool pure CSS background patterns.
+    https://www.magicpattern.design/tools/css-backgrounds
 
 
 
@@ -858,6 +861,9 @@ JavaScript & Libraries
 109. Filepond => A JavaScript library that can upload anything you throw at it, optimizes images for faster uploads, and offers a great, 
     accessible, silky smooth user experience.
     https://pqina.nl/filepond/
+
+110. Handwritten JS => A JavaScript library to convert typed text to realistic handwriting.
+    https://alias-rahil.github.io/handwritten.js/
 
 
 
@@ -1545,6 +1551,9 @@ All in One => https://arpitbrandings.in/freeicons/
 87. Logo Crunch => Logo Crunch is a logotype maker that specializes in creating beautiful responsive graphics.
     https://brandmark.io/logo-crunch/
 
+88. ScreenBean => A tool to add colorful backgrounds to screenshots.
+    https://screenbean.brunnerliv.io/
+
 
 
 
@@ -1626,6 +1635,9 @@ colors
 
 22. Flat UI Colors
     https://flatuicolors.com/
+
+23. CCCREATE => A carefully curated collection of tools & resources for web creators.
+    https://cccreate.co/
 
 
 
@@ -2611,6 +2623,9 @@ Templates
 29. Bootstrap Taste => Premium & Free Bootstrap Templates 2021. Looking for a good collection of Bootstrap templates and themes ? 
     You have landed on the right page.
     https://bootstraptaste.com/
+
+30. Coded Mails => A list of free responsive HTML email templates.
+    https://codedmails.com/
 
 
 
