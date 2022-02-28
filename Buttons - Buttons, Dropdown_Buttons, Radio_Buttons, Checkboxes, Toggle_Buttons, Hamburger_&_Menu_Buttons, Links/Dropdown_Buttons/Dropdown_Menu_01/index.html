@@ -281,7 +281,7 @@
 
             mainButton.addEventListener("click", () => {  
                 const listWrapperSizes = 3.5; // margins, paddings & borders  
-                const dropdownOpenHeight = 4.6 * listItems.length + listWrapperSizes;  
+                const dropdownOpenHeight = 5.6 * listItems.length + listWrapperSizes;  
                 const currDropdownHeight =  
                 root.style.getPropertyValue("--dropdown-height") || "0";  
                 currDropdownHeight === "0" ? setDropdownProps(180, dropdownOpenHeight, 1) : setDropdownProps(0, 0, 0);  
