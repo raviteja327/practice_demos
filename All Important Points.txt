@@ -714,7 +714,8 @@ JavaScript & Libraries
 69. Popmotion JS
     https://popmotion.io/
 
-70. MO JS
+70. MO JS => Motion graphics has a big part to play in animations and Mo.js is one option with which you can make an impact. With a number of 
+    tutorials and demos to help out, beginners may not find it hard to create geometrical shapes and time animations to the dot.
     https://mojs.github.io/
 
 71. Leaflet JS => Leaflet is one of the best JavaScript libraries that you can use to include interactive maps into your website.
@@ -823,7 +824,9 @@ JavaScript & Libraries
 98. Lottie JS
     https://airbnb.io/lottie/#/
 
-99. Ani JS
+99. Ani JS => Among the JavaScript libraries in this list, AniJS is somewhat unique. It allows you to add animations to elements in a simple
+    'sentence-like' structure, great for folks new to animation. What's more, its non-specific nature allows almost everyone to use it in 
+    routine UX design.
     https://anijs.github.io/
 
 100. Popmotion Pure JS
@@ -864,6 +867,25 @@ JavaScript & Libraries
 
 110. Handwritten JS => A JavaScript library to convert typed text to realistic handwriting.
     https://alias-rahil.github.io/handwritten.js/
+
+111. Anime JS => Let's start this list of JavaScript animation libraries with Anime.js. This lightweight animation library clocks 35K+ stars 
+     on GitHub. Working from a single powerful API, you can use it to animate HTML, CSS, JS, SVG and DOM attributes.
+     https://animejs.com/
+
+112. Velocity JS => Velocity.js combines the best of jQuery and CSS transitions. It rates close to 17K stars on GitHub and boasts of prominent 
+     users like WhatsApp and Mailchimp. You can also use Velocity.js to scroll browser windows.
+     http://velocityjs.org/
+
+113. Popmotion Pure => At close to 18K stars, Popmotion is a functional animation library for any JavaScript environment. It can work with just
+     about any API that accepts numbers as inputs such as React, Three.js, A-Frame and PixiJS. Popmotion weighs only 11.7KB, but packs a punch 
+     neverthless.
+     https://popmotion.io/pure/
+
+114. Grid JS => An open-source HTML table plugin written in TypeScript. It works with most JavaScript frameworks.
+     https://gridjs.io/
+
+115. Scroll Trigger JS => A plugin for scroll-based animations with minimal code.
+     https://greensock.com/scrolltrigger/
 
 
 
@@ -1553,6 +1575,9 @@ All in One => https://arpitbrandings.in/freeicons/
 
 88. ScreenBean => A tool to add colorful backgrounds to screenshots.
     https://screenbean.brunnerliv.io/
+
+89. Shape Dividers => A generator for beautiful SVG shape dividers.
+    https://www.shapedivider.app/
 
 
 
@@ -2486,6 +2511,13 @@ Chrome Extensions
 
 6. Responsive Viewer => This extension shows multiple screens in one view that allows will developers to test multiple screens while
     developing responsive websites / applications.
+    https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en-US
+
+7. Window Resizer => This extension re-sizes the browser's window in order to emulate various resolutions and devices.
+    https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=en-US
+
+8. Web Developer => The Web Developer extension adds a toolbar button to the browser with various web developer tools.
+    https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=en-US
 
 
 
@@ -2766,6 +2798,11 @@ Hosting
 8. Free Hostia => FreeHostia offers free hosting services incl. an industry-best Control Panel & a 1-click installation of 50+ free apps.
     Instant setup. No forced ads.
     https://www.freehostia.com/
+
+9. Github Page
+10. Google Cloud
+11. Amazon Web Hosting
+12. Microsoft Azure.
 
 
 
