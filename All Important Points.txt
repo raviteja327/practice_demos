@@ -354,6 +354,7 @@ CSS Tools & Libraries
 45. CSS Snippets => The CSS Snippet collection contains utilities and interactive examples for CSS3. It includes modern techniques for creating
     commonly-used layouts, styling and Animating elements, as well as snippets for handling user interactions.
     https://www.30secondsofcode.org/css/p/1
+    https://www.30secondsofcode.org/
 
 46. CSS Section Separator Generator => A collection of customizable CSS section separators, with the possibility to easily copy the code.
     https://wweb.dev/resources/css-separator-generator/
@@ -479,6 +480,18 @@ CSS Tools & Libraries
 
 83. CSS Background Patterns => A bunch of cool pure CSS background patterns.
     https://www.magicpattern.design/tools/css-backgrounds
+
+84. Normalize CSS => Helps us build all elements more consistently when displayed in today's popular browsers.
+    https://necolas.github.io/normalize.css/
+
+85. Solved by Flexbox => It synthesizes common ways to build layouts for websites using flexbox.
+    https://philipwalton.github.io/solved-by-flexbox/
+
+86. Spinkit => Helps you build CSS loading animation effects for your project.
+    https://tobiasahlin.com/spinkit/
+
+87. CSS Animation => Summary of articles to help you build motion effects for your website.
+    https://cssanimation.rocks/
 
 
 

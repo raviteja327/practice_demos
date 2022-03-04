@@ -56,6 +56,49 @@
             input.c2 {
                 accent-color: red;
             }
+
+
+            /* Scroll Snaps */
+            .container.ss {
+                display: flex;
+                overflow: auto;
+                scroll-snap-type: x mandatory;
+            }
+            .item {
+                min-width: 100%;
+                scroll-snap-align: start;
+                background-color: chartreuse;
+                height: 200px;
+                margin: 20px;
+            }
+
+
+
+            /* Text Hover Effect */
+            .link {
+                background-image: linear-gradient(#ff2f97, #ff2f97);
+                background-repeat: no-repeat;
+                background-size: 0 100%;
+                background-position-x: right;
+                transition: background-size 500ms;
+            }
+            .link:hover {
+                background-size: 100% 100%;
+                background-position-x: left;
+            }
+
+
+
+            /* Resizable Elements */
+            .re {
+                width: 300px;
+                height: 200px;
+                background-color: cadetblue;
+                overflow: auto;
+                resize: both;
+                display: grid;
+                place-items: center;
+            }
         </style>
     </head>
     <body>
@@ -133,13 +176,38 @@
         <input type="checkbox" checked>
         <br>
         <input type="checkbox" checked class="c2">
+        <br>
 
 
 
         <!-- Disable Right Click -->
         <!-- <body oncontextmenu="return false">
             <div></div>  
-        </body> -->
+        </body> 
+
+
+
+
+        <!-- Scroll Snaps -->
+ 
+        <div class="container ss">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+        <br>
+
+
+
+        <!-- Text Hover Effect -->
+        <h2 class="link">Hello World</h2>
+        <br>
+
+
+
+        <!-- Resizable Elements -->
+        <div class="re">Hello</div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
