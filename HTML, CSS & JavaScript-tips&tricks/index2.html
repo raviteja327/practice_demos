@@ -99,6 +99,137 @@
                 display: grid;
                 place-items: center;
             }
+
+
+
+            /* Ellipsize Long Text */
+            .long-text {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                background-color: aquamarine;
+                padding: 5px;
+                border-radius: 2px;
+                width: 50%;
+            }
+
+
+
+            /* CSS Border Radius */
+            .br {
+                width: 200px;
+                height: 100px;
+                background-color: cornflowerblue;
+            }
+            .br1 {
+                border-radius: 20px;
+            }
+            .br2 {
+                border-radius: 20px 40px;
+            }
+            .br3 {
+                border-radius: 10px 20px 30px 40px;
+            }
+
+
+
+            /* Background Patern in CSS */
+            .bp {
+                width: 200px;
+                height: 200px;
+                background-color: #e5e5f7;
+                opacity: 0.8;
+            }
+            .bp1 {
+                background-image: linear-gradient(135deg, #ff4c4c 25%, transparent 25%);
+            }
+            .bp2 {
+                background-image: linear-gradient(225deg, #ff4c4c 25%, transparent 25%);
+            }
+            .bp3 {
+                background-image: linear-gradient(45deg, #ff4c4c 25%, transparent 25%);
+            }
+            .bp4 {
+                background-image: linear-gradient(315deg, #ff4c4c 25%, transparent 25%);
+            }
+            .bp5 {
+                background-image: linear-gradient(135deg, #ff4c4c 25%, transparent 25%);
+                background-position: 10px 0, 10px 0, 0 0, 0 0;
+                background-size: 20px 20px;
+                background-repeat: repeat;
+            }
+            .bp6 {
+                background-image: linear-gradient(135deg, #ff4c4c 25%, transparent 25%), 
+                                    linear-gradient(225deg, #ff4c4c 25%, transparent 25%),
+                                    linear-gradient(45deg, #ff4c4c 25%, transparent 25%),
+                                    linear-gradient(315deg, #ff4c4c 25%, #e5e5f7 25%);
+                background-position: 10px 0, 10px 0, 0 0, 0 0;
+                background-size: 20px 20px;
+                background-repeat: repeat;
+            }
+
+
+
+            /* Truncate Paragraph */
+            /* Cut of too long passage like this... */
+            .truncate {
+                width: 300px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+
+
+            /* Caret Color */
+            /* Change color of caret in Inputs */
+            input.caret {
+                caret-color: dodgerblue;
+            }
+
+
+
+            /* CSS Link State */
+            /* You can style your links different based on the state of the link */
+            a.state:link {
+                color: red;
+            }
+            a.state:visited {
+                color: black;
+            }
+
+
+
+            /* CSS Hacks */
+
+            /* Inherit box sizing */
+            html {
+                box-sizing: border-box;
+            }
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+
+            /* Better User Experience for Video */
+            /* This is a cool user experience trick to mute videos on autoplay and let the user decide if they want to hear it. */
+            video[autoplay]:not([muted]) {
+                display: none;
+            }
+
+            /* Selection pseudo class */
+            /* Use selection pseudo-class to give a personal touch to text selection on your websites. */
+            ::selection {
+                background-color: #6600ff;
+                color: #ffffff;
+            }
+
+            /* No value, No problem */
+            /* Display links when the element has no text value but the href attribute has a link. */
+            a[href^='http']:empty::before {
+                content: attr(href);
+            }
         </style>
     </head>
     <body>
@@ -208,6 +339,90 @@
 
         <!-- Resizable Elements -->
         <div class="re">Hello</div>
+        <br>
+
+
+
+        <!-- Ellipsize Long Text -->
+        <p class="long-text">
+            "Never Gonna Give You Up" is the debut single recorded by English singer and songwriter Rick Astley, released on 27 July 1987.
+        </p>
+        <br>
+
+
+
+        <!-- Mail Attributes -->
+        <a href="mailto: codingmaster52@gmail.com ? cc = kdi.tarun@gmail.com & bcc = cm123@gmail.com & subject = New Post">Send Email</a>
+        <br>
+
+
+
+        <!-- CSS Border Radius -->
+        <div class="br1 br"></div>
+        <br>
+        <div class="br2 br"></div>
+        <br>
+        <div class="br3 br"></div>
+        <br>
+
+
+
+        <!-- Background Patern in CSS -->
+        <div class="bp bp1"></div>
+        <br>
+        <div class="bp bp2"></div>
+        <br>
+        <div class="bp bp3"></div>
+        <br>
+        <div class="bp bp4"></div>
+        <br>
+        <div class="bp bp5"></div>
+        <br>
+        <div class="bp bp6"></div>
+        <br>
+
+
+
+
+        <!-- Truncate Paragraph -->
+        <!-- Cut of too long passage like this... -->
+        <p class="truncate">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate culpa, vitae labore perferendis veritatis adipisci id reprehenderit sapiente, ipsam in perspiciatis distinctio itaque harum quaerat odio veniam, laboriosam deleniti molestiae!
+        </p>
+        <br>
+
+
+
+
+        <!-- Caret Color -->
+        <!-- Change color of caret in Inputs -->
+        <input type="text" class="caret">
+        <br>
+
+
+
+        <!-- CSS Link State -->
+        <!-- You can style your links different based on the state of the link -->
+        <a href="#" class="state">Link State</a>
+        <br>
+
+
+
+        <!-- CSS Hacks -->
+
+        <!-- Better User Experience for Video -->
+        <!-- This is a cool user experience trick to mute videos on autoplay and let the user decide if they want to hear it. -->
+        <video controls autoplay>
+            <source src="https://youtu.be/e4N9al7vhVQ?list=RDC_K3EcbVmHI" type="video/mp4">
+            <source src="https://youtu.be/e4N9al7vhVQ?list=RDC_K3EcbVmHI" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+
+        <!-- No value, No problem -->
+        <!-- Display links when the element has no text value but the href attribute has a link. -->
+        <a href="https://www.w3schools.com/" class="nvnp"></a>
+        <br>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
