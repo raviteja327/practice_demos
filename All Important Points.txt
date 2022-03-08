@@ -493,6 +493,18 @@ CSS Tools & Libraries
 87. CSS Animation => Summary of articles to help you build motion effects for your website.
     https://cssanimation.rocks/
 
+88. Bootswatch => Synthesize Bootstrap interfaces for the project (Free themes for Bootstrap).
+    https://bootswatch.com/
+
+89. Charts CSS => Helps you design charts for your project using HTML & CSS.
+    https://chartscss.org/
+
+90. Pattern CSS => Allows you to design beautiful images, background patterns for websites.
+    https://bansal.io/pattern-css
+
+91. Bttn CSS => Summary of design interfaces for HTML buttons. Awesome buttons for awesome projects!
+    https://bttn.surge.sh/
+
 
 
 
@@ -1591,6 +1603,9 @@ All in One => https://arpitbrandings.in/freeicons/
 
 89. Shape Dividers => A generator for beautiful SVG shape dividers.
     https://www.shapedivider.app/
+
+90. Country Flags Icon => Summary of flags and icons of countries around the world.
+    https://flagicons.lipis.dev/
 
 
 
