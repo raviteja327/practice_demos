@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <title>Paytm Loading Effect</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box {
+                display: flex;
+                justify-content: center;
+            }
+            span {
+                display: block;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                animation: effect 0.6s linear infinite alternate;
+                transform: scale(0);
+                background: #002B73;
+            }
+            span:nth-child(1) {
+                animation-delay: 0.1s;
+            }
+            span:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+            span:nth-child(3) {
+                animation-delay: 0.3s;
+            }
+            span:nth-child(4) {
+                animation-delay: 0.4s;
+                background: #00B9F5;
+            }
+            span:nth-child(5) {
+                animation-delay: 0.5s;
+                background: #00B9F5;
+            }
+
+            @keyframes effect {
+                100% {
+                    transform: scale(1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <div class="box">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
