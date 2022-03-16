@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Animation Using HTML & CSS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <!-- Importing Poppins Font From Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <style>
+        * {  
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }  
+        body {
+            margin:0;
+            height:100vh;
+            display:grid;
+            place-items:center;
+            background-color:#010101;
+        }
+        
+        .profile-container{
+            width:500px;
+            height:350px;
+            position:relative;
+            overflow:hidden;
+            background-color:#fff;
+            border-radius:10px;
+        }
+        .profile-container .img-bar{
+            height:100%;
+            background-image:url("https://images.pexels.com/photos/3781545/pexels-photo-3781545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-size:cover;
+            background-repeat:no-repeat;
+            position:absolute;
+            transition:all 1s;
+            border-radius:5px;
+        }
+        .profile-container .img-bar:nth-child(1){
+            width:25%;
+            z-index:6;
+            transition-delay:0s;
+        }
+        .profile-container .img-bar:nth-child(2){
+            width:50%;
+            z-index:5;
+            transition-delay:0.2s;
+        }
+        .profile-container .img-bar:nth-child(3){
+            width:75%;
+            z-index:4;
+            transition-delay:0.4s;
+        }
+        .profile-container .img-bar:nth-child(4){
+            width:100%;
+            z-index:3;
+            transition-delay:0.6s;
+        }
+        .profile-container:hover .img-bar{
+            transform:translateY(-100%);
+        }
+        .profile-container:hover .img-bar:nth-child(1){
+            transition-delay:0.6s;
+        }
+        .profile-container:hover .img-bar:nth-child(2){
+            transition-delay:0.4s;
+        }
+        .profile-container:hover .img-bar:nth-child(3){
+            transition-delay:0.2s;
+        }
+        .profile-container:hover .img-bar:nth-child(4){
+            transition-delay:0s;
+        }
+        .profile-content{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            height:100%;
+            padding:0 30px;
+            text-transform:capitalize;
+            font-family: Arial;
+            text-align:center;
+            transform:translateY(100%);
+            transition:all 1.5s;
+            transition-delay:0.3s;
+            color:#444;
+        }
+        .profile-content p{
+            line-height:1.6;
+            margin:20px 0 30px;
+        }
+        .profile-content .btn{
+            text-decoration:none;
+            padding:10px 20px;
+            color:#444;
+            border:3px solid #444;
+            font-weight:bolder;
+        }
+        .profile-container:hover .profile-content{
+            transform:translateY(0);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="profile-container">
+        <span class="img-bar"></span>
+        <span class="img-bar"></span>
+        <span class="img-bar"></span>
+        <span class="img-bar"></span>
+        <div class="profile-content">
+            <h2>hey! i am kylie singh</h2>
+            <p>
+                so I have to say something about myself. Sometimes it is hard to
+                introduce yourself because you know yourself so well that you do not
+                know where to start with.
+            </p>
+            <a href="#" class="btn">see my work &#8594;</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+</html>
