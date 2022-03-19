@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+        <title>Copy to Clipboard in JavaScript</title>
+        <style>
+            body {  
+                text-align: center;  
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;  
+                color: #444;  
+                line-height: 1.6;  
+                background-color: #FAFAFA;
+            }
+
+            button {
+                color: #1D343E;
+                transition: .5s opacity;
+            }
+            button:hover {
+                opacity: .85;
+            }
+            input {
+                background-color: #B9E3C6;
+                color: #1D343E;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div>
+            <input id="text" type="text" class="h-10 rounded mr-4 w-64 outline-none px-4 cursor-not-allowed" value="https://example.com" readonly>
+            <button id="btn" class="text-xs font-bold uppercase"><i class="fa fa-clone"></i> copy link</button>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            // Select button element
+            const btn = document.getElementById("btn");
+            // Select text input element
+            const text = document.getElementById('text');
+            // When button is pressed
+            btn.addEventListener('click', () => {
+                // Select the input text content
+                text.focus();
+                text.select();
+                // Copy content to clipboard
+                document.execCommand('copy');
+                // Remember the button current text
+                const oldText = btn.innerHTML;
+                // Set the button text to 'copied'
+                btn.innerHTML = '<i class="fa fa-check"></i> copied';
+                btn.classList.toggle('cursor-default');
+                // After 2s change it back
+                setTimeout(() => {
+                    btn.innerHTML = oldText;
+                    btn.classList.toggle('cursor-default');
+                }, 2000);
+            });
+        </script>
+    </body>
+</html>

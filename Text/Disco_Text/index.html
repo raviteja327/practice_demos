@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Disco Text</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+                font-weight: 900;
+            }
+
+            .container {
+                position: relative;
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            input[type="checkbox"] {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 100%;
+                width: 100%;
+                z-index: 100;
+            }
+            .container i {
+                margin-top: 10px;
+                color: #333;
+            }
+            .container span {
+                width: 100%;
+                height: 100%;
+                background: #efefef;
+                position: absolute;
+                z-index: -1;
+                transition: all 0.5s ease;
+            }
+            .container div {
+                position: relative;
+                width: auto;
+                background: #1d1e21;
+                color: #555;
+                padding: 20px 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 46px;
+                cursor: pointer;
+                margin: 0 4px;
+                border-radius: 25px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                transition: all 0.5s ease;
+            }
+            input[type="checkbox"]:checked ~ div {
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+                color: yellow;
+                text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+                animation: glow 5s linear infinite;
+            }
+            input[type="checkbox"]:checked ~ span {
+                background: #333;
+            }
+
+            @keyframes glow {
+                0% {
+                    filter: hue-rotate(0);
+                }
+                100% {
+                    filter: hue-rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <input type="checkbox">
+            <div>DISCO</div>
+            <i>Click Above</i>
+            <span></span>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

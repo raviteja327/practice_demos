@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Section Design Using HTML & CSS</title>
+
+  <!-- Embedding fontawesome icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Nunito", sans-serif;
+      background: #f4f4f4;
+    }
+
+    .service-section {
+      position: relative;
+      text-align: center;
+      max-width: 320px;
+      width: 100%;
+      padding: 38px 26px;
+      box-sizing: border-box;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 3px rgba(123, 116, 116, 0.08);
+      cursor: pointer;
+      transition: all 0.3s linear;
+      color: #403c3c;
+    }
+    .top-line {
+      width: 250px;
+      height: 10px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      background-color: #FFC63D;
+      border-radius: 0 0 10px 10px;
+      display: none;
+      animation: top-line 0.5s;
+    }
+    .service-section img {
+      width: 80px;
+    }
+    .service-section h1 {
+      margin: 6px 0;
+    }
+    .service-section p {
+      color: #403c3c;
+      text-align: center;
+      margin: 0;
+    }
+    .primary-button {
+      border-radius: 5px;
+      border: 2px solid #FFC63D;
+      color: #576975;
+      margin-top: 15px;
+      display: inline-block;
+      padding: 8px 22px;
+      text-decoration: none;
+    }
+    .service-section:hover {
+      box-shadow: 2px 2px 32px rgba(0, 0, 0, 0.07);
+      transition: 0.3s linear all;
+    }
+    .primary-button:hover {
+      background-color: #FFC63D;
+      border: 2px solid #FFC63D;
+      color: #000000;
+      transition: 0.3s linear all;
+    }
+    .service-section:hover .top-line {
+      display: block;
+    }
+
+    @keyframes top-line {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="service-section">
+    <div class="top-line"></div>
+    <div class="icon">
+      <img src="https://www.kindpng.com/picc/m/560-5602764_ui-ux-ui-ux-design-icon-hd-png.png" class="img-fluid" alt="UX design Icon">
+    </div>
+    <h1>UI Development</h1>
+    <p>
+      We provide content related to frontend development.
+      For more information you can follow our profile. Thanks
+    </p>
+    <a href="#" class="primary-button">Learn More</a>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Product Filter in JavaScript</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            #searchBox {
+                box-sizing: border-box;
+                width: 50%;
+                margin-bottom: 15px;
+                padding: 10px;
+            }
+            #list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            #list li {
+                padding: 10px 5px;
+                border: 1px solid #eee;
+            }
+            #list li:nth-child(odd) {
+                background: #f2f2f2;
+            }
+            #list li:hover {
+                background: #fffed6;
+            }
+            #list li.hide {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <input type="text" id="searchBox" placeholder="Search...">
+        <ul id="list">
+            <li>Apple</li>
+            <li>Avocado</li>
+            <li>Banana</li>
+            <li>Strawberry</li>
+            <li>Watermelon</li>
+        </ul>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            window.addEventListener('load', function() {
+                let filter = document.getElementById('searchBox');
+
+                filter.addEventListener('keyup', function() {
+                    var search = this.value.toLowerCase();
+                    var all =document.querySelectorAll('#list li');
+
+                    for (let i of all) {
+                        let item = i.innerHTML.toLocaleLowerCase();
+                        if (item.indexOf(search) == -1) {
+                            i.classList.add('hide');
+                        } else {
+                            i.classList.remove('hide');
+                        }
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>
