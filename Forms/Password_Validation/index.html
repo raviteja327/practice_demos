@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Password Validation</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background: rgb(235, 73, 73);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: sans-serif;
+            }
+
+            form {
+                position: relative;
+            }
+            input {
+                min-width: 28rem;
+                height: 4rem;
+                padding: 0 25px;
+                outline: 0;
+                border: 1px solid rgb(208, 208, 208);
+                border-radius: 50px;
+                font-size: 24px;
+                letter-spacing: 1px;
+            }
+            .far {
+                position: absolute;
+                font-size: 30px;
+                color: rgb(39, 39, 39);
+                top: 1.1rem;
+                right: 1.2rem;
+                cursor: pointer;
+            }
+            .message {
+                position: relative;
+                width: 25rem;
+                height: 16rem;
+                background: white;
+                top: 1.5rem;
+                border-radius: 10px;
+                opacity: 0;
+                transition: 0.3s;
+            }
+            .fas {
+                position: relative;
+                top: 2rem;
+                font-size: 22px;
+                padding: 0 30px;
+                color: red;
+            }
+            .password-contain {
+                position: relative;
+                font-size: 22px;
+                padding: 0 60px;
+                color: rgb(46, 45, 45);
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+            .valid {
+                color: green;
+            }
+            .invalid {
+                color: red;
+            }
+            .fa-check {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="box">
+            <form action="#">
+                <input type="password" id="myPassword">
+                <i class="far fa-eye" id="eye" onclick="showtoggle()"></i>
+            </form>
+        </div>
+        <div class="message" id="message">
+            <i class="fas fa-times" id="numberIcon"></i>
+            <p class="password-contain" id="number">Must have numbers !</p>
+
+            <i class="fas fa-times" id="charIcon"></i>
+            <p class="password-contain" id="specialCHAR">Must have special char !</p>
+
+            <i class="fas fa-times" id="capitalIcon"></i>
+            <p class="password-contain" id="capital">A Uppercase letter !</p>
+
+            <i class="fas fa-times" id="lengthIcon"></i>
+            <p class="password-contain" id="length">Should be 8 characters !</p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            var state = false;
+
+            function showtoggle() {
+                if (state) {
+                    document.getElementById('myPassword').setAttribute('type', 'password');
+                    document.getElementById('eye').setAttribute('class', 'far fa-eye');
+                    state = false;
+                } else {
+                    document.getElementById('myPassword').setAttribute('type', 'text');
+                    document.getElementById('eye').setAttribute('class', 'far fa-eye-slash');
+                    state = true;
+                }
+            }
+
+            myPassword.onfocus = function() {
+                document.getElementById('message').style.opacity = '1';
+            }
+
+            myPassword.onblur = function() {
+                document.getElementById('message').style.opacity = '0';
+            }
+
+            // FOR VALIDATION
+
+            var Password = document.getElementById('myPassword');
+            var number = document.getElementById('number');
+            var specialCHAR = document.getElementById('specialCHAR');
+            var capital = document.getElementById('capital');
+            var length = document.getElementById('length');
+
+            Password.onkeyup = function() {
+                // For first validation
+                if (Password.value.match(/[0-9]/)) {
+                    document.getElementById('numberIcon').setAttribute('class', 'fas fa-check');
+                    number.classList.remove('invalid');
+                    number.classList.add('valid');
+                } else {
+                    document.getElementById('numberIcon').setAttribute('class', 'fas fa-times');
+                    number.classList.add('invalid');
+                    number.classList.remove('valid');
+                }
+
+                // For SECOND VALIDATION
+                if (Password.value.match(/[a-z^A-Z]/)) {
+                    document.getElementById('charIcon').setAttribute('class', 'fas fa-check');
+                    specialCHAR.classList.remove('invalid');
+                    specialCHAR.classList.add('valid');
+                } else {
+                    document.getElementById('charIcon').setAttribute('class', 'fas fa-times');
+                    specialCHAR.classList.add('invalid');
+                    specialCHAR.classList.remove('valid');
+                }
+
+                // For THIRD VALIDATION
+                if (Password.value.match(/[A-Z]/)) {
+                    document.getElementById('capitalIcon').setAttribute('class', 'fas fa-check');
+                    capital.classList.remove('invalid');
+                    capital.classList.add('valid');
+                } else {
+                    document.getElementById('capitalIcon').setAttribute('class', 'fas fa-times');
+                    capital.classList.add('invalid');
+                    capital.classList.remove('valid');
+                }
+
+                // For FORTH VALIDATION
+                if (Password.value.length >= 8) {
+                    document.getElementById('lengthIcon').setAttribute('class', 'fas fa-check');
+                    length.classList.remove('invalid');
+                    length.classList.add('valid');
+                } else {
+                    document.getElementById('lengthIcon').setAttribute('class', 'fas fa-times');
+                    length.classList.add('invalid');
+                    length.classList.remove('valid');
+                }
+            }
+        </script>
+    </body>
+</html>
