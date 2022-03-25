@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Split Landing Page Design With HTML, CSS & JavaScript</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #131313;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .container {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                position: relative;
+            }
+            .split {
+                width: 50%;
+                height: 100%;
+                overflow: hidden;
+                position: absolute;
+            }
+            .split.left {
+                left: 0;
+                background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/marvel-cinematic-universe-order-1601976266.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+            }
+            .split.left::before {
+                content: '';
+                background-color: rgba(135, 121, 218, 0.4);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+            h2 {
+                color: #fff;
+                font-size: 58px;
+                position: absolute;
+                white-space: nowrap;
+                left: 50%;
+                top: 30%;
+                transform: translateX(-50%);
+            }
+            button {
+                border: none;
+                font-size: 16px;
+                background: #fff;
+                color: #000;
+                width: 120px;
+                height: 50px;
+                border-radius: 2px;
+                padding: 8px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%);
+                cursor: pointer;
+            }
+            .split.left button:hover {
+                background: rgba(135, 121, 218, 1);
+                color: #fff;
+                transition: 0.2s ease-in;
+                border: #fff solid;
+            }
+            .split.right {
+                right: 0;
+                background-image: url('https://www.rollingstone.com/wp-content/uploads/2018/06/justice-league-0bc218d8-2ea7-4fb9-b189-ce1c760290c7.jpg?resize=1800,1200&w=450');
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+            }
+            .split.right::before {
+                content: '';
+                background-color: rgba(43, 43, 43, 0.6);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+            .split.right button:hover {
+                background: rgba(43, 43, 43, 1);
+                color: #fff;
+                transition: 0.2s ease-in;
+                border: #fff solid;
+            }
+            .active-left .left {
+                width: 75%;
+            }
+            .active-left .right {
+                width: 25%;
+            }
+            .active-right .left {
+                width: 25%;
+            }
+            .active-right .right {
+                width: 75%;
+            }
+            .split.left,
+            .split.left::before,
+            .split.right,
+            .split.right::before {
+                transition: all 1000ms ease-in-out;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <div class="split left">
+                <h2>Marvel</h2>
+                <button>Buy Ticket</button>
+            </div>
+            <div class="split right">
+                <h2>DC</h2>
+                <button>Buy Ticket</button>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            let ps5 = document.querySelector('.left');
+            let xbox = document.querySelector('.right');
+            let container = document.querySelector('.container');
+
+            ps5.addEventListener('mouseenter', () => {
+                container.classList.add('active-left');
+            });
+            ps5.addEventListener('mouseleave', () => {
+                container.classList.remove('active-left');
+            });
+
+            xbox.addEventListener('mouseenter', () => {
+                container.classList.add('active-right');
+            });
+            xbox.addEventListener('mouseleave', () => {
+                container.classList.remove('active-right');
+            });
+        </script>
+    </body>
+</html>

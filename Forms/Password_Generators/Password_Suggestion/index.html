@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Password Suggestion</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                /* background-color: #131313; */
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* font-family: 'Poppins', sans-serif; */
+            }
+
+            .container h2 {
+                font-family: 'Consolas';
+                font-size: 28px;
+                color: #1f1f1f;
+            }
+            .container input {
+                width: 100%;
+                height: 40px;
+                border: none;
+                margin: 15px 0 20px;
+                background: transparent;
+                outline: none;
+                padding: 4px 20px;
+                font-size: 18px;
+                border-radius: 8px;
+                color: #1f1f1f;
+                box-shadow: -4px -4px 10px rgba(255, 255, 255, 1), inset 4px 4px 10px rgba(0, 0, 0, 0.05),
+                            inset -4px -4px 10px rgba(255, 255, 255, 1), 4px 4px 10px rgba(0, 0, 0, 0.05);
+            }
+            .container span {
+                font-size: 15px;
+                position: absolute;
+                top: 40%;
+                right: -6%;
+                cursor: pointer;
+            }
+            .container p {
+                display: none;
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 0 20px;
+                font-size: 18px;
+                color: #1f1f1f;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <h2>Password Suggestion</h2>
+            <div style="position: relative;">
+                <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="off">
+                <span onclick="toggle()">
+                    <i class="far fa-eye" onclick="myFunction(this)"></i>
+                </span>
+            </div>
+            <p class="random-password"></p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            let password = document.getElementById('password');
+            let randomPassword = document.querySelector('.random-password');
+            
+            var passwordLength = 14;
+            var passwordVal = '';
+            
+            // Random Password Suggestion
+            window.onload = function loadPassword() {
+                let randomGenerateChars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*"';
+                
+                for (var i = 0; i < passwordLength; i++) {
+                    let randomNumber = Math.floor(Math.random() * randomGenerateChars.length);
+                    // console.log(randomNumber);
+                    passwordVal += randomGenerateChars.substring(randomNumber, randomNumber + 1);
+                }
+                randomPassword.innerHTML = passwordVal;
+            }
+
+            password.addEventListener('focus', function() {
+                if (password.value == '') {
+                    randomPassword.style = 'display: block';
+                }
+            })
+
+            randomPassword.addEventListener('click', function() {
+                password.value = passwordVal;
+                randomPassword.style = 'display: none';
+            })
+
+            // Show and Hide password
+            var state = false;
+            function toggle() {
+                if (state) {
+                    password.setAttribute('type', 'password');
+                    state = false;
+                } else {
+                    password.setAttribute('type', 'text');
+                    state = true;
+                }
+            }
+
+            function myFunction(show) {
+                show.classList.toggle('fa-eye-slash');
+            }
+        </script>
+    </body>
+</html>
