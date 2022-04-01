@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Custom Countdown</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+            * {
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html {  
+                box-sizing: border-box;  
+            }
+            body {
+                margin: 0;
+                min-height: 100vh;
+                overflow-y: hidden;
+                background-color: #131313;
+                display: flex;
+                align-items: center;
+                font-family: 'Nunito', Arial, Helvetica, sans-serif;
+            }
+
+            /* Video Background */  
+            .video-background {  
+                position: fixed;  
+                right: 0;  
+                bottom: 0;  
+                width: 100vw;  
+                height: auto;  
+            }  
+            video {  
+                position: absolute;  
+                top: 50%;  
+                left: 50%;  
+                transform: translate(-50%, -50%);  
+            }  
+            .video-overlay {  
+                position: fixed;  
+                left: 0;  
+                top: 0;  
+                height: 100vh;  
+                width: 100vw;  
+                background: rgb(255 255 255 / 0.35);  
+            }
+
+            /* Container */  
+            .container {  
+                min-width: 580px;  
+                min-height: 304px;  
+                color: black;  
+                margin: 0 auto;  
+                padding: 25px 50px;  
+                border-radius: 5px;  
+                z-index: 2;  
+                display: flex;  
+                justify-content: center;  
+                background: rgb(255 255 255 / 0.85);  
+            }  
+            .input-container {  
+                position: relative;  
+                top: 20px;  
+            }  
+            h1 {  
+                font-size: 35px;  
+                text-align: center;  
+                margin-top: 0;  
+                margin-bottom: 10px;  
+            }
+
+            /* Form */  
+            .form {  
+                width: 480px;  
+            }  
+            label {  
+                font-weight: bold;  
+                margin-left: 10px;  
+            }  
+            input {  
+                width: 95%;  
+                margin-bottom: 10px;  
+                padding: 10px;  
+                border: 1px solid #ccc;  
+                border-radius: 20px;  
+                background: #fff;  
+                outline: none;  
+                font-family: 'Nunito', Arial, Helvetica, sans-serif;  
+            }
+
+            /* Button */  
+            button {  
+                width: 100%;  
+                height: 40px;  
+                border-radius: 20px;  
+                margin-top: 15px;  
+                border: none;  
+                text-transform: uppercase;  
+                background: #006959;  
+                color: white;  
+                cursor: pointer;  
+                outline: none;  
+            }  
+            button:hover {  
+                filter: brightness(110%);  
+            }
+
+            /* Countdown */  
+            ul {  
+                margin-left: -45px;  
+            }  
+            li {  
+                display: inline-block;  
+                font-size: 30px;  
+                list-style-type: none;  
+                padding: 10px;  
+                text-transform: uppercase;  
+            }  
+            li span {  
+                display: block;  
+                font-size: 80px;  
+                text-align: center;  
+            }
+
+            /* Complete */  
+            .complete {  
+                position: relative;  
+                top: 60px;  
+            }  
+            .complete-title {  
+                animation: complete 4s infinite;  
+            }
+
+            @keyframes complete {  
+                0% {  
+                    color: red;  
+                }  
+                25% {  
+                    color: rgb(195, 207, 18);  
+                }  
+                50% {  
+                    color: green;  
+                    transform: scale(1.5);  
+                }  
+                75% {  
+                    color: blue;  
+                }  
+                100% {  
+                    color: purple;  
+                }  
+            }
+
+            /* Media Query: Large Smartphone (Vertical) */  
+            @media screen and (max-width: 600px) {  
+                .video-background {  
+                    height: 100vh;  
+                    width: 100vw;  
+                }  
+                video {  
+                    object-fit: cover;  
+                    object-position: 70%;  
+                    margin-top: -1px;  
+                }  
+                .container {  
+                    min-width: unset;  
+                    width: 95vw;  
+                    min-height: 245px;  
+                    padding: 20px;  
+                    margin: 10px;  
+                }  
+                .input-container {  
+                    top: unset;  
+                }  
+                .countdown {  
+                    position: relative;  
+                    top: 10px;  
+                }  
+                .form {  
+                    width: unset;  
+                }  
+                input {  
+                    width: 93%;  
+                }  
+                h1 {  
+                    font-size: 20px;  
+                }  
+                li {  
+                    font-size: 15px;  
+                }  
+                li span {  
+                    font-size: 40px;  
+                }  
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Video Background -->  
+        <video class="video-background" loop muted autoplay>  
+            <source src="time.mp4" />  
+        </video>  
+        <div class="video-overlay"></div>  
+        <!-- Container -->  
+        <div class="container">  
+            <!-- Input -->  
+            <div class="input-container" id="input-container">  
+                <h1>Create a Custom Countdown</h1>  
+                <form class="form" id="countdownForm">  
+                    <label for="title">Title</label>  
+                    <input type="text" id="title" placeholder="What are you counting down to?"/>  
+                    <label for="date-picker">Select a Date</label>  
+                    <input type="date" id="date-picker" />  
+                    <button type="submit">Submit</button>  
+                </form>  
+            </div>  
+            <!-- Countdown -->  
+            <div class="countdown" id="countdown" hidden>  
+                <h1 id="countdown-title">Countdown Title Here</h1>  
+                <ul>  
+                    <li><span></span> Days</li>  
+                    <li><span></span> Hours</li>  
+                    <li><span></span> Minutes</li>  
+                    <li><span></span> Seconds</li>  
+                </ul>  
+                <button id="countdown-button">Reset</button>  
+            </div>  
+            <!-- Countdown Completed -->  
+            <div class="complete" id="complete" hidden>  
+                <h1 class="complete-title">Countdown Complete!</h1>  
+                <h1 id="complete-info"></h1>  
+                <button id="complete-button">New Countdown</button>  
+            </div>  
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            // Elements  
+            const inputContainer = document.getElementById('input-container');  
+            const countdownForm = document.getElementById('countdownForm');  
+            const dateEl = document.getElementById('date-picker');  
+            const titleEl = document.getElementById('title');  
+            const countdownEl = document.getElementById('countdown');  
+            const countdownElTitle = document.getElementById('countdown-title');  
+            const resetBtn = document.getElementById('countdown-button');  
+            const timeElements = document.querySelectorAll('span');  
+            const completeEl = document.getElementById('complete');  
+            const completeElInfo = document.getElementById('complete-info');  
+            const completeBtn = document.getElementById('complete-button');  
+            // Global Variables  
+            let countdownTitle = '';  
+            let countdownDate = '';  
+            let countdownValue = new Date();  
+            let countdownActive;  
+            let savedCountdown;  
+            // Time Variables  
+            const second = 1000;  
+            const minute = second * 60;  
+            const hour = minute * 60;  
+            const day = hour * 24;  
+            // Set date input minimum with todays date  
+            const today = new Date().toISOString().split('T')[0];  
+            dateEl.setAttribute('min', today);  
+            // Populate countdown / complete UI  
+            function updateDOM() {  
+                countdownActive = setInterval(() => {  
+                    // Get the time between Jan 1, 1970 to the entered date, returned in milliseconds.  
+                    const now = new Date().getTime();  
+                    const distance = countdownValue - now;  
+                    // Split up the time held in distance into days, hours, minutes, and seconds.  
+                    const days = Math.floor(distance / day);  
+                    const hours = Math.floor((distance % day) / hour);  
+                    const minutes = Math.floor((distance % hour) / minute);  
+                    const seconds = Math.floor((distance % minute) / second);  
+                    // Hide Input  
+                    inputContainer.hidden = true;  
+                    // If countdown has ended, show complete messaging  
+                    if (distance < 0) {  
+                        countdownEl.hidden = true;  
+                        clearInterval(countdownActive);  
+                        completeElInfo.textContent = `${countdownTitle} countdown finished on ${countdownDate}`;  
+                        completeEl.hidden = false;  
+                    } else {  
+                        // Else, Show countdown in progress  
+                        // Populate the countdown  
+                        countdownElTitle.textContent = `${countdownTitle}`;  
+                        timeElements[0].textContent = `${days}`;  
+                        timeElements[1].textContent = `${hours}`;  
+                        timeElements[2].textContent = `${minutes}`;  
+                        timeElements[3].textContent = `${seconds}`;  
+                        completeEl.hidden = true;  
+                        countdownEl.hidden = false;  
+                    }  
+                }, second);  
+            }  
+            // Take Values from form input  
+            function updateCountdown(event) {  
+                event.preventDefault();  
+                countdownTitle = event.srcElement[0].value;  
+                countdownDate = event.srcElement[1].value;  
+                savedCountdown = {  
+                    title: countdownTitle,  
+                    date: countdownDate,  
+                };  
+                localStorage.setItem('countdown', JSON.stringify(savedCountdown));  
+                // Check for valid date  
+                if (countdownDate === '') {  
+                    alert('Please select a date for the countdown.');  
+                } else {  
+                    // Get the numbner version of current date and update DOM  
+                    countdownValue = new Date(countdownDate).getTime();  
+                    updateDOM();  
+                }  
+            }  
+            // Reset all values  
+            function reset() {  
+                // Hide Countdown and show input  
+                countdownEl.hidden = true;  
+                completeEl.hidden = true;  
+                inputContainer.hidden = false;  
+                // Stop the countdown  
+                clearInterval(countdownActive);  
+                // Reset Values  
+                countdownTitle = '';  
+                countdownDate = '';  
+                titleEl.value = '';  
+                dateEl.value = '';  
+                localStorage.removeItem('countdown');  
+            }  
+            // Get the countdown from localStorage if available  
+            function restorePreviousCountdown() {  
+                if (localStorage.getItem('countdown')) {  
+                    inputContainer.hidden = true;  
+                    savedCountdown = JSON.parse(localStorage.getItem('countdown'));  
+                    countdownTitle = savedCountdown.title;  
+                    countdownDate = savedCountdown.date;  
+                    countdownValue = new Date(countdownDate).getTime();  
+                    updateDOM();  
+                }  
+            }  
+            // Event Listener  
+            countdownForm.addEventListener('submit', updateCountdown);  
+            resetBtn.addEventListener('click', reset);  
+            completeBtn.addEventListener('click', reset);  
+            // On Load  
+            restorePreviousCountdown();
+        </script>
+    </body>
+</html>
