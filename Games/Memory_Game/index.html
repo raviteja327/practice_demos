@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Memory Game</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+            *,  
+            *::before,  
+            *::after {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                margin: 20px 0;  
+                background: #6589f9;
+            }
+
+            .heading {  
+                text-align: center;  
+                background: rgb(0, 15, 46);  
+                padding: 1rem;  
+                color: bisque;  
+            }  
+            .count-container {  
+                display: flex;  
+                justify-content: space-between;  
+                align-items: center;  
+                width: 60%;  
+                margin: auto auto;  
+                padding: 2rem 0;  
+            }  
+            .attempts {  
+                font-size: 2rem;  
+                color: antiquewhite;  
+            }   
+            .reset {  
+                font-size: 2rem;  
+                color: antiquewhite;  
+                cursor: pointer;  
+                border: 1px solid grey;  
+                padding: .5rem;  
+            }
+            .reset:hover {  
+                transform: scale(1.2);  
+            }  
+            .time {  
+                font-size: 2rem;  
+                color: antiquewhite;  
+            }  
+            .grid {  
+                max-width: 750px;  
+                margin: 0 auto;  
+                display: flex;  
+                flex-wrap: wrap;  
+                justify-content: space-evenly;  
+            }  
+            .card {  
+                position: relative;  
+                transition: all 0.4s linear;  
+                transform-style: preserve-3d;  
+                margin: 5px;  
+            }
+            .card,  
+            .back,  
+            .front {  
+                height: 100px;  
+                width: 100px;  
+            }  
+            .back,  
+            .front {  
+                position: absolute;  
+                backface-visibility: hidden;  
+            }  
+            .front {  
+                background: #fab942 url('../media/question.gif') no-repeat center center / contain;  
+            }  
+            .back {  
+                transform: rotateY(180deg);  
+                background-color: white;  
+                background-size: contain;  
+                background-repeat: no-repeat;  
+                background-position: center center;  
+            }  
+            .selected {  
+                border: 4px solid blue;  
+                transform: rotateY(180deg);  
+            }
+            .match .front {  
+                border: 0px;  
+                background: rgb(4, 44, 2) url("../media/celebrate.gif") no-repeat center center / contain !important;  
+                cursor: not-allowed;  
+                transform: none !important;  
+            }
+        </style>
+    </head>
+    <body>
+    
+        <header>  
+            <h1 class="heading">How good is your Memory?</h1>  
+        </header>  
+        <div class="count-container">  
+            <p class="attempts">Attempts: <span class="count"></span></p>  
+            <span class="reset">Reset <i class="fas fa-sync"></i></span>  
+            <p class="time">Time: <span class="min-count">00</span>: <span class="sec-count">00</span></p>  
+        </div>  
+        <div id="game"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            // Card data  
+            const cardsArray = [  
+                {  
+                name: "pokemon1",  
+                img: "./assets/media/pokemon1.png",  
+                },  
+                {  
+                name: "pokemon2",  
+                img: "./assets/media/pokemon2.png",  
+                },  
+                {  
+                name: "pokemon3",  
+                img: "./assets/media/pokemon3.png",  
+                },  
+                {  
+                name: "pokemon4",  
+                img: "./assets/media/pokemon4.png",  
+                },  
+                {  
+                name: "pokemon5",  
+                img: "./assets/media/pokemon5.png",  
+                },  
+                {  
+                name: "pokemon6",  
+                img: "./assets/media/pokemon6.png",  
+                },  
+                {  
+                name: "pokemon7",  
+                img: "./assets/media/pokemon7.png",  
+                },  
+                {  
+                name: "pokemon8",  
+                img: "./assets/media/pokemon8.png",  
+                },  
+                {  
+                name: "pokemon9",  
+                img: "./assets/media/pokemon9.png",  
+                },  
+                {  
+                name: "pokemon10",  
+                img: "./assets/media/pokemon10.png",  
+                },  
+                {  
+                name: "pokemon11",  
+                img: "./assets/media/pokemon11.png",  
+                },  
+                {  
+                name: "pokemon12",  
+                img: "./assets/media/pokemon12.png",  
+                },  
+            ];
+
+            // GAME   
+            const game = document.getElementById("game");  
+            const grid = document.createElement("section");  
+            grid.classList.add("grid");  
+            // game.addEventListener("click", secCount);  
+            game.appendChild(grid);  
+            // DOUBLE ARREY  
+            let gameGrid = cardsArray.concat(cardsArray);  
+            // FOR RAMDOMISING THE CARDS EVERY TIME WE REFERESH THE PAGE  
+            gameGrid.sort(() => 0.5 - Math.random());  
+            // CREATE CARDS  
+            gameGrid.forEach((item) => {  
+                const card = document.createElement("div");  
+                card.classList.add(`card`,`${item.name}`);  
+                card.dataset.name = item.name;  
+                const front = document.createElement("div");  
+                front.classList.add("front");  
+                const back = document.createElement("div");  
+                back.classList.add("back");  
+                back.style.backgroundImage = `url(${item.img})`;  
+                grid.appendChild(card);  
+                card.appendChild(front);  
+                card.appendChild(back);  
+            });
+
+            // ATTEMPTS COUNT  
+            let attemptCount = 0;  
+            let attempts = document.querySelector(".count");  
+            attempts.innerText = attemptCount;  
+            // TIME COUNT  
+            var sec = 0;  
+            var timeInSec;  
+            let min = 0;  
+            function secCount() {  
+                sec = sec + 1;  
+                document.querySelector(".sec-count").innerText = Math.floor(sec % 60);  
+                timeInSec = setTimeout(secCount, 1000);  
+                min = Math.floor(sec / 60);  
+                document.querySelector(".min-count").innerText = min;  
+            }  
+            var timeStarted = false;  
+            // secCount();  
+            // RESET ALL  
+            let reset = document.querySelector(".reset");  
+            reset.addEventListener("click", () => {  
+                let confirmReset = confirm("Whole game will start again. continue to reset?");  
+                if (confirmReset === true) {  
+                    window.location.reload();  
+                }   
+            });
+
+            // VARIABLES FOR THE GAME  
+            let firstGuess = "";  
+            let secondGuess = "";  
+            let previousTarget = null;  
+            let count = 0;  
+            let delay = 1200;  
+            // FUNCTIONS FOR THE GAME  
+            const match = () => {  
+                var selected = document.querySelectorAll(".selected");  
+                selected.forEach((card) => {  
+                    card.classList.add("match");  
+                });  
+            };  
+            const resetGuesses = () => {  
+                firstGuess = "";  
+                secondGuess = "";  
+                count = 0;  
+                var selected = document.querySelectorAll(".selected");  
+                selected.forEach((card) => {  
+                    card.classList.remove("selected");  
+                });  
+            };
+
+            // GAME LOGICS  
+            grid.addEventListener("click", function (event) {  
+                !timeStarted && secCount();  
+                timeStarted = true;  
+                let clicked = event.target;   
+                attemptCount++;  
+                attempts.innerText = attemptCount;  
+                if (  
+                    clicked.nodeName === "SECTION" ||  
+                    clicked === previousTarget ||  
+                    clicked.parentNode.classList.contains("selected")  
+                ) {  
+                    return;  
+                }  
+                if (count < 2) {  
+                    count++;  
+                    if (count === 1) {  
+                        // Assign first guess  
+                        firstGuess = clicked.parentNode.dataset.name;  
+                        clicked.parentNode.classList.add("selected");  
+                    } else {  
+                        // Assign second guess  
+                        secondGuess = clicked.parentNode.dataset.name;  
+                        clicked.parentNode.classList.add("selected");  
+                    }  
+                    // If both guesses are not empty...  
+                    if (firstGuess !== "" && secondGuess !== "") {  
+                        // and the first guess matches the second match...  
+                        if (firstGuess === secondGuess) {  
+                            // run the match function  
+                            // match();  
+                            // resetGuesses();  
+                            setTimeout(match, delay);  
+                            setTimeout(resetGuesses, delay);  
+                            var matched = document.querySelectorAll(`.${firstGuess}`);  
+                            matched.forEach(node => node.addEventListener('click',function (e) {    
+                            e.stopPropagation();  
+                            }))  
+                        } else {  
+                            setTimeout(resetGuesses, delay);  
+                        }  
+                    }  
+                }  
+                // Set previous target to clicked  
+                previousTarget = clicked;  
+            });
+        </script>
+    </body>
+</html>

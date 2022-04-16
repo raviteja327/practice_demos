@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <title>Random IP Generator</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {  
+                font-family: 'Kodchasan';  
+                text-align: center;  
+                color: #ffffff;  
+                background-color: #2c86e0;  
+            }
+            ::selection {  
+                color: #ffffff;  
+                background: #000000;  
+            }
+            ::-moz-selection {  
+                color: #ffffff;  
+                background: #000000;  
+            }
+
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button {  
+                -webkit-appearance: none;  
+                margin: 0;  
+            }  
+            input:focus, 
+            select:focus, 
+            textarea:focus, 
+            button:focus {  
+                outline: none !important;  
+                box-shadow: none !important;  
+            }
+
+            #ipOut {  
+                margin-bottom: 20px;  
+                border-top-left-radius: 0px;  
+                border-top-right-radius: 0px;  
+                border-bottom-left-radius: 0.25rem;  
+                border-bottom-right-radius: 0.25rem;  
+            }  
+            #log {  
+                border-top-left-radius: 0.25rem;  
+                border-top-right-radius: 0.25rem;  
+                border-bottom-left-radius: 0px;  
+                border-bottom-right-radius: 0px;  
+            } 
+
+            @media only screen and (max-width: 680px) {  
+                .github-fork-ribbon {  
+                    display: none;  
+                }  
+            }  
+            @media only screen and (max-width: 465px) {  
+                h1 {  
+                    font-size: 1.7em;  
+                }  
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">  
+            <div class="row">  
+                <div class="col-md-12">  
+                    <h1>Random IPv4 Generator</h1>  
+                </div>  
+            </div>  
+            <div class="row" oninput="rangeSet()">  
+                <div class="col-md-12">  
+                    <h4>Range</h4>  
+                    <div class="input-group">  
+                        <div class="input-group-prepend">  
+                            <span class="input-group-text">Start</span>  
+                        </div>  
+                        <input id="rangeStart1" class="form-control wheelable" type="number" value="0" min="0" max="255">  
+                        <input id="rangeStart2" class="form-control wheelable" type="number" value="0" min="0" max="255">  
+                        <input id="rangeStart3" class="form-control wheelable" type="number" value="0" min="0" max="255">  
+                        <input id="rangeStart4" class="form-control wheelable" type="number" value="0" min="0" max="255">  
+                    </div>  
+                </div>  
+            </div>
+            <br>  
+            <div class="row" oninput="rangeSet()">  
+                <div class="col-md-12">  
+                    <div class="input-group">  
+                        <div class="input-group-prepend">  
+                            <span class="input-group-text">End</span>  
+                        </div>  
+                        <input id="rangeEnd1" class="form-control wheelable" type="number" value="255" min="0" max="255">  
+                        <input id="rangeEnd2" class="form-control wheelable" type="number" value="255" min="0" max="255">  
+                        <input id="rangeEnd3" class="form-control wheelable" type="number" value="255" min="0" max="255">  
+                        <input id="rangeEnd4" class="form-control wheelable" type="number" value="255" min="0" max="255">  
+                    </div>  
+                </div>  
+            </div>  
+            <br>  
+            <div class="row">  
+                <div class="col-md-12">  
+                    <h4>Amount</h4>  
+                    <div class="input-group">  
+                        <input id="ipAmount" class="form-control wheelable" type="number" value="1" min="1" max="256"  
+                        oninput="amountSet()">  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="row">  
+                <div class="col-md-12">  
+                <br>  
+                    <h4>Output</h4>  
+                    <div>  
+                        <button id="ipGenBtn" class="btn btn-outline-light" onclick="ipGen()">Generate</button>  
+                        <button id="copyBtn" class="btn btn-outline-light" onclick="autoCopy()">Copy</button>  
+                        <button id="copyBtn" class="btn btn-outline-light" onclick="downloadText()">Download</button><br>  
+                        <br>  
+                        <div class="alert-success" id="log">Page loaded successfuly</div>  
+                        <div class="row">  
+                            <div class="col-md-12">  
+                                <div class="input-group">  
+                                    <textarea id="ipOut" class="form-control" rows="6"></textarea>  
+                                </div>  
+                            </div>  
+                        </div>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            var rangeStart1 = 0;  
+            var rangeStart2 = 0;  
+            var rangeStart3 = 0;  
+            var rangeStart4 = 0;  
+            var rangeEnd1 = 255;  
+            var rangeEnd2 = 255;  
+            var rangeEnd3 = 255;  
+            var rangeEnd4 = 255;  
+            var ipAmount = 1;  
+            function alertBox(type, text) {  
+                if (type === true) {  
+                    document.getElementById('log').innerHTML = text;  
+                    document.getElementById('log').className = "alert-success";  
+                } else if (type === false) {  
+                    document.getElementById('log').innerHTML = text;  
+                    document.getElementById('log').className = "alert-danger";  
+                }  
+            }
+
+            function rangeSet() {  
+                rangeStart1 = document.getElementById('rangeStart1').value;  
+                rangeStart2 = document.getElementById('rangeStart2').value;  
+                rangeStart3 = document.getElementById('rangeStart3').value;  
+                rangeStart4 = document.getElementById('rangeStart4').value;  
+                rangeEnd1 = document.getElementById('rangeEnd1').value;  
+                rangeEnd2 = document.getElementById('rangeEnd2').value;  
+                rangeEnd3 = document.getElementById('rangeEnd3').value;  
+                rangeEnd4 = document.getElementById('rangeEnd4').value;  
+            }  
+            function amountSet() {  
+                ipAmount = document.getElementById('ipAmount').value;  
+            } 
+
+            function ipGen() {  
+                if (ipAmount > 256) return(alertBox(false, "You cannot generate more than 256 IP's at a time"));  
+                document.getElementById('ipOut').innerHTML = '';  
+                for (var i = 0; i < ipAmount; i++) {  
+                    var out1 = Math.floor(Math.random() * (parseFloat(rangeEnd1) - parseFloat(rangeStart1) + 1)) + parseFloat(rangeStart1);  
+                    var out2 = Math.floor(Math.random() * (parseFloat(rangeEnd2) - parseFloat(rangeStart2) + 1)) + parseFloat(rangeStart2);  
+                    var out3 = Math.floor(Math.random() * (parseFloat(rangeEnd3) - parseFloat(rangeStart3) + 1)) + parseFloat(rangeStart3);  
+                    var out4 = Math.floor(Math.random() * (parseFloat(rangeEnd4) - parseFloat(rangeStart4) + 1)) + parseFloat(rangeStart4);  
+                    document.getElementById('ipOut').innerHTML += out1 + "." + out2 + "." + out3 + "." + out4 + "&#10;";  
+                }  
+                alertBox(true, ipAmount + " IP's generated successfuly");  
+            }  
+            function autoCopy() {  
+                var text = document.getElementById("ipOut");  
+                text.select();  
+                document.execCommand("copy");  
+                alertBox(true, ipAmount + " IP's copied to clipboard")  
+            }
+
+            function downloadText() {  
+                var text = document.getElementById("ipOut").value;  
+                if (!text) return(alertBox(false, "There are no generated IP's to download"));  
+                text = text.replace(/\n/g, "\r\n");  
+                var blob = new Blob([text], { type: "text/plain"});  
+                var anchor = document.createElement("a");  
+                anchor.download = `${ipAmount}-IP-list.txt`;  
+                anchor.href = window.URL.createObjectURL(blob);  
+                anchor.target ="_blank";  
+                anchor.style.display = "none";  
+                document.body.appendChild(anchor);  
+                anchor.click();  
+                document.body.removeChild(anchor);  
+                alertBox(true, ipAmount + " IP's downloaded successfuly")  
+            }
+
+            var EventUtil = {  
+                addHandler: function (element, type, handler) {  
+                    if (element.addEventListener) {  
+                            element.addEventListener(type, handler, false);  
+                    } else if (element.attachEvent) {  
+                            element.attachEvent("on" + type, handler);  
+                    } else {  
+                            element["on" + type] = handler;  
+                    }  
+                },  
+                removeHandler: function (element, type, handler) {  
+                    if (element.removeEventListener) {  
+                            element.removeEventListener(type, handler, false);  
+                    } else if (element.detachEvent) {  
+                            element.detachEvent("on" + type, handler);  
+                    } else {  
+                            element["on" + type] = null;  
+                    }  
+                },  
+                getEvent: function (event) {  
+                    return event ? event : window.event;  
+                },  
+                getTarget: function (event) {  
+                    return event.target || event.srcElement;  
+                },  
+                getWheelDelta: function (event) {  
+                    if (event.wheelDelta) {  
+                            return event.wheelDelta;  
+                    } else {  
+                            return -event.detail * 40;  
+                    }  
+                },  
+                preventDefault: function (event) {  
+                    if (event.preventDefault) {  
+                            event.preventDefault();  
+                    } else {  
+                            event.returnValue = false;  
+                    }  
+                }  
+            };
+
+            function onWheel(event) {  
+                event = EventUtil.getEvent(event);  
+                var curElem = EventUtil.getTarget(event);  
+                var curVal = parseInt(curElem.value);  
+                var delta = EventUtil.getWheelDelta(event);  
+                if (delta > 0) {  
+                    curElem.value = curVal + 1;  
+                    rangeSet();  
+                    amountSet();  
+                } else {  
+                    curElem.value = curVal - 1;  
+                    rangeSet();  
+                    amountSet();  
+                }  
+                if (curElem.value > 255) {  
+                    curElem.value = 255;  
+                } else if (curElem.value < 0) {  
+                    curElem.value = 0;  
+                }  
+                EventUtil.preventDefault(event);  
+            }
+
+            $(function () {  
+                $(".wheelable").hover(function () {  
+                    EventUtil.addHandler(document, 'mousewheel', onWheel);  
+                    EventUtil.addHandler(document, 'DOMMouseScroll', onWheel);  
+                },  
+                function () {  
+                    EventUtil.removeHandler(document, 'mousewheel', onWheel);  
+                    EventUtil.removeHandler(document, 'DOMMouseScroll', onWheel);  
+                });  
+            });
+        </script>
+    </body>
+</html>
