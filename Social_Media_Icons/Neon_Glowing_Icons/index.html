@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <title>Glowing Icons</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background: #18191f;
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .icon {
+                color: #fff;
+                font-size: 50px;
+                animation: first_color 0.5s ease-in-out infinite alternate;
+            }
+            .icon:nth-child(2) {
+                animation-name: second_color;
+            }
+            .icon:nth-child(3) {
+                animation-name: third_color;
+            }
+
+            @keyframes first_color {
+                0% {
+                    text-shadow: 0 0 10px #ff1177, 0 0 20px #d6249f, 0 0 30px #285AEB;
+                }
+                100% {
+                    text-shadow: 0 0 5px #ff1177, 0 0 10px #d6249f, 0 0 15px #285AEB;
+                }
+            }
+            @keyframes second_color {
+                0% {
+                    text-shadow: 0 0 10px #1877f2, 0 0 20px #1459b3, 0 0 30px #179bff;
+                }
+                100% {
+                    text-shadow: 0 0 5px #1877f2, 0 0 10px #1459b3, 0 0 15px #179bff;
+                }
+            }
+            @keyframes third_color {
+                0% {
+                    text-shadow: 0 0 10px #25d366, 0 0 20px #48ee85, 0 0 30px #0ec0a5;
+                }
+                100% {
+                    text-shadow: 0 0 5px #25d366, 0 0 10px #1459b3, 0 0 15px #179bff;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <i class="ri-instagram-line icon"></i>
+        <i class="ri-facebook-circle-line icon"></i>
+        <i class="ri-whatsapp-line icon"></i>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

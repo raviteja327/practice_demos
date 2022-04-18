@@ -230,6 +230,16 @@
             a[href^='http']:empty::before {
                 content: attr(href);
             }
+
+
+            /* Text Effect */
+            p.text {
+                white-space: nowrap;
+                width: 200px;
+                border: 1px solid #000000;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         </style>
     </head>
     <body>
@@ -423,6 +433,12 @@
         <!-- Display links when the element has no text value but the href attribute has a link. -->
         <a href="https://www.w3schools.com/" class="nvnp"></a>
         <br>
+
+
+        <!-- Text Effect -->
+        <p class="text">
+            The text-overflow property specifies how overflowed content that is not displayed should be signaled to the user. It can be clipped
+        </p>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
